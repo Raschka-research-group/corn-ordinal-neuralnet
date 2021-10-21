@@ -1,0 +1,815 @@
+This script: resnet34_xentr.py
+PyTorch Version: 1.8.1
+CUDA device: cuda:1
+CUDA version: 11.1
+Random seed: 0
+Learning rate: 0.0005
+Epochs: 200
+Batch size: 256
+Output path: runs/morph2-balanced/resnet34_xentr-imp0-seed0-epochs200_best-rmse
+Epoch: 001/200 | Batch 0000/0080 | Loss: 3.6884
+Epoch: 001/200 | Batch 0050/0080 | Loss: 3.2792
+MAE/RMSE/ACC: Current Valid: 6.80/9.10/6.36 Ep. 1 | Best Valid: 6.80/9.10/6.36 | Ep. 1
+Time elapsed: 0.60 min
+Epoch: 002/200 | Batch 0000/0080 | Loss: 3.1490
+Epoch: 002/200 | Batch 0050/0080 | Loss: 3.0272
+MAE/RMSE/ACC: Current Valid: 4.73/6.26/8.63 Ep. 2 | Best Valid: 4.73/6.26/8.63 | Ep. 2
+Time elapsed: 1.19 min
+Epoch: 003/200 | Batch 0000/0080 | Loss: 2.9617
+Epoch: 003/200 | Batch 0050/0080 | Loss: 2.9038
+MAE/RMSE/ACC: Current Valid: 5.86/7.48/8.63 Ep. 3 | Best Valid: 4.73/6.26/8.63 | Ep. 2
+Time elapsed: 1.78 min
+Epoch: 004/200 | Batch 0000/0080 | Loss: 2.7674
+Epoch: 004/200 | Batch 0050/0080 | Loss: 2.8160
+MAE/RMSE/ACC: Current Valid: 5.74/7.48/8.63 Ep. 4 | Best Valid: 4.73/6.26/8.63 | Ep. 2
+Time elapsed: 2.39 min
+Epoch: 005/200 | Batch 0000/0080 | Loss: 2.7256
+Epoch: 005/200 | Batch 0050/0080 | Loss: 2.7361
+MAE/RMSE/ACC: Current Valid: 6.37/8.35/8.63 Ep. 5 | Best Valid: 4.73/6.26/8.63 | Ep. 2
+Time elapsed: 3.00 min
+Epoch: 006/200 | Batch 0000/0080 | Loss: 2.6568
+Epoch: 006/200 | Batch 0050/0080 | Loss: 2.6231
+MAE/RMSE/ACC: Current Valid: 7.73/9.61/8.63 Ep. 6 | Best Valid: 4.73/6.26/8.63 | Ep. 2
+Time elapsed: 3.61 min
+Epoch: 007/200 | Batch 0000/0080 | Loss: 2.6916
+Epoch: 007/200 | Batch 0050/0080 | Loss: 2.7021
+MAE/RMSE/ACC: Current Valid: 4.60/6.00/8.26 Ep. 7 | Best Valid: 4.60/6.00/8.26 | Ep. 7
+Time elapsed: 4.23 min
+Epoch: 008/200 | Batch 0000/0080 | Loss: 2.5645
+Epoch: 008/200 | Batch 0050/0080 | Loss: 2.5998
+MAE/RMSE/ACC: Current Valid: 3.92/5.23/10.73 Ep. 8 | Best Valid: 3.92/5.23/10.73 | Ep. 8
+Time elapsed: 4.85 min
+Epoch: 009/200 | Batch 0000/0080 | Loss: 2.5234
+Epoch: 009/200 | Batch 0050/0080 | Loss: 2.6721
+MAE/RMSE/ACC: Current Valid: 5.37/6.78/10.73 Ep. 9 | Best Valid: 3.92/5.23/10.73 | Ep. 8
+Time elapsed: 5.46 min
+Epoch: 010/200 | Batch 0000/0080 | Loss: 2.5326
+Epoch: 010/200 | Batch 0050/0080 | Loss: 2.5149
+MAE/RMSE/ACC: Current Valid: 5.93/7.49/10.73 Ep. 10 | Best Valid: 3.92/5.23/10.73 | Ep. 8
+Time elapsed: 6.09 min
+Epoch: 011/200 | Batch 0000/0080 | Loss: 2.4814
+Epoch: 011/200 | Batch 0050/0080 | Loss: 2.5306
+MAE/RMSE/ACC: Current Valid: 3.84/5.13/11.58 Ep. 11 | Best Valid: 3.84/5.13/11.58 | Ep. 11
+Time elapsed: 6.72 min
+Epoch: 012/200 | Batch 0000/0080 | Loss: 2.3863
+Epoch: 012/200 | Batch 0050/0080 | Loss: 2.3864
+MAE/RMSE/ACC: Current Valid: 3.70/4.95/11.39 Ep. 12 | Best Valid: 3.70/4.95/11.39 | Ep. 12
+Time elapsed: 7.35 min
+Epoch: 013/200 | Batch 0000/0080 | Loss: 2.3778
+Epoch: 013/200 | Batch 0050/0080 | Loss: 2.3936
+MAE/RMSE/ACC: Current Valid: 4.34/5.74/11.39 Ep. 13 | Best Valid: 3.70/4.95/11.39 | Ep. 12
+Time elapsed: 7.99 min
+Epoch: 014/200 | Batch 0000/0080 | Loss: 2.3770
+Epoch: 014/200 | Batch 0050/0080 | Loss: 2.3023
+MAE/RMSE/ACC: Current Valid: 3.95/5.09/11.39 Ep. 14 | Best Valid: 3.70/4.95/11.39 | Ep. 12
+Time elapsed: 8.64 min
+Epoch: 015/200 | Batch 0000/0080 | Loss: 2.2599
+Epoch: 015/200 | Batch 0050/0080 | Loss: 2.2299
+MAE/RMSE/ACC: Current Valid: 3.90/5.30/11.39 Ep. 15 | Best Valid: 3.70/4.95/11.39 | Ep. 12
+Time elapsed: 9.28 min
+Epoch: 016/200 | Batch 0000/0080 | Loss: 2.1123
+Epoch: 016/200 | Batch 0050/0080 | Loss: 2.1030
+MAE/RMSE/ACC: Current Valid: 3.59/4.86/11.53 Ep. 16 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 9.93 min
+Epoch: 017/200 | Batch 0000/0080 | Loss: 2.0742
+Epoch: 017/200 | Batch 0050/0080 | Loss: 2.2465
+MAE/RMSE/ACC: Current Valid: 3.76/5.01/11.53 Ep. 17 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 10.60 min
+Epoch: 018/200 | Batch 0000/0080 | Loss: 2.0352
+Epoch: 018/200 | Batch 0050/0080 | Loss: 2.0363
+MAE/RMSE/ACC: Current Valid: 3.63/4.89/11.53 Ep. 18 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 11.26 min
+Epoch: 019/200 | Batch 0000/0080 | Loss: 1.7776
+Epoch: 019/200 | Batch 0050/0080 | Loss: 1.9413
+MAE/RMSE/ACC: Current Valid: 3.67/5.07/11.53 Ep. 19 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 11.93 min
+Epoch: 020/200 | Batch 0000/0080 | Loss: 1.6221
+Epoch: 020/200 | Batch 0050/0080 | Loss: 1.8598
+MAE/RMSE/ACC: Current Valid: 3.63/4.91/11.53 Ep. 20 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 12.60 min
+Epoch: 021/200 | Batch 0000/0080 | Loss: 1.4975
+Epoch: 021/200 | Batch 0050/0080 | Loss: 1.6600
+MAE/RMSE/ACC: Current Valid: 3.80/5.26/11.53 Ep. 21 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 13.26 min
+Epoch: 022/200 | Batch 0000/0080 | Loss: 1.2871
+Epoch: 022/200 | Batch 0050/0080 | Loss: 1.6261
+MAE/RMSE/ACC: Current Valid: 3.60/4.91/11.53 Ep. 22 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 13.93 min
+Epoch: 023/200 | Batch 0000/0080 | Loss: 1.0306
+Epoch: 023/200 | Batch 0050/0080 | Loss: 1.3572
+MAE/RMSE/ACC: Current Valid: 3.83/5.15/11.53 Ep. 23 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 14.59 min
+Epoch: 024/200 | Batch 0000/0080 | Loss: 1.0063
+Epoch: 024/200 | Batch 0050/0080 | Loss: 1.1464
+MAE/RMSE/ACC: Current Valid: 3.92/5.26/11.53 Ep. 24 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 15.25 min
+Epoch: 025/200 | Batch 0000/0080 | Loss: 0.8086
+Epoch: 025/200 | Batch 0050/0080 | Loss: 0.9575
+MAE/RMSE/ACC: Current Valid: 4.09/5.63/11.53 Ep. 25 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 15.91 min
+Epoch: 026/200 | Batch 0000/0080 | Loss: 0.7836
+Epoch: 026/200 | Batch 0050/0080 | Loss: 0.8791
+MAE/RMSE/ACC: Current Valid: 3.69/4.97/11.53 Ep. 26 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 16.58 min
+Epoch: 027/200 | Batch 0000/0080 | Loss: 0.6738
+Epoch: 027/200 | Batch 0050/0080 | Loss: 0.6647
+MAE/RMSE/ACC: Current Valid: 3.65/5.01/11.53 Ep. 27 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 17.24 min
+Epoch: 028/200 | Batch 0000/0080 | Loss: 0.4988
+Epoch: 028/200 | Batch 0050/0080 | Loss: 0.7035
+MAE/RMSE/ACC: Current Valid: 3.64/4.94/11.53 Ep. 28 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 17.90 min
+Epoch: 029/200 | Batch 0000/0080 | Loss: 0.4593
+Epoch: 029/200 | Batch 0050/0080 | Loss: 0.4740
+MAE/RMSE/ACC: Current Valid: 3.69/5.11/11.53 Ep. 29 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 18.56 min
+Epoch: 030/200 | Batch 0000/0080 | Loss: 0.4363
+Epoch: 030/200 | Batch 0050/0080 | Loss: 0.4710
+MAE/RMSE/ACC: Current Valid: 3.70/5.07/11.53 Ep. 30 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 19.23 min
+Epoch: 031/200 | Batch 0000/0080 | Loss: 0.3361
+Epoch: 031/200 | Batch 0050/0080 | Loss: 0.4611
+MAE/RMSE/ACC: Current Valid: 4.33/5.83/11.53 Ep. 31 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 19.89 min
+Epoch: 032/200 | Batch 0000/0080 | Loss: 0.3803
+Epoch: 032/200 | Batch 0050/0080 | Loss: 0.3663
+MAE/RMSE/ACC: Current Valid: 3.71/5.08/11.53 Ep. 32 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 20.55 min
+Epoch: 033/200 | Batch 0000/0080 | Loss: 0.2325
+Epoch: 033/200 | Batch 0050/0080 | Loss: 0.3396
+MAE/RMSE/ACC: Current Valid: 3.69/5.03/11.53 Ep. 33 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 21.22 min
+Epoch: 034/200 | Batch 0000/0080 | Loss: 0.2395
+Epoch: 034/200 | Batch 0050/0080 | Loss: 0.3781
+MAE/RMSE/ACC: Current Valid: 3.74/5.15/11.53 Ep. 34 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 21.88 min
+Epoch: 035/200 | Batch 0000/0080 | Loss: 0.1549
+Epoch: 035/200 | Batch 0050/0080 | Loss: 0.2454
+MAE/RMSE/ACC: Current Valid: 3.68/5.09/11.53 Ep. 35 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 22.54 min
+Epoch: 036/200 | Batch 0000/0080 | Loss: 0.1738
+Epoch: 036/200 | Batch 0050/0080 | Loss: 0.2137
+MAE/RMSE/ACC: Current Valid: 3.84/5.35/11.53 Ep. 36 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 23.21 min
+Epoch: 037/200 | Batch 0000/0080 | Loss: 0.1831
+Epoch: 037/200 | Batch 0050/0080 | Loss: 0.2872
+MAE/RMSE/ACC: Current Valid: 3.65/5.06/11.53 Ep. 37 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 23.87 min
+Epoch: 038/200 | Batch 0000/0080 | Loss: 0.1826
+Epoch: 038/200 | Batch 0050/0080 | Loss: 0.2992
+MAE/RMSE/ACC: Current Valid: 3.84/5.33/11.53 Ep. 38 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 24.53 min
+Epoch: 039/200 | Batch 0000/0080 | Loss: 0.1772
+Epoch: 039/200 | Batch 0050/0080 | Loss: 0.1700
+MAE/RMSE/ACC: Current Valid: 4.06/5.59/11.53 Ep. 39 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 25.20 min
+Epoch: 040/200 | Batch 0000/0080 | Loss: 0.1222
+Epoch: 040/200 | Batch 0050/0080 | Loss: 0.2272
+MAE/RMSE/ACC: Current Valid: 3.93/5.53/11.53 Ep. 40 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 25.86 min
+Epoch: 041/200 | Batch 0000/0080 | Loss: 0.1629
+Epoch: 041/200 | Batch 0050/0080 | Loss: 0.1613
+MAE/RMSE/ACC: Current Valid: 4.35/5.95/11.53 Ep. 41 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 26.52 min
+Epoch: 042/200 | Batch 0000/0080 | Loss: 0.1780
+Epoch: 042/200 | Batch 0050/0080 | Loss: 0.1446
+MAE/RMSE/ACC: Current Valid: 3.63/5.06/11.53 Ep. 42 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 27.19 min
+Epoch: 043/200 | Batch 0000/0080 | Loss: 0.1200
+Epoch: 043/200 | Batch 0050/0080 | Loss: 0.1493
+MAE/RMSE/ACC: Current Valid: 3.99/5.49/11.53 Ep. 43 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 27.85 min
+Epoch: 044/200 | Batch 0000/0080 | Loss: 0.0966
+Epoch: 044/200 | Batch 0050/0080 | Loss: 0.1385
+MAE/RMSE/ACC: Current Valid: 4.03/5.59/11.53 Ep. 44 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 28.51 min
+Epoch: 045/200 | Batch 0000/0080 | Loss: 0.0722
+Epoch: 045/200 | Batch 0050/0080 | Loss: 0.2314
+MAE/RMSE/ACC: Current Valid: 3.97/5.48/11.53 Ep. 45 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 29.17 min
+Epoch: 046/200 | Batch 0000/0080 | Loss: 0.1542
+Epoch: 046/200 | Batch 0050/0080 | Loss: 0.1000
+MAE/RMSE/ACC: Current Valid: 4.14/5.64/11.53 Ep. 46 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 29.84 min
+Epoch: 047/200 | Batch 0000/0080 | Loss: 0.1614
+Epoch: 047/200 | Batch 0050/0080 | Loss: 0.1413
+MAE/RMSE/ACC: Current Valid: 3.83/5.32/11.53 Ep. 47 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 30.50 min
+Epoch: 048/200 | Batch 0000/0080 | Loss: 0.1648
+Epoch: 048/200 | Batch 0050/0080 | Loss: 0.1046
+MAE/RMSE/ACC: Current Valid: 3.83/5.28/11.53 Ep. 48 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 31.16 min
+Epoch: 049/200 | Batch 0000/0080 | Loss: 0.1249
+Epoch: 049/200 | Batch 0050/0080 | Loss: 0.1380
+MAE/RMSE/ACC: Current Valid: 3.80/5.20/11.53 Ep. 49 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 31.82 min
+Epoch: 050/200 | Batch 0000/0080 | Loss: 0.1725
+Epoch: 050/200 | Batch 0050/0080 | Loss: 0.1676
+MAE/RMSE/ACC: Current Valid: 5.10/6.91/11.53 Ep. 50 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 32.49 min
+Epoch: 051/200 | Batch 0000/0080 | Loss: 0.1714
+Epoch: 051/200 | Batch 0050/0080 | Loss: 0.1338
+MAE/RMSE/ACC: Current Valid: 4.84/6.60/11.53 Ep. 51 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 33.15 min
+Epoch: 052/200 | Batch 0000/0080 | Loss: 0.1184
+Epoch: 052/200 | Batch 0050/0080 | Loss: 0.1587
+MAE/RMSE/ACC: Current Valid: 3.79/5.26/11.53 Ep. 52 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 33.82 min
+Epoch: 053/200 | Batch 0000/0080 | Loss: 0.1505
+Epoch: 053/200 | Batch 0050/0080 | Loss: 0.1411
+MAE/RMSE/ACC: Current Valid: 3.79/5.34/11.53 Ep. 53 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 34.48 min
+Epoch: 054/200 | Batch 0000/0080 | Loss: 0.1645
+Epoch: 054/200 | Batch 0050/0080 | Loss: 0.1365
+MAE/RMSE/ACC: Current Valid: 3.73/5.22/11.53 Ep. 54 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 35.15 min
+Epoch: 055/200 | Batch 0000/0080 | Loss: 0.1122
+Epoch: 055/200 | Batch 0050/0080 | Loss: 0.1222
+MAE/RMSE/ACC: Current Valid: 4.01/5.58/11.53 Ep. 55 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 35.81 min
+Epoch: 056/200 | Batch 0000/0080 | Loss: 0.1110
+Epoch: 056/200 | Batch 0050/0080 | Loss: 0.1292
+MAE/RMSE/ACC: Current Valid: 4.46/6.10/11.53 Ep. 56 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 36.48 min
+Epoch: 057/200 | Batch 0000/0080 | Loss: 0.0669
+Epoch: 057/200 | Batch 0050/0080 | Loss: 0.0817
+MAE/RMSE/ACC: Current Valid: 3.98/5.55/11.53 Ep. 57 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 37.15 min
+Epoch: 058/200 | Batch 0000/0080 | Loss: 0.0899
+Epoch: 058/200 | Batch 0050/0080 | Loss: 0.1467
+MAE/RMSE/ACC: Current Valid: 3.68/5.12/11.53 Ep. 58 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 37.82 min
+Epoch: 059/200 | Batch 0000/0080 | Loss: 0.0900
+Epoch: 059/200 | Batch 0050/0080 | Loss: 0.1660
+MAE/RMSE/ACC: Current Valid: 3.80/5.32/11.53 Ep. 59 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 38.48 min
+Epoch: 060/200 | Batch 0000/0080 | Loss: 0.1511
+Epoch: 060/200 | Batch 0050/0080 | Loss: 0.1037
+MAE/RMSE/ACC: Current Valid: 3.94/5.49/11.53 Ep. 60 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 39.15 min
+Epoch: 061/200 | Batch 0000/0080 | Loss: 0.0851
+Epoch: 061/200 | Batch 0050/0080 | Loss: 0.1335
+MAE/RMSE/ACC: Current Valid: 4.03/5.61/11.53 Ep. 61 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 39.81 min
+Epoch: 062/200 | Batch 0000/0080 | Loss: 0.1090
+Epoch: 062/200 | Batch 0050/0080 | Loss: 0.0474
+MAE/RMSE/ACC: Current Valid: 3.75/5.23/11.53 Ep. 62 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 40.48 min
+Epoch: 063/200 | Batch 0000/0080 | Loss: 0.0840
+Epoch: 063/200 | Batch 0050/0080 | Loss: 0.1814
+MAE/RMSE/ACC: Current Valid: 4.02/5.57/11.53 Ep. 63 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 41.15 min
+Epoch: 064/200 | Batch 0000/0080 | Loss: 0.1193
+Epoch: 064/200 | Batch 0050/0080 | Loss: 0.1089
+MAE/RMSE/ACC: Current Valid: 3.75/5.17/11.53 Ep. 64 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 41.82 min
+Epoch: 065/200 | Batch 0000/0080 | Loss: 0.0635
+Epoch: 065/200 | Batch 0050/0080 | Loss: 0.0990
+MAE/RMSE/ACC: Current Valid: 3.70/5.13/11.53 Ep. 65 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 42.48 min
+Epoch: 066/200 | Batch 0000/0080 | Loss: 0.0999
+Epoch: 066/200 | Batch 0050/0080 | Loss: 0.0541
+MAE/RMSE/ACC: Current Valid: 3.86/5.33/11.53 Ep. 66 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 43.15 min
+Epoch: 067/200 | Batch 0000/0080 | Loss: 0.0951
+Epoch: 067/200 | Batch 0050/0080 | Loss: 0.2056
+MAE/RMSE/ACC: Current Valid: 3.77/5.14/11.53 Ep. 67 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 43.82 min
+Epoch: 068/200 | Batch 0000/0080 | Loss: 0.0560
+Epoch: 068/200 | Batch 0050/0080 | Loss: 0.1354
+MAE/RMSE/ACC: Current Valid: 3.96/5.55/11.53 Ep. 68 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 44.48 min
+Epoch: 069/200 | Batch 0000/0080 | Loss: 0.1334
+Epoch: 069/200 | Batch 0050/0080 | Loss: 0.0884
+MAE/RMSE/ACC: Current Valid: 6.72/8.73/11.53 Ep. 69 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 45.15 min
+Epoch: 070/200 | Batch 0000/0080 | Loss: 0.1063
+Epoch: 070/200 | Batch 0050/0080 | Loss: 0.0641
+MAE/RMSE/ACC: Current Valid: 3.98/5.43/11.53 Ep. 70 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 45.82 min
+Epoch: 071/200 | Batch 0000/0080 | Loss: 0.1110
+Epoch: 071/200 | Batch 0050/0080 | Loss: 0.0543
+MAE/RMSE/ACC: Current Valid: 3.88/5.36/11.53 Ep. 71 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 46.49 min
+Epoch: 072/200 | Batch 0000/0080 | Loss: 0.0456
+Epoch: 072/200 | Batch 0050/0080 | Loss: 0.0926
+MAE/RMSE/ACC: Current Valid: 3.72/5.22/11.53 Ep. 72 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 47.16 min
+Epoch: 073/200 | Batch 0000/0080 | Loss: 0.0799
+Epoch: 073/200 | Batch 0050/0080 | Loss: 0.1202
+MAE/RMSE/ACC: Current Valid: 4.09/5.69/11.53 Ep. 73 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 47.82 min
+Epoch: 074/200 | Batch 0000/0080 | Loss: 0.0540
+Epoch: 074/200 | Batch 0050/0080 | Loss: 0.1034
+MAE/RMSE/ACC: Current Valid: 3.78/5.31/11.53 Ep. 74 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 48.49 min
+Epoch: 075/200 | Batch 0000/0080 | Loss: 0.1117
+Epoch: 075/200 | Batch 0050/0080 | Loss: 0.0875
+MAE/RMSE/ACC: Current Valid: 3.77/5.23/11.53 Ep. 75 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 49.16 min
+Epoch: 076/200 | Batch 0000/0080 | Loss: 0.0784
+Epoch: 076/200 | Batch 0050/0080 | Loss: 0.1390
+MAE/RMSE/ACC: Current Valid: 4.22/5.76/11.53 Ep. 76 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 49.83 min
+Epoch: 077/200 | Batch 0000/0080 | Loss: 0.0645
+Epoch: 077/200 | Batch 0050/0080 | Loss: 0.1034
+MAE/RMSE/ACC: Current Valid: 3.79/5.30/11.53 Ep. 77 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 50.50 min
+Epoch: 078/200 | Batch 0000/0080 | Loss: 0.0849
+Epoch: 078/200 | Batch 0050/0080 | Loss: 0.1086
+MAE/RMSE/ACC: Current Valid: 3.84/5.33/11.53 Ep. 78 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 51.16 min
+Epoch: 079/200 | Batch 0000/0080 | Loss: 0.1455
+Epoch: 079/200 | Batch 0050/0080 | Loss: 0.0633
+MAE/RMSE/ACC: Current Valid: 3.81/5.33/11.53 Ep. 79 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 51.83 min
+Epoch: 080/200 | Batch 0000/0080 | Loss: 0.0369
+Epoch: 080/200 | Batch 0050/0080 | Loss: 0.1067
+MAE/RMSE/ACC: Current Valid: 3.84/5.30/11.53 Ep. 80 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 52.49 min
+Epoch: 081/200 | Batch 0000/0080 | Loss: 0.0627
+Epoch: 081/200 | Batch 0050/0080 | Loss: 0.1133
+MAE/RMSE/ACC: Current Valid: 4.33/6.02/11.53 Ep. 81 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 53.16 min
+Epoch: 082/200 | Batch 0000/0080 | Loss: 0.1039
+Epoch: 082/200 | Batch 0050/0080 | Loss: 0.0798
+MAE/RMSE/ACC: Current Valid: 4.78/6.44/11.53 Ep. 82 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 53.83 min
+Epoch: 083/200 | Batch 0000/0080 | Loss: 0.0893
+Epoch: 083/200 | Batch 0050/0080 | Loss: 0.0829
+MAE/RMSE/ACC: Current Valid: 3.79/5.29/11.53 Ep. 83 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 54.49 min
+Epoch: 084/200 | Batch 0000/0080 | Loss: 0.0621
+Epoch: 084/200 | Batch 0050/0080 | Loss: 0.0889
+MAE/RMSE/ACC: Current Valid: 3.80/5.30/11.53 Ep. 84 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 55.16 min
+Epoch: 085/200 | Batch 0000/0080 | Loss: 0.0793
+Epoch: 085/200 | Batch 0050/0080 | Loss: 0.0652
+MAE/RMSE/ACC: Current Valid: 4.37/5.96/11.53 Ep. 85 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 55.83 min
+Epoch: 086/200 | Batch 0000/0080 | Loss: 0.0816
+Epoch: 086/200 | Batch 0050/0080 | Loss: 0.0540
+MAE/RMSE/ACC: Current Valid: 3.74/5.24/11.53 Ep. 86 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 56.49 min
+Epoch: 087/200 | Batch 0000/0080 | Loss: 0.1370
+Epoch: 087/200 | Batch 0050/0080 | Loss: 0.0832
+MAE/RMSE/ACC: Current Valid: 3.84/5.34/11.53 Ep. 87 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 57.16 min
+Epoch: 088/200 | Batch 0000/0080 | Loss: 0.0815
+Epoch: 088/200 | Batch 0050/0080 | Loss: 0.0655
+MAE/RMSE/ACC: Current Valid: 4.60/6.34/11.53 Ep. 88 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 57.83 min
+Epoch: 089/200 | Batch 0000/0080 | Loss: 0.0235
+Epoch: 089/200 | Batch 0050/0080 | Loss: 0.0683
+MAE/RMSE/ACC: Current Valid: 3.80/5.28/11.53 Ep. 89 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 58.49 min
+Epoch: 090/200 | Batch 0000/0080 | Loss: 0.0636
+Epoch: 090/200 | Batch 0050/0080 | Loss: 0.0601
+MAE/RMSE/ACC: Current Valid: 3.86/5.44/11.53 Ep. 90 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 59.16 min
+Epoch: 091/200 | Batch 0000/0080 | Loss: 0.0646
+Epoch: 091/200 | Batch 0050/0080 | Loss: 0.1105
+MAE/RMSE/ACC: Current Valid: 4.24/5.86/11.53 Ep. 91 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 59.83 min
+Epoch: 092/200 | Batch 0000/0080 | Loss: 0.1120
+Epoch: 092/200 | Batch 0050/0080 | Loss: 0.0840
+MAE/RMSE/ACC: Current Valid: 3.70/5.15/11.53 Ep. 92 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 60.49 min
+Epoch: 093/200 | Batch 0000/0080 | Loss: 0.0744
+Epoch: 093/200 | Batch 0050/0080 | Loss: 0.0711
+MAE/RMSE/ACC: Current Valid: 3.81/5.28/11.53 Ep. 93 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 61.16 min
+Epoch: 094/200 | Batch 0000/0080 | Loss: 0.0833
+Epoch: 094/200 | Batch 0050/0080 | Loss: 0.0700
+MAE/RMSE/ACC: Current Valid: 3.89/5.37/11.53 Ep. 94 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 61.82 min
+Epoch: 095/200 | Batch 0000/0080 | Loss: 0.0508
+Epoch: 095/200 | Batch 0050/0080 | Loss: 0.0228
+MAE/RMSE/ACC: Current Valid: 4.53/6.20/11.53 Ep. 95 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 62.49 min
+Epoch: 096/200 | Batch 0000/0080 | Loss: 0.0917
+Epoch: 096/200 | Batch 0050/0080 | Loss: 0.0480
+MAE/RMSE/ACC: Current Valid: 3.90/5.37/11.53 Ep. 96 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 63.15 min
+Epoch: 097/200 | Batch 0000/0080 | Loss: 0.0617
+Epoch: 097/200 | Batch 0050/0080 | Loss: 0.0621
+MAE/RMSE/ACC: Current Valid: 3.86/5.44/11.53 Ep. 97 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 63.81 min
+Epoch: 098/200 | Batch 0000/0080 | Loss: 0.0306
+Epoch: 098/200 | Batch 0050/0080 | Loss: 0.0724
+MAE/RMSE/ACC: Current Valid: 3.94/5.38/11.53 Ep. 98 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 64.48 min
+Epoch: 099/200 | Batch 0000/0080 | Loss: 0.0838
+Epoch: 099/200 | Batch 0050/0080 | Loss: 0.0330
+MAE/RMSE/ACC: Current Valid: 4.93/6.71/11.53 Ep. 99 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 65.14 min
+Epoch: 100/200 | Batch 0000/0080 | Loss: 0.0814
+Epoch: 100/200 | Batch 0050/0080 | Loss: 0.0957
+MAE/RMSE/ACC: Current Valid: 3.82/5.38/11.53 Ep. 100 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 65.80 min
+Epoch: 101/200 | Batch 0000/0080 | Loss: 0.0810
+Epoch: 101/200 | Batch 0050/0080 | Loss: 0.1406
+MAE/RMSE/ACC: Current Valid: 3.86/5.32/11.53 Ep. 101 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 66.47 min
+Epoch: 102/200 | Batch 0000/0080 | Loss: 0.0468
+Epoch: 102/200 | Batch 0050/0080 | Loss: 0.1466
+MAE/RMSE/ACC: Current Valid: 3.81/5.29/11.53 Ep. 102 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 67.13 min
+Epoch: 103/200 | Batch 0000/0080 | Loss: 0.0849
+Epoch: 103/200 | Batch 0050/0080 | Loss: 0.0612
+MAE/RMSE/ACC: Current Valid: 3.99/5.50/11.53 Ep. 103 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 67.79 min
+Epoch: 104/200 | Batch 0000/0080 | Loss: 0.0567
+Epoch: 104/200 | Batch 0050/0080 | Loss: 0.1143
+MAE/RMSE/ACC: Current Valid: 3.80/5.30/11.53 Ep. 104 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 68.46 min
+Epoch: 105/200 | Batch 0000/0080 | Loss: 0.0549
+Epoch: 105/200 | Batch 0050/0080 | Loss: 0.0709
+MAE/RMSE/ACC: Current Valid: 3.73/5.25/11.53 Ep. 105 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 69.13 min
+Epoch: 106/200 | Batch 0000/0080 | Loss: 0.0569
+Epoch: 106/200 | Batch 0050/0080 | Loss: 0.0712
+MAE/RMSE/ACC: Current Valid: 4.57/6.32/11.53 Ep. 106 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 69.80 min
+Epoch: 107/200 | Batch 0000/0080 | Loss: 0.0570
+Epoch: 107/200 | Batch 0050/0080 | Loss: 0.0590
+MAE/RMSE/ACC: Current Valid: 3.95/5.51/11.53 Ep. 107 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 70.46 min
+Epoch: 108/200 | Batch 0000/0080 | Loss: 0.1058
+Epoch: 108/200 | Batch 0050/0080 | Loss: 0.0609
+MAE/RMSE/ACC: Current Valid: 4.89/6.62/11.53 Ep. 108 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 71.12 min
+Epoch: 109/200 | Batch 0000/0080 | Loss: 0.0601
+Epoch: 109/200 | Batch 0050/0080 | Loss: 0.0902
+MAE/RMSE/ACC: Current Valid: 3.84/5.33/11.53 Ep. 109 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 71.79 min
+Epoch: 110/200 | Batch 0000/0080 | Loss: 0.0823
+Epoch: 110/200 | Batch 0050/0080 | Loss: 0.0522
+MAE/RMSE/ACC: Current Valid: 3.92/5.45/11.53 Ep. 110 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 72.45 min
+Epoch: 111/200 | Batch 0000/0080 | Loss: 0.1155
+Epoch: 111/200 | Batch 0050/0080 | Loss: 0.0904
+MAE/RMSE/ACC: Current Valid: 3.95/5.49/11.53 Ep. 111 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 73.11 min
+Epoch: 112/200 | Batch 0000/0080 | Loss: 0.0590
+Epoch: 112/200 | Batch 0050/0080 | Loss: 0.0493
+MAE/RMSE/ACC: Current Valid: 3.93/5.41/11.53 Ep. 112 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 73.78 min
+Epoch: 113/200 | Batch 0000/0080 | Loss: 0.0419
+Epoch: 113/200 | Batch 0050/0080 | Loss: 0.0872
+MAE/RMSE/ACC: Current Valid: 3.83/5.33/11.53 Ep. 113 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 74.44 min
+Epoch: 114/200 | Batch 0000/0080 | Loss: 0.0488
+Epoch: 114/200 | Batch 0050/0080 | Loss: 0.0815
+MAE/RMSE/ACC: Current Valid: 3.92/5.45/11.53 Ep. 114 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 75.11 min
+Epoch: 115/200 | Batch 0000/0080 | Loss: 0.0594
+Epoch: 115/200 | Batch 0050/0080 | Loss: 0.1273
+MAE/RMSE/ACC: Current Valid: 4.60/6.39/11.53 Ep. 115 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 75.77 min
+Epoch: 116/200 | Batch 0000/0080 | Loss: 0.0690
+Epoch: 116/200 | Batch 0050/0080 | Loss: 0.0783
+MAE/RMSE/ACC: Current Valid: 4.03/5.60/11.53 Ep. 116 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 76.43 min
+Epoch: 117/200 | Batch 0000/0080 | Loss: 0.0230
+Epoch: 117/200 | Batch 0050/0080 | Loss: 0.1034
+MAE/RMSE/ACC: Current Valid: 3.73/5.18/11.53 Ep. 117 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 77.09 min
+Epoch: 118/200 | Batch 0000/0080 | Loss: 0.0350
+Epoch: 118/200 | Batch 0050/0080 | Loss: 0.0580
+MAE/RMSE/ACC: Current Valid: 3.95/5.46/11.53 Ep. 118 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 77.76 min
+Epoch: 119/200 | Batch 0000/0080 | Loss: 0.0580
+Epoch: 119/200 | Batch 0050/0080 | Loss: 0.0806
+MAE/RMSE/ACC: Current Valid: 4.02/5.59/11.53 Ep. 119 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 78.42 min
+Epoch: 120/200 | Batch 0000/0080 | Loss: 0.0333
+Epoch: 120/200 | Batch 0050/0080 | Loss: 0.0723
+MAE/RMSE/ACC: Current Valid: 3.86/5.34/11.53 Ep. 120 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 79.08 min
+Epoch: 121/200 | Batch 0000/0080 | Loss: 0.0407
+Epoch: 121/200 | Batch 0050/0080 | Loss: 0.0723
+MAE/RMSE/ACC: Current Valid: 3.87/5.37/11.53 Ep. 121 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 79.74 min
+Epoch: 122/200 | Batch 0000/0080 | Loss: 0.0342
+Epoch: 122/200 | Batch 0050/0080 | Loss: 0.1152
+MAE/RMSE/ACC: Current Valid: 4.06/5.63/11.53 Ep. 122 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 80.40 min
+Epoch: 123/200 | Batch 0000/0080 | Loss: 0.0596
+Epoch: 123/200 | Batch 0050/0080 | Loss: 0.0516
+MAE/RMSE/ACC: Current Valid: 4.29/6.04/11.53 Ep. 123 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 81.07 min
+Epoch: 124/200 | Batch 0000/0080 | Loss: 0.0465
+Epoch: 124/200 | Batch 0050/0080 | Loss: 0.0571
+MAE/RMSE/ACC: Current Valid: 3.92/5.45/11.53 Ep. 124 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 81.73 min
+Epoch: 125/200 | Batch 0000/0080 | Loss: 0.1226
+Epoch: 125/200 | Batch 0050/0080 | Loss: 0.1172
+MAE/RMSE/ACC: Current Valid: 5.21/7.23/11.53 Ep. 125 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 82.40 min
+Epoch: 126/200 | Batch 0000/0080 | Loss: 0.0530
+Epoch: 126/200 | Batch 0050/0080 | Loss: 0.1250
+MAE/RMSE/ACC: Current Valid: 3.94/5.53/11.53 Ep. 126 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 83.06 min
+Epoch: 127/200 | Batch 0000/0080 | Loss: 0.0076
+Epoch: 127/200 | Batch 0050/0080 | Loss: 0.0855
+MAE/RMSE/ACC: Current Valid: 3.90/5.48/11.53 Ep. 127 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 83.73 min
+Epoch: 128/200 | Batch 0000/0080 | Loss: 0.0314
+Epoch: 128/200 | Batch 0050/0080 | Loss: 0.1023
+MAE/RMSE/ACC: Current Valid: 4.52/6.28/11.53 Ep. 128 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 84.40 min
+Epoch: 129/200 | Batch 0000/0080 | Loss: 0.0381
+Epoch: 129/200 | Batch 0050/0080 | Loss: 0.0384
+MAE/RMSE/ACC: Current Valid: 3.92/5.46/11.53 Ep. 129 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 85.07 min
+Epoch: 130/200 | Batch 0000/0080 | Loss: 0.0632
+Epoch: 130/200 | Batch 0050/0080 | Loss: 0.0391
+MAE/RMSE/ACC: Current Valid: 4.30/5.99/11.53 Ep. 130 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 85.74 min
+Epoch: 131/200 | Batch 0000/0080 | Loss: 0.0779
+Epoch: 131/200 | Batch 0050/0080 | Loss: 0.0269
+MAE/RMSE/ACC: Current Valid: 3.88/5.36/11.53 Ep. 131 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 86.40 min
+Epoch: 132/200 | Batch 0000/0080 | Loss: 0.0721
+Epoch: 132/200 | Batch 0050/0080 | Loss: 0.0614
+MAE/RMSE/ACC: Current Valid: 3.79/5.30/11.53 Ep. 132 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 87.07 min
+Epoch: 133/200 | Batch 0000/0080 | Loss: 0.0623
+Epoch: 133/200 | Batch 0050/0080 | Loss: 0.0762
+MAE/RMSE/ACC: Current Valid: 3.78/5.27/11.53 Ep. 133 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 87.73 min
+Epoch: 134/200 | Batch 0000/0080 | Loss: 0.0237
+Epoch: 134/200 | Batch 0050/0080 | Loss: 0.0552
+MAE/RMSE/ACC: Current Valid: 4.23/5.93/11.53 Ep. 134 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 88.40 min
+Epoch: 135/200 | Batch 0000/0080 | Loss: 0.0428
+Epoch: 135/200 | Batch 0050/0080 | Loss: 0.0602
+MAE/RMSE/ACC: Current Valid: 4.82/6.65/11.53 Ep. 135 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 89.07 min
+Epoch: 136/200 | Batch 0000/0080 | Loss: 0.0225
+Epoch: 136/200 | Batch 0050/0080 | Loss: 0.0315
+MAE/RMSE/ACC: Current Valid: 4.87/6.69/11.53 Ep. 136 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 89.73 min
+Epoch: 137/200 | Batch 0000/0080 | Loss: 0.0424
+Epoch: 137/200 | Batch 0050/0080 | Loss: 0.0416
+MAE/RMSE/ACC: Current Valid: 4.29/5.96/11.53 Ep. 137 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 90.40 min
+Epoch: 138/200 | Batch 0000/0080 | Loss: 0.0526
+Epoch: 138/200 | Batch 0050/0080 | Loss: 0.0280
+MAE/RMSE/ACC: Current Valid: 3.76/5.22/11.53 Ep. 138 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 91.06 min
+Epoch: 139/200 | Batch 0000/0080 | Loss: 0.0342
+Epoch: 139/200 | Batch 0050/0080 | Loss: 0.0520
+MAE/RMSE/ACC: Current Valid: 4.50/6.27/11.53 Ep. 139 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 91.73 min
+Epoch: 140/200 | Batch 0000/0080 | Loss: 0.0283
+Epoch: 140/200 | Batch 0050/0080 | Loss: 0.0353
+MAE/RMSE/ACC: Current Valid: 5.33/7.21/11.53 Ep. 140 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 92.40 min
+Epoch: 141/200 | Batch 0000/0080 | Loss: 0.0384
+Epoch: 141/200 | Batch 0050/0080 | Loss: 0.0634
+MAE/RMSE/ACC: Current Valid: 3.93/5.47/11.53 Ep. 141 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 93.07 min
+Epoch: 142/200 | Batch 0000/0080 | Loss: 0.0695
+Epoch: 142/200 | Batch 0050/0080 | Loss: 0.0536
+MAE/RMSE/ACC: Current Valid: 3.83/5.34/11.53 Ep. 142 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 93.74 min
+Epoch: 143/200 | Batch 0000/0080 | Loss: 0.0177
+Epoch: 143/200 | Batch 0050/0080 | Loss: 0.0530
+MAE/RMSE/ACC: Current Valid: 4.20/5.81/11.53 Ep. 143 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 94.40 min
+Epoch: 144/200 | Batch 0000/0080 | Loss: 0.0276
+Epoch: 144/200 | Batch 0050/0080 | Loss: 0.0525
+MAE/RMSE/ACC: Current Valid: 3.75/5.21/11.53 Ep. 144 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 95.07 min
+Epoch: 145/200 | Batch 0000/0080 | Loss: 0.0395
+Epoch: 145/200 | Batch 0050/0080 | Loss: 0.0297
+MAE/RMSE/ACC: Current Valid: 3.77/5.30/11.53 Ep. 145 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 95.74 min
+Epoch: 146/200 | Batch 0000/0080 | Loss: 0.0692
+Epoch: 146/200 | Batch 0050/0080 | Loss: 0.0325
+MAE/RMSE/ACC: Current Valid: 3.74/5.20/11.53 Ep. 146 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 96.41 min
+Epoch: 147/200 | Batch 0000/0080 | Loss: 0.0574
+Epoch: 147/200 | Batch 0050/0080 | Loss: 0.0199
+MAE/RMSE/ACC: Current Valid: 5.19/7.01/11.53 Ep. 147 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 97.07 min
+Epoch: 148/200 | Batch 0000/0080 | Loss: 0.0542
+Epoch: 148/200 | Batch 0050/0080 | Loss: 0.0396
+MAE/RMSE/ACC: Current Valid: 3.83/5.33/11.53 Ep. 148 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 97.74 min
+Epoch: 149/200 | Batch 0000/0080 | Loss: 0.0333
+Epoch: 149/200 | Batch 0050/0080 | Loss: 0.0631
+MAE/RMSE/ACC: Current Valid: 3.93/5.55/11.53 Ep. 149 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 98.41 min
+Epoch: 150/200 | Batch 0000/0080 | Loss: 0.0463
+Epoch: 150/200 | Batch 0050/0080 | Loss: 0.0510
+MAE/RMSE/ACC: Current Valid: 4.25/5.88/11.53 Ep. 150 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 99.08 min
+Epoch: 151/200 | Batch 0000/0080 | Loss: 0.0801
+Epoch: 151/200 | Batch 0050/0080 | Loss: 0.0379
+MAE/RMSE/ACC: Current Valid: 3.89/5.39/11.53 Ep. 151 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 99.74 min
+Epoch: 152/200 | Batch 0000/0080 | Loss: 0.0635
+Epoch: 152/200 | Batch 0050/0080 | Loss: 0.0719
+MAE/RMSE/ACC: Current Valid: 4.07/5.77/11.53 Ep. 152 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 100.41 min
+Epoch: 153/200 | Batch 0000/0080 | Loss: 0.0434
+Epoch: 153/200 | Batch 0050/0080 | Loss: 0.1000
+MAE/RMSE/ACC: Current Valid: 5.29/7.26/11.53 Ep. 153 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 101.07 min
+Epoch: 154/200 | Batch 0000/0080 | Loss: 0.0498
+Epoch: 154/200 | Batch 0050/0080 | Loss: 0.0503
+MAE/RMSE/ACC: Current Valid: 5.44/7.31/11.53 Ep. 154 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 101.74 min
+Epoch: 155/200 | Batch 0000/0080 | Loss: 0.0340
+Epoch: 155/200 | Batch 0050/0080 | Loss: 0.0622
+MAE/RMSE/ACC: Current Valid: 4.75/6.41/11.53 Ep. 155 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 102.41 min
+Epoch: 156/200 | Batch 0000/0080 | Loss: 0.0756
+Epoch: 156/200 | Batch 0050/0080 | Loss: 0.0325
+MAE/RMSE/ACC: Current Valid: 4.64/6.30/11.53 Ep. 156 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 103.08 min
+Epoch: 157/200 | Batch 0000/0080 | Loss: 0.0481
+Epoch: 157/200 | Batch 0050/0080 | Loss: 0.0487
+MAE/RMSE/ACC: Current Valid: 3.81/5.27/11.53 Ep. 157 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 103.75 min
+Epoch: 158/200 | Batch 0000/0080 | Loss: 0.0349
+Epoch: 158/200 | Batch 0050/0080 | Loss: 0.0730
+MAE/RMSE/ACC: Current Valid: 3.88/5.42/11.53 Ep. 158 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 104.54 min
+Epoch: 159/200 | Batch 0000/0080 | Loss: 0.0529
+Epoch: 159/200 | Batch 0050/0080 | Loss: 0.0231
+MAE/RMSE/ACC: Current Valid: 3.87/5.38/11.53 Ep. 159 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 105.50 min
+Epoch: 160/200 | Batch 0000/0080 | Loss: 0.0388
+Epoch: 160/200 | Batch 0050/0080 | Loss: 0.0975
+MAE/RMSE/ACC: Current Valid: 3.84/5.40/11.53 Ep. 160 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 106.44 min
+Epoch: 161/200 | Batch 0000/0080 | Loss: 0.0361
+Epoch: 161/200 | Batch 0050/0080 | Loss: 0.0633
+MAE/RMSE/ACC: Current Valid: 4.42/6.08/11.53 Ep. 161 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 107.34 min
+Epoch: 162/200 | Batch 0000/0080 | Loss: 0.0302
+Epoch: 162/200 | Batch 0050/0080 | Loss: 0.0170
+MAE/RMSE/ACC: Current Valid: 3.90/5.46/11.53 Ep. 162 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 108.23 min
+Epoch: 163/200 | Batch 0000/0080 | Loss: 0.0343
+Epoch: 163/200 | Batch 0050/0080 | Loss: 0.0457
+MAE/RMSE/ACC: Current Valid: 3.91/5.47/11.53 Ep. 163 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 109.12 min
+Epoch: 164/200 | Batch 0000/0080 | Loss: 0.0516
+Epoch: 164/200 | Batch 0050/0080 | Loss: 0.0686
+MAE/RMSE/ACC: Current Valid: 3.92/5.46/11.53 Ep. 164 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 110.00 min
+Epoch: 165/200 | Batch 0000/0080 | Loss: 0.0420
+Epoch: 165/200 | Batch 0050/0080 | Loss: 0.0117
+MAE/RMSE/ACC: Current Valid: 3.99/5.63/11.53 Ep. 165 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 110.87 min
+Epoch: 166/200 | Batch 0000/0080 | Loss: 0.0429
+Epoch: 166/200 | Batch 0050/0080 | Loss: 0.0336
+MAE/RMSE/ACC: Current Valid: 4.16/5.77/11.53 Ep. 166 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 111.75 min
+Epoch: 167/200 | Batch 0000/0080 | Loss: 0.0420
+Epoch: 167/200 | Batch 0050/0080 | Loss: 0.0601
+MAE/RMSE/ACC: Current Valid: 3.85/5.39/11.53 Ep. 167 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 112.62 min
+Epoch: 168/200 | Batch 0000/0080 | Loss: 0.0336
+Epoch: 168/200 | Batch 0050/0080 | Loss: 0.0976
+MAE/RMSE/ACC: Current Valid: 3.73/5.27/11.53 Ep. 168 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 113.49 min
+Epoch: 169/200 | Batch 0000/0080 | Loss: 0.0217
+Epoch: 169/200 | Batch 0050/0080 | Loss: 0.0734
+MAE/RMSE/ACC: Current Valid: 4.08/5.72/11.53 Ep. 169 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 114.36 min
+Epoch: 170/200 | Batch 0000/0080 | Loss: 0.0590
+Epoch: 170/200 | Batch 0050/0080 | Loss: 0.0120
+MAE/RMSE/ACC: Current Valid: 3.76/5.24/11.53 Ep. 170 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 115.24 min
+Epoch: 171/200 | Batch 0000/0080 | Loss: 0.0378
+Epoch: 171/200 | Batch 0050/0080 | Loss: 0.0369
+MAE/RMSE/ACC: Current Valid: 3.79/5.32/11.53 Ep. 171 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 116.11 min
+Epoch: 172/200 | Batch 0000/0080 | Loss: 0.0387
+Epoch: 172/200 | Batch 0050/0080 | Loss: 0.0287
+MAE/RMSE/ACC: Current Valid: 3.80/5.30/11.53 Ep. 172 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 116.98 min
+Epoch: 173/200 | Batch 0000/0080 | Loss: 0.0063
+Epoch: 173/200 | Batch 0050/0080 | Loss: 0.0310
+MAE/RMSE/ACC: Current Valid: 3.75/5.23/11.53 Ep. 173 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 117.84 min
+Epoch: 174/200 | Batch 0000/0080 | Loss: 0.0299
+Epoch: 174/200 | Batch 0050/0080 | Loss: 0.0313
+MAE/RMSE/ACC: Current Valid: 4.14/5.78/11.53 Ep. 174 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 118.71 min
+Epoch: 175/200 | Batch 0000/0080 | Loss: 0.0358
+Epoch: 175/200 | Batch 0050/0080 | Loss: 0.0500
+MAE/RMSE/ACC: Current Valid: 3.79/5.27/11.53 Ep. 175 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 119.57 min
+Epoch: 176/200 | Batch 0000/0080 | Loss: 0.0674
+Epoch: 176/200 | Batch 0050/0080 | Loss: 0.0210
+MAE/RMSE/ACC: Current Valid: 3.88/5.42/11.53 Ep. 176 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 120.45 min
+Epoch: 177/200 | Batch 0000/0080 | Loss: 0.0103
+Epoch: 177/200 | Batch 0050/0080 | Loss: 0.0448
+MAE/RMSE/ACC: Current Valid: 4.06/5.59/11.53 Ep. 177 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 121.31 min
+Epoch: 178/200 | Batch 0000/0080 | Loss: 0.0370
+Epoch: 178/200 | Batch 0050/0080 | Loss: 0.0470
+MAE/RMSE/ACC: Current Valid: 3.81/5.35/11.53 Ep. 178 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 122.17 min
+Epoch: 179/200 | Batch 0000/0080 | Loss: 0.0302
+Epoch: 179/200 | Batch 0050/0080 | Loss: 0.0324
+MAE/RMSE/ACC: Current Valid: 4.01/5.61/11.53 Ep. 179 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 123.04 min
+Epoch: 180/200 | Batch 0000/0080 | Loss: 0.0235
+Epoch: 180/200 | Batch 0050/0080 | Loss: 0.0137
+MAE/RMSE/ACC: Current Valid: 3.93/5.49/11.53 Ep. 180 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 123.90 min
+Epoch: 181/200 | Batch 0000/0080 | Loss: 0.0337
+Epoch: 181/200 | Batch 0050/0080 | Loss: 0.0612
+MAE/RMSE/ACC: Current Valid: 4.34/6.01/11.53 Ep. 181 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 124.77 min
+Epoch: 182/200 | Batch 0000/0080 | Loss: 0.0132
+Epoch: 182/200 | Batch 0050/0080 | Loss: 0.0555
+MAE/RMSE/ACC: Current Valid: 4.40/6.10/11.53 Ep. 182 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 125.62 min
+Epoch: 183/200 | Batch 0000/0080 | Loss: 0.0248
+Epoch: 183/200 | Batch 0050/0080 | Loss: 0.0520
+MAE/RMSE/ACC: Current Valid: 3.97/5.52/11.53 Ep. 183 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 126.48 min
+Epoch: 184/200 | Batch 0000/0080 | Loss: 0.0140
+Epoch: 184/200 | Batch 0050/0080 | Loss: 0.0238
+MAE/RMSE/ACC: Current Valid: 3.96/5.52/11.53 Ep. 184 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 127.32 min
+Epoch: 185/200 | Batch 0000/0080 | Loss: 0.0267
+Epoch: 185/200 | Batch 0050/0080 | Loss: 0.0396
+MAE/RMSE/ACC: Current Valid: 3.97/5.53/11.53 Ep. 185 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 128.17 min
+Epoch: 186/200 | Batch 0000/0080 | Loss: 0.0895
+Epoch: 186/200 | Batch 0050/0080 | Loss: 0.0801
+MAE/RMSE/ACC: Current Valid: 3.78/5.30/11.53 Ep. 186 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 129.03 min
+Epoch: 187/200 | Batch 0000/0080 | Loss: 0.0446
+Epoch: 187/200 | Batch 0050/0080 | Loss: 0.0290
+MAE/RMSE/ACC: Current Valid: 3.87/5.46/11.53 Ep. 187 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 129.86 min
+Epoch: 188/200 | Batch 0000/0080 | Loss: 0.0262
+Epoch: 188/200 | Batch 0050/0080 | Loss: 0.0415
+MAE/RMSE/ACC: Current Valid: 5.30/7.16/11.53 Ep. 188 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 130.70 min
+Epoch: 189/200 | Batch 0000/0080 | Loss: 0.0367
+Epoch: 189/200 | Batch 0050/0080 | Loss: 0.0585
+MAE/RMSE/ACC: Current Valid: 4.16/5.82/11.53 Ep. 189 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 131.55 min
+Epoch: 190/200 | Batch 0000/0080 | Loss: 0.0259
+Epoch: 190/200 | Batch 0050/0080 | Loss: 0.0413
+MAE/RMSE/ACC: Current Valid: 4.01/5.62/11.53 Ep. 190 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 132.38 min
+Epoch: 191/200 | Batch 0000/0080 | Loss: 0.0579
+Epoch: 191/200 | Batch 0050/0080 | Loss: 0.0531
+MAE/RMSE/ACC: Current Valid: 7.50/9.84/11.53 Ep. 191 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 133.22 min
+Epoch: 192/200 | Batch 0000/0080 | Loss: 0.0530
+Epoch: 192/200 | Batch 0050/0080 | Loss: 0.0402
+MAE/RMSE/ACC: Current Valid: 4.13/5.71/11.53 Ep. 192 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 134.05 min
+Epoch: 193/200 | Batch 0000/0080 | Loss: 0.0580
+Epoch: 193/200 | Batch 0050/0080 | Loss: 0.0420
+MAE/RMSE/ACC: Current Valid: 3.78/5.35/11.53 Ep. 193 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 134.90 min
+Epoch: 194/200 | Batch 0000/0080 | Loss: 0.0179
+Epoch: 194/200 | Batch 0050/0080 | Loss: 0.0292
+MAE/RMSE/ACC: Current Valid: 3.87/5.46/11.53 Ep. 194 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 135.72 min
+Epoch: 195/200 | Batch 0000/0080 | Loss: 0.0499
+Epoch: 195/200 | Batch 0050/0080 | Loss: 0.0212
+MAE/RMSE/ACC: Current Valid: 3.92/5.48/11.53 Ep. 195 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 136.55 min
+Epoch: 196/200 | Batch 0000/0080 | Loss: 0.0786
+Epoch: 196/200 | Batch 0050/0080 | Loss: 0.0208
+MAE/RMSE/ACC: Current Valid: 4.07/5.68/11.53 Ep. 196 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 137.40 min
+Epoch: 197/200 | Batch 0000/0080 | Loss: 0.0278
+Epoch: 197/200 | Batch 0050/0080 | Loss: 0.0173
+MAE/RMSE/ACC: Current Valid: 3.97/5.62/11.53 Ep. 197 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 138.24 min
+Epoch: 198/200 | Batch 0000/0080 | Loss: 0.0344
+Epoch: 198/200 | Batch 0050/0080 | Loss: 0.0484
+MAE/RMSE/ACC: Current Valid: 3.86/5.41/11.53 Ep. 198 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 139.06 min
+Epoch: 199/200 | Batch 0000/0080 | Loss: 0.0338
+Epoch: 199/200 | Batch 0050/0080 | Loss: 0.0649
+MAE/RMSE/ACC: Current Valid: 3.83/5.33/11.53 Ep. 199 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 139.87 min
+Epoch: 200/200 | Batch 0000/0080 | Loss: 0.0382
+Epoch: 200/200 | Batch 0050/0080 | Loss: 0.0354
+MAE/RMSE/ACC: Current Valid: 3.94/5.43/11.53 Ep. 200 | Best Valid: 3.59/4.86/11.53 | Ep. 16
+Time elapsed: 140.68 min
+MAE/RMSE: | Train: 0.09/0.84 | Valid: 3.94/5.43 | Test: 4.03/5.59
+ACC: | Train: 98.13 | Valid: 13.65 | Test: 12.34
+Total Running Time: 142.00 min
+MAE/RMSE: | Best Train: 2.53/3.78 | Best Valid: 3.59/4.86 | Best Test: 3.81/5.19
+ACC: | Best Train: 25.86 | Best Valid: 11.53 | Best Test: 10.52
+Total Running Time: 143.30 min
