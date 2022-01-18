@@ -2,10 +2,21 @@ These are simple demo scripts for the different methods compared in this work, i
 
 
 
+ResNet-34 version models for image classification / ordinal regression:
+
 - `resnet34_classifier.py`: a conventional ResNet-34 image classifier with cross-entropy loss.
 - `resnet34_coral.py`: ResNet-34 for ordinal regression with CORAL.
 - `resnet34_corn.py`: ResNet-34 for ordinal regression with CORN.
 - `resnet34_niu.py`: ResNet-34 for ordinal regression with Niu et al.'s method.
+
+
+
+Multilayer perceptrons for tabular data:
+
+- `mlp_classifier.py`
+- `mlp_coral.py`
+- `mlp_corn.py`
+- `mlp_niu.py`
 
 
 

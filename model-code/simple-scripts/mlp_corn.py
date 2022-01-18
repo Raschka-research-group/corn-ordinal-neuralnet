@@ -1,22 +1,20 @@
 import argparse
-from functools import partial
+import os
+import shutil
 import time
 
 import torch
 import torch.nn.functional as F
-from torch.utils.data import DataLoader
-from torch.utils.data import SubsetRandomSampler
-from torchvision.datasets import MNIST
-from torchvision import transforms
 
 # Import from local helper file
 from helper import parse_cmdline_args
 from helper import compute_mae_and_rmse
-from helper import resnet34base
+from helper import get_dataloaders_fireman
 
 
 # Argparse helper
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(
+    formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 args = parse_cmdline_args(parser)
 
 ##########################
@@ -27,9 +25,18 @@ NUM_WORKERS = args.numworkers
 LEARNING_RATE = args.learningrate
 NUM_EPOCHS = args.epochs
 BATCH_SIZE = args.batchsize
-BEST_MODEL_PATH = args.best_model_path
-LOGFILE_PATH = args.logfile_path
+OUTPUT_DIR = args.output_dir
 LOSS_PRINT_INTERVAL = args.loss_print_interval
+
+if os.path.exists(args.output_dir):
+    if args.overwrite:
+        shutil.rmtree(args.output_dir)
+    else:
+        raise ValueError('Output directory already exists.')
+
+os.makedirs(args.output_dir)
+BEST_MODEL_PATH = os.path.join(args.output_dir, 'best_model.pt')
+LOGFILE_PATH = os.path.join(args.output_dir, 'training.log')
 
 if args.cuda >= 0 and torch.cuda.is_available():
     DEVICE = torch.device(f'cuda:{args.cuda}')
@@ -46,96 +53,61 @@ else:
 # Dataset
 ############################
 
-def train_transform():
-    return transforms.Compose([transforms.ToTensor()])
 
+NUM_CLASSES = 16
+NUM_FEATURES = 10
 
-def validation_transform():
-    return transforms.Compose([transforms.ToTensor()])
-
-
-NUM_CLASSES = 10
-GRAYSCALE = True
-RESNET34_AVGPOOLSIZE = 1
-
-train_dataset = MNIST(root='./datasets',
-                      train=True,
-                      download=True,
-                      transform=train_transform())
-
-valid_dataset = MNIST(root='./datasets',
-                      train=True,
-                      transform=validation_transform(),
-                      download=False)
-
-test_dataset = MNIST(root='./datasets',
-                     train=False,
-                     transform=validation_transform(),
-                     download=False)
-
-train_indices = torch.arange(1000, 60000)
-valid_indices = torch.arange(0, 1000)
-train_sampler = SubsetRandomSampler(train_indices)
-valid_sampler = SubsetRandomSampler(valid_indices)
-
-train_loader = DataLoader(dataset=train_dataset,
-                          batch_size=BATCH_SIZE,
-                          shuffle=False,  # SubsetRandomSampler shuffles
-                          drop_last=True,
-                          num_workers=NUM_WORKERS,
-                          sampler=train_sampler)
-
-valid_loader = DataLoader(dataset=valid_dataset,
-                          batch_size=BATCH_SIZE,
-                          shuffle=False,
-                          num_workers=NUM_WORKERS,
-                          sampler=valid_sampler)
-
-test_loader = DataLoader(dataset=test_dataset,
-                         batch_size=BATCH_SIZE,
-                         shuffle=False,
-                         num_workers=NUM_WORKERS)
+train_loader, valid_loader, test_loader = get_dataloaders_fireman(
+    batch_size=BATCH_SIZE,
+    train_csv_path='./datasets/fireman_example_balanced_train.csv',
+    valid_csv_path='./datasets/fireman_example_balanced_valid.csv',
+    test_csv_path='./datasets/fireman_example_balanced_test.csv',
+    balanced=True,
+    num_workers=NUM_WORKERS,
+    num_classes=NUM_CLASSES)
 
 
 ##########################
 # MODEL
 ##########################
 
-model = resnet34base(
-    num_classes=NUM_CLASSES,
-    grayscale=GRAYSCALE,
-    resnet34_avg_poolsize=RESNET34_AVGPOOLSIZE)
+class MultilayerPerceptron(torch.nn.Module):
+
+    def __init__(self, num_features, num_classes,
+                 num_hidden_1, num_hidden_2):
+        super().__init__()
+
+        self.num_classes = num_classes
+        self.my_network = torch.nn.Sequential(
+
+            # 1st hidden layer
+            torch.nn.Linear(num_features, num_hidden_1, bias=False),
+            torch.nn.LeakyReLU(),
+            torch.nn.Dropout(0.2),
+            torch.nn.BatchNorm1d(num_hidden_1),
+
+            # 2nd hidden layer
+            torch.nn.Linear(num_hidden_1, num_hidden_2, bias=False),
+            torch.nn.LeakyReLU(),
+            torch.nn.Dropout(0.2),
+            torch.nn.BatchNorm1d(num_hidden_2),
+
+            torch.nn.Linear(num_hidden_2, self.num_classes-1)
+        )
+
+    def forward(self, x):
+        logits = self.my_network(x)
+        return logits
 
 
-model.output_layer = torch.nn.Linear(512, (NUM_CLASSES-1))
+if RANDOM_SEED is not None:
+    torch.manual_seed(RANDOM_SEED)
+model = MultilayerPerceptron(num_features=NUM_FEATURES,
+                             num_hidden_1=300,
+                             num_hidden_2=300,
+                             num_classes=16)
 
-
-def forward(self, x):
-    x = self.conv1(x)
-    x = self.bn1(x)
-    x = self.relu(x)
-    x = self.maxpool(x)
-
-    x = self.layer1(x)
-    x = self.layer2(x)
-    x = self.layer3(x)
-    x = self.layer4(x)
-
-    x = self.avgpool(x)
-
-    x = x.view(x.size(0), -1)
-    logits = self.output_layer(x)
-    logits = logits.view(-1, (self.num_classes-1))
-    return logits
-
-
-def add_method(obj, func):
-    'Bind a function and store it in an object'
-    setattr(obj, func.__name__, partial(func, obj))
-
-
-add_method(model, forward)
-model.to(DEVICE)
+model = model.to(DEVICE)
 optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
 
@@ -163,13 +135,17 @@ def loss_corn(logits, y_train, num_classes):
         num_examples += len(train_labels)
         pred = logits[train_examples, task_index]
 
-        loss = -torch.sum( F.logsigmoid(pred)*train_labels
-                                + (F.logsigmoid(pred) - pred)*(1-train_labels) )
+        loss = -torch.sum(F.logsigmoid(pred)*train_labels
+                          + (F.logsigmoid(pred) - pred)*(1-train_labels)
+                          )
         losses += loss
     return losses/num_examples
 
 
-def label_from_logits_corn(logits):
+def label_from_logits(logits):
+    """ Converts logits to class labels.
+    This is function is specific to CORN.
+    """
     probas = torch.sigmoid(logits)
     probas = torch.cumprod(probas, dim=1)
     predict_levels = probas > 0.5
@@ -219,7 +195,7 @@ for epoch in range(1, NUM_EPOCHS+1):
         if not batch_idx % LOSS_PRINT_INTERVAL:
             s = (f'Epoch: {epoch:03d}/{NUM_EPOCHS:03d} | '
                  f'Batch {batch_idx:04d}/'
-                 f'{len(train_dataset)//BATCH_SIZE:04d} | '
+                 f'{len(train_loader):04d} | '
                  f'Loss: {loss:.4f}')
             print(s)
             with open(LOGFILE_PATH, 'a') as f:
@@ -232,7 +208,7 @@ for epoch in range(1, NUM_EPOCHS+1):
             model=model,
             data_loader=valid_loader,
             device=DEVICE,
-            label_from_logits_func=label_from_logits_corn
+            label_from_logits_func=label_from_logits
         )
 
         if valid_mae < best_valid_mae:
@@ -257,21 +233,21 @@ with torch.no_grad():
         model=model,
         data_loader=train_loader,
         device=DEVICE,
-        label_from_logits_func=label_from_logits_corn
+        label_from_logits_func=label_from_logits
         )
 
     valid_mae, valid_rmse = compute_mae_and_rmse(
         model=model,
         data_loader=valid_loader,
         device=DEVICE,
-        label_from_logits_func=label_from_logits_corn
+        label_from_logits_func=label_from_logits
         )
 
     test_mae, test_rmse = compute_mae_and_rmse(
         model=model,
         data_loader=valid_loader,
         device=DEVICE,
-        label_from_logits_func=label_from_logits_corn
+        label_from_logits_func=label_from_logits
         )
 
 s = ('\n\n=========================================\n\n'
