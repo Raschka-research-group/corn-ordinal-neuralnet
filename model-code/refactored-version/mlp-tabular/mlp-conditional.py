@@ -119,36 +119,36 @@ class MultilayerPerceptron(torch.nn.Module):
     def __init__(self, num_features, num_classes, 
                  num_hidden_1,num_hidden_2):
         super().__init__()
-        
+
         self.num_classes = num_classes
-        
+
         # self.embedding = torch.nn.Embedding(
         #     num_embeddings=20, embedding_dim=embedding_dim)
 
         self.my_network = torch.nn.Sequential(
-            
+
             # 1st hidden layer
             torch.nn.Linear(num_features, num_hidden_1, bias=False),
             torch.nn.LeakyReLU(),
             torch.nn.Dropout(0.2),
             torch.nn.BatchNorm1d(num_hidden_1),
-            
+
             # 2nd hidden layer
             torch.nn.Linear(num_hidden_1, num_hidden_2, bias=False),
             torch.nn.LeakyReLU(),
             torch.nn.Dropout(0.2),
             torch.nn.BatchNorm1d(num_hidden_2),
-            
+
             torch.nn.Linear(num_hidden_2, (self.num_classes-1))
         )
-           
+
     def forward(self, x):
         logits = self.my_network(x)
         probas = torch.sigmoid(logits)
         probas = torch.cumprod(probas, dim=1)
         return logits, probas
-    
-    
+
+
 torch.manual_seed(RANDOM_SEED)
 model = MultilayerPerceptron(num_features=NUM_FEATURES,
                              num_hidden_1=300,

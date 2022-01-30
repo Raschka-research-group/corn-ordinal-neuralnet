@@ -62,7 +62,7 @@ def parse_cmdline_args(parser=None):
     parser.add_argument('--skip_train_eval',
                         type=str,
                         choices=['true', 'false'],
-                        default='true')
+                        default='false')
 
     parser.set_defaults(feature=True)
     args = parser.parse_args()
