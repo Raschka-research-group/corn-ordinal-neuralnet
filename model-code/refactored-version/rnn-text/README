@@ -1,0 +1,216 @@
+# RNN runs
+
+## CORN test run
+
+python rnn_corn.py --cuda 1 --seed 0 --epochs 1 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed0-epochs1-batchsize16_best-rmse
+
+python rnn_corn.py --cuda -1 --seed 0 --epochs 1 --dataset coursera --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed0-epochs1-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 1 --seed 0 --epochs 200 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed0-epochs200-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed0-epochs200-batchsize16_best-rmse
+
+## CORAL test run
+
+python rnn_coral.py --cuda -1 --seed 0 --epochs 1 --dataset tripadvisor --outpath runs/tripadvisor/rnn_coral-imp0-seed0-epochs1_best-rmse
+
+python rnn_coral.py --cuda -1 --seed 0 --epochs 1 --dataset coursera --outpath runs/coursera/rnn_coral-imp0-seed0-epochs1_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 0 --epochs 200 --dataset tripadvisor --outpath runs/tripadvisor/rnn_coral-imp0-seed0-epochs200_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200_best-rmse
+
+## NIU test run
+
+python rnn_niu.py --cuda -1 --seed 0 --epochs 1 --dataset tripadvisor --outpath runs/tripadvisor/rnn_niu-imp0-seed0-epochs1_best-rmse
+
+python rnn_niu.py --cuda -1 --seed 0 --epochs 1 --dataset coursera --outpath runs/coursera/rnn_niu-imp0-seed0-epochs1_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 0 --epochs 200 --dataset tripadvisor --outpath runs/tripadvisor/rnn_niu-imp0-seed0-epochs200_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200_best-rmse
+
+## XENTR test run
+
+python rnn_xentr.py --cuda -1 --seed 0 --epochs 1 --dataset tripadvisor --outpath runs/tripadvisor/rnn_xentr-imp0-seed0-epochs1_best-rmse
+
+python rnn_xentr.py --cuda -1 --seed 0 --epochs 1 --dataset coursera --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs1_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 0 --epochs 200 --dataset tripadvisor --outpath runs/tripadvisor/rnn_xentr-imp0-seed0-epochs200_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200_best-rmse
+
+
+
+## RANDOM SEED RUNS
+
+# CORN TRIP
+
+python rnn_corn.py --cuda 1 --seed 1 --epochs 200 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed1-epochs200-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 2 --seed 2 --epochs 200 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed2-epochs200-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 3 --seed 3 --epochs 200 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed3-epochs200-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 4 --seed 4 --epochs 200 --dataset tripadvisor --batchsize 16 --numworkers 1 --outpath runs/tripadvisor/rnn_corn-imp0-seed4-epochs200-batchsize16_best-rmse
+
+
+# CORAL TRIP
+
+python rnn_coral.py --cuda 1 --seed 1 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 16 --outpath runs/tripadvisor/rnn_coral-imp0-seed1-epochs200-learningrate0.005-batchsize16_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 2 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 16 --outpath runs/tripadvisor/rnn_coral-imp0-seed2-epochs200-learningrate0.005-batchsize16_best-rmse
+
+python rnn_coral.py --cuda 3 --seed 3 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 16 --outpath runs/tripadvisor/rnn_coral-imp0-seed3-epochs200-learningrate0.005-batchsize16_best-rmse
+
+python rnn_coral.py --cuda 4 --seed 4 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 16 --outpath runs/tripadvisor/rnn_coral-imp0-seed4-epochs200-learningrate0.005-batchsize16_best-rmse
+
+# NIU TRIP
+
+python rnn_niu.py --cuda 1 --seed 1 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 64 --outpath runs/tripadvisor/rnn_niu-imp0-seed1-epochs200-learningrate0.005-batchsize64_best-rmse
+
+python rnn_niu.py --cuda 2 --seed 2 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 64 --outpath runs/tripadvisor/rnn_niu-imp0-seed2-epochs200-learningrate0.005-batchsize64_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 3 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 64 --outpath runs/tripadvisor/rnn_niu-imp0-seed3-epochs200-learningrate0.005-batchsize64_best-rmse
+
+python rnn_niu.py --cuda 4 --seed 4 --epochs 200 --dataset tripadvisor --learningrate 0.005 --batchsize 64 --outpath runs/tripadvisor/rnn_niu-imp0-seed4-epochs200-learningrate0.005-batchsize64_best-rmse
+
+
+
+# XENTR TRIP
+
+python rnn_xentr.py --cuda 1 --seed 1 --epochs 200 --dataset tripadvisor --learningrate 0.00005 --batchsize 64 --outpath runs/tripadvisor/rnn_xentr-imp0-seed1-epochs200-learningrate0.00005-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 2 --seed 2 --epochs 200 --dataset tripadvisor --learningrate 0.00005 --batchsize 64 --outpath runs/tripadvisor/rnn_xentr-imp0-seed2-epochs200-learningrate0.00005-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 3 --seed 3 --epochs 200 --dataset tripadvisor --learningrate 0.00005 --batchsize 64 --outpath runs/tripadvisor/rnn_xentr-imp0-seed3-epochs200-learningrate0.00005-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 4 --epochs 200 --dataset tripadvisor --learningrate 0.00005 --batchsize 64 --outpath runs/tripadvisor/rnn_xentr-imp0-seed4-epochs200-learningrate0.00005-batchsize64_best-rmse
+
+
+# CORN COURSERA
+
+python rnn_corn.py --cuda 1 --seed 1 --epochs 200 --dataset coursera --learningrate 0.001 --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed1-epochs200-learningrate0.001-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 2 --seed 2 --epochs 200 --dataset coursera --learningrate 0.001 --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed2-epochs200-learningrate0.001-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 3 --seed 3 --epochs 200 --dataset coursera --learningrate 0.001 --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed3-epochs200-learningrate0.001-batchsize16_best-rmse
+
+python rnn_corn.py --cuda 4 --seed 4 --epochs 200 --dataset coursera --learningrate 0.001 --batchsize 16 --numworkers 1 --outpath runs/coursera/rnn_corn-imp0-seed4-epochs200-learningrate0.001-batchsize16_best-rmse
+
+
+# CORAL COURSERA
+
+python rnn_coral.py --cuda 1 --seed 1 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_coral-imp0-seed1-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 2 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_coral-imp0-seed2-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_coral.py --cuda 3 --seed 3 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_coral-imp0-seed3-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_coral.py --cuda 4 --seed 4 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_coral-imp0-seed4-epochs200-learningrate0.005-batchsize32_best-rmse
+
+
+
+# NIU COURSERA
+
+python rnn_niu.py --cuda 1 --seed 1 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_niu-imp0-seed1-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_niu.py --cuda 2 --seed 2 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_niu-imp0-seed2-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 3 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_niu-imp0-seed3-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_niu.py --cuda 4 --seed 4 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_niu-imp0-seed4-epochs200-learningrate0.005-batchsize32_best-rmse
+
+
+# XENTR COURSERA
+
+python rnn_xentr.py --cuda 1 --seed 1 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 64 --outpath runs/coursera/rnn_xentr-imp0-seed1-epochs200-learningrate0.0001-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 2 --seed 2 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 64 --outpath runs/coursera/rnn_xentr-imp0-seed2-epochs200-learningrate0.0001-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 3 --seed 3 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 64 --outpath runs/coursera/rnn_xentr-imp0-seed3-epochs200-learningrate0.0001-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 4 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 64 --outpath runs/coursera/rnn_xentr-imp0-seed4-epochs200-learningrate0.0001-batchsize64_best-rmse
+
+
+
+## CORAL TUNE
+
+python rnn_coral.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0005 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.0005_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.0001_best-rmse
+
+python rnn_coral.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.001 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.001_best-rmse
+
+python rnn_coral.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005_best-rmse
+
+python rnn_coral.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00001 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.00001_best-rmse
+
+python rnn_coral.py --cuda 6 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00005 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.00005_best-rmse
+
+
+python rnn_coral.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 16 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005-batchsize16_best-rmse
+
+python rnn_coral.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_coral.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 64 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005-batchsize64_best-rmse
+
+python rnn_coral.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 128 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005-batchsize128_best-rmse
+
+python rnn_coral.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 512 --outpath runs/coursera/rnn_coral-imp0-seed0-epochs200-learningrate0.005-batchsize512_best-rmse
+
+
+## NIU TUNE
+
+python rnn_niu.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0005 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.0005_best-rmse
+
+python rnn_niu.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.0001_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.001 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.001_best-rmse
+
+python rnn_niu.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005_best-rmse
+
+python rnn_niu.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00001 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.00001_best-rmse
+
+python rnn_niu.py --cuda 6 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00005 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.00005_best-rmse
+
+
+python rnn_niu.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 16 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize16_best-rmse
+
+python rnn_niu.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 32 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize32_best-rmse
+
+python rnn_niu.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 64 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize64_best-rmse
+
+python rnn_niu.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 128 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize128_best-rmse
+
+python rnn_niu.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 256 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize256_best-rmse
+
+python rnn_niu.py --cuda 6 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --batchsize 512 --outpath runs/coursera/rnn_niu-imp0-seed0-epochs200-learningrate0.005-batchsize512_best-rmse
+
+
+## XENTR TUNE
+python rnn_xentr.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0005 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0005_best-rmse
+
+python rnn_xentr.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001_best-rmse
+
+python rnn_xentr.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.001 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.001_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.005 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.005_best-rmse
+
+python rnn_xentr.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00001 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.00001_best-rmse
+
+python rnn_xentr.py --cuda 6 --seed 0 --epochs 200 --dataset coursera --learningrate 0.00005 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.00005_best-rmse
+
+
+python rnn_xentr.py --cuda 1 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 16 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize16_best-rmse
+
+python rnn_xentr.py --cuda 2 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 32 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize32_best-rmse
+
+python rnn_xentr.py --cuda 3 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 64 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize64_best-rmse
+
+python rnn_xentr.py --cuda 4 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 128 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize128_best-rmse
+
+python rnn_xentr.py --cuda 5 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 256 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize256_best-rmse
+
+python rnn_xentr.py --cuda 6 --seed 0 --epochs 200 --dataset coursera --learningrate 0.0001 --batchsize 512 --outpath runs/coursera/rnn_xentr-imp0-seed0-epochs200-learningrate0.0001-batchsize512_best-rmse
+
