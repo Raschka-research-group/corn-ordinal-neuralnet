@@ -59,6 +59,22 @@ def parse_cmdline_args(parser=None):
                         choices=['mnist', 'morph2', 'morph2-balanced', 'aes'],
                         default='mnist')
 
+    parser.add_argument('--dataset_img_path',
+                        type=str,
+                        default='')
+
+    parser.add_argument('--dataset_train_csv_path',
+                        type=str,
+                        default='')    
+    
+    parser.add_argument('--dataset_valid_csv_path',
+                        type=str,
+                        default='')   
+
+    parser.add_argument('--dataset_test_csv_path',
+                        type=str,
+                        default='')   
+    
     parser.add_argument('--skip_train_eval',
                         type=str,
                         choices=['true', 'false'],
