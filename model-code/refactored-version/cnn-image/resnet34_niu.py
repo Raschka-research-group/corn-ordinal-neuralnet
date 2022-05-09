@@ -93,22 +93,22 @@ set_all_seeds(RANDOM_SEED)
 ###################
 
 if args.dataset == 'mnist':
-    from constants import MNIST_INFO as DATASET_INFO
+    from helper_files.constants import MNIST_INFO as DATASET_INFO
     from torchvision.datasets import MNIST as PyTorchDataset
-    from dataset import mnist_train_transform as train_transform
-    from dataset import mnist_validation_transform as validation_transform
+    from helper_files.dataset import mnist_train_transform as train_transform
+    from helper_files.dataset import mnist_validation_transform as validation_transform
 
 elif args.dataset == 'morph2':
-    from constants import MORPH2_INFO as DATASET_INFO
-    from dataset import Morph2Dataset as PyTorchDataset
-    from dataset import morph2_train_transform as train_transform
-    from dataset import morph2_validation_transform as validation_transform
+    from helper_files.constants import MORPH2_INFO as DATASET_INFO
+    from helper_files.dataset import Morph2Dataset as PyTorchDataset
+    from helper_files.dataset import morph2_train_transform as train_transform
+    from helper_files.dataset import morph2_validation_transform as validation_transform
 
 elif args.dataset == 'morph2-balanced':
-    from constants import MORPH2_BALANCED_INFO as DATASET_INFO
-    from dataset import Morph2Dataset as PyTorchDataset
-    from dataset import morph2_train_transform as train_transform
-    from dataset import morph2_validation_transform as validation_transform
+    from helper_files.constants import MORPH2_BALANCED_INFO as DATASET_INFO
+    from helper_files.dataset import Morph2Dataset as PyTorchDataset
+    from helper_files.dataset import morph2_train_transform as train_transform
+    from helper_files.dataset import morph2_validation_transform as validation_transform
 
 else:
     raise ValueError('Dataset choice not supported')

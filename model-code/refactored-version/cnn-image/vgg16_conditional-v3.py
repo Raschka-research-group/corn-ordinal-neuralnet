@@ -108,15 +108,15 @@ set_all_seeds(RANDOM_SEED)
 ###################
 
 if args.dataset == "mnist":
-    from constants import MNIST_INFO as DATASET_INFO
+    from helper_files.constants import MNIST_INFO as DATASET_INFO
     from torchvision.datasets import MNIST as PyTorchDataset
 
 elif args.dataset == "morph2":
-    from constants import MORPH2_INFO as DATASET_INFO
+    from helper_files.constants import MORPH2_INFO as DATASET_INFO
     from dataset import Morph2Dataset as PyTorchDataset
 
 elif args.dataset == "morph2-balanced":
-    from constants import MORPH2_BALANCED_INFO as DATASET_INFO
+    from helper_files.constants import MORPH2_BALANCED_INFO as DATASET_INFO
     from dataset import Morph2Dataset as PyTorchDataset
 
 else:
