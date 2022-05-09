@@ -2,7 +2,7 @@ import os
 import time
 import torch
 import numpy as np
-from dataset import proba_to_label
+from helper_files.dataset import proba_to_label
 
 
 def compute_mae_and_mse(model, data_loader, device, which_model):
