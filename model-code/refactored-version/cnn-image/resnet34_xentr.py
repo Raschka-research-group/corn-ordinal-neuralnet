@@ -165,6 +165,18 @@ else:
     GRAYSCALE = False
     RESNET34_AVGPOOLSIZE = 4
 
+    if args.dataset_train_csv_path:
+        DATASET_INFO['TRAIN_CSV_PATH'] = args.dataset_train_csv_path
+
+    if args.dataset_valid_csv_path:
+        DATASET_INFO['VALID_CSV_PATH'] = args.dataset_valid_csv_path
+        
+    if args.dataset_test_csv_path:
+        DATASET_INFO['TEST_CSV_PATH'] = args.dataset_test_csv_path
+        
+    if args.dataset_img_path:
+        DATASET_INFO['IMAGE_PATH'] = args.dataset_img_path
+    
     df = pd.read_csv(DATASET_INFO['TRAIN_CSV_PATH'], index_col=0)
     classes = df[DATASET_INFO['CLASS_COLUMN']].values
     del df
