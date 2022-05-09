@@ -18,17 +18,16 @@ from torch.utils.data import SubsetRandomSampler
 
 # ### from local .py files
 
-sys.path.insert(0, "./helper_files")  # to include ../layer.py etc.
-from trainingeval import (iteration_logging, epoch_logging,
+from helper_files.trainingeval import (iteration_logging, epoch_logging,
                           aftertraining_logging, save_predictions,
                           create_logfile)
-from trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
-from resnet34 import BasicBlock
-from helper import set_all_seeds, set_deterministic
-from plotting import plot_training_loss, plot_mae, plot_accuracy
-from plotting import plot_per_class_mae
-from dataset import get_labels_from_loader
-from parser import parse_cmdline_args
+from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
+from helper_files.resnet34 import BasicBlock
+from helper_files.helper import set_all_seeds, set_deterministic
+from helper_files.plotting import plot_training_loss, plot_mae, plot_accuracy
+from helper_files.plotting import plot_per_class_mae
+from helper_files.dataset import get_labels_from_loader
+from helper_files.parser import parse_cmdline_args
 
 
 # Argparse helper
