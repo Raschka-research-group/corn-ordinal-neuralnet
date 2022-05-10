@@ -215,14 +215,12 @@ class AFADDataset(Dataset):
 
 
 def afad_train_transform():
-    return transforms.Compose([transforms.CenterCrop((140, 140)),
-                               transforms.Resize((128, 128)),
+    return transforms.Compose([transforms.Resize((128, 128)),
                                transforms.RandomCrop((120, 120)),
                                transforms.ToTensor()])
 
 
 def afad_validation_transform():
-    return transforms.Compose([transforms.CenterCrop((140, 140)),
-                               transforms.Resize((128, 128)),
+    return transforms.Compose([transforms.Resize((128, 128)),
                                transforms.CenterCrop((120, 120)),
                                transforms.ToTensor()])
