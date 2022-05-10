@@ -36,7 +36,6 @@ from helper_files.trainingeval import (
     create_logfile,
 )
 from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
-from helper_files.resnet34 import BasicBlock
 from helper_files.dataset import levels_from_labelbatch
 from helper_files.losses import loss_conditional_v2
 from helper_files.helper import set_all_seeds, set_deterministic
@@ -125,11 +124,7 @@ elif args.dataset == 'afad-balanced':
 
 elif args.dataset == 'aes':
     from helper_files.constants import AES_INFO as DATASET_INFO
-    from helper_files.dataset import AESDataset as PyTorchDataset
-
-elif args.dataset == 'aes':
-    from helper_files.constants import AES_INFO as DATASET_INFO
-    from dataset import AesDataset as PyTorchDataset
+    from helper_files.dataset import AesDataset as PyTorchDataset
 else:
     raise ValueError("Dataset choice not supported")
 
@@ -296,10 +291,6 @@ model.to(DEVICE)
 ###########################################
 # Initialize Loss and Optimizer
 ###########################################
-
-model = resnet34(NUM_CLASSES, GRAYSCALE)
-
-model.to(DEVICE)
 
 if args.optimizer == "adam":
     optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
