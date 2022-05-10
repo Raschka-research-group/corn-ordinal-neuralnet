@@ -113,11 +113,11 @@ if args.dataset == "mnist":
 
 elif args.dataset == "morph2":
     from helper_files.constants import MORPH2_INFO as DATASET_INFO
-    from dataset import Morph2Dataset as PyTorchDataset
+    from helper_files.dataset import Morph2Dataset as PyTorchDataset
 
 elif args.dataset == "morph2-balanced":
     from helper_files.constants import MORPH2_BALANCED_INFO as DATASET_INFO
-    from dataset import Morph2Dataset as PyTorchDataset
+    from helper_files.dataset import Morph2Dataset as PyTorchDataset
 
 elif args.dataset == 'afad-balanced':
     from helper_files.constants import AFAD_BALANCED_INFO as DATASET_INFO
