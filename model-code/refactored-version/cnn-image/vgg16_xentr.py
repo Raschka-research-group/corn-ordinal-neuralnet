@@ -116,7 +116,6 @@ elif args.dataset == 'aes':
     from helper_files.constants import AES_INFO as DATASET_INFO
     from helper_files.dataset import AESDataset as PyTorchDataset
 
-
 else:
     raise ValueError("Dataset choice not supported")
 
