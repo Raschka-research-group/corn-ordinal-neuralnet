@@ -108,6 +108,12 @@ elif args.dataset == 'morph2-balanced':
     from helper_files.dataset import morph2_train_transform as train_transform
     from helper_files.dataset import morph2_validation_transform as validation_transform
 
+elif args.dataset == 'afad-balanced':
+    from helper_files.constants import AFAD_BALANCED_INFO as DATASET_INFO
+    from helper_files.dataset import AFADDataset as PyTorchDataset
+    from helper_files.dataset import afad_train_transform as train_transform
+    from helper_files.dataset import afad_validation_transform as validation_transform
+
 else:
     raise ValueError('Dataset choice not supported')
 

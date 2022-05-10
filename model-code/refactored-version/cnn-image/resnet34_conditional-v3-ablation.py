@@ -32,7 +32,7 @@ from helper_files.trainingeval import (iteration_logging, epoch_logging,
 from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
 from helper_files.resnet34 import BasicBlock
 from helper_files.dataset import levels_from_labelbatch
-from helper_files.losses import loss_conditional_v2
+from helper_files.losses import loss_conditional_v2_ablation
 from helper_files.helper import set_all_seeds, set_deterministic
 from helper_files.plotting import plot_training_loss, plot_mae, plot_accuracy
 from helper_files.plotting import plot_per_class_mae
@@ -370,7 +370,7 @@ for epoch in range(1, NUM_EPOCHS+1):
         logits, probas = model(features)
 
         # ### Ordinal loss
-        loss = loss_conditional_v2(logits, targets, NUM_CLASSES)
+        loss = loss_conditional_v2_ablation(logits, targets, NUM_CLASSES)
         # ##--------------------------------------------------------------------###
 
         optimizer.zero_grad()

@@ -182,3 +182,87 @@ def get_labels_from_loader(data_loader):
     for batch_idx, (features, targets) in enumerate(data_loader):
         lst.append(targets)
     return torch.cat(lst)
+
+
+##################################################################################
+
+
+class AFADDataset(Dataset):
+    """Custom Dataset for loading AFAD face images"""
+
+    def __init__(self, csv_path, img_dir, transform=None):
+
+        df = pd.read_csv(csv_path, index_col=0)
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_paths = df['path']
+        self.y = df['age'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_paths[index]))
+
+        if self.transform is not None:
+            img = self.transform(img)
+
+        label = self.y[index]
+
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+def afad_train_transform():
+    return transforms.Compose([transforms.CenterCrop((140, 140)),
+                               transforms.Resize((128, 128)),
+                               transforms.RandomCrop((120, 120)),
+                               transforms.ToTensor()])
+
+
+def afad_validation_transform():
+    return transforms.Compose([transforms.CenterCrop((140, 140)),
+                               transforms.Resize((128, 128)),
+                               transforms.CenterCrop((120, 120)),
+                               transforms.ToTensor()])
+
+##################################################################################
+
+
+class AesDataset(Dataset):
+    def __init__(self,
+                 csv_path, img_dir, transform=None):
+        df = pd.read_csv(csv_path, index_col=0)
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_names = df.index.values
+        self.y = df['beauty_scores'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_names[index]))
+        if self.transform is not None:
+            img = self.transform(img)
+            if img.shape[0] == 1:
+                img = torch.cat(list(torch.split(img, 1, dim=0))*3)
+        label = self.y[index]
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+def aes_train_transform():
+    return transforms.Compose([transforms.CenterCrop((140, 140)),
+                               transforms.Resize((128, 128)),
+                               transforms.RandomCrop((120, 120)),
+                               transforms.ToTensor()])
+
+
+def aes_validation_transform():
+    return transforms.Compose([transforms.CenterCrop((140, 140)),
+                               transforms.Resize((128, 128)),
+                               transforms.CenterCrop((120, 120)),
+                               transforms.ToTensor()])
