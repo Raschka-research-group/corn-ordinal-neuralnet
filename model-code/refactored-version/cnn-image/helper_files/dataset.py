@@ -242,11 +242,9 @@ class AesDataset(Dataset):
 
     def __getitem__(self, index):
         img = Image.open(os.path.join(self.img_dir,
-                                      self.img_names[index]))
+                                      self.img_names[index])).convert('RGB')
         if self.transform is not None:
             img = self.transform(img)
-            if img.shape[0] == 1:
-                img = torch.cat(list(torch.split(img, 1, dim=0))*3)
         label = self.y[index]
         return img, label
 

@@ -28,9 +28,8 @@ from helper_files.trainingeval import (
     create_logfile,
 )
 from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
-from helper_files.resnet34 import BasicBlock
 from helper_files.dataset import levels_from_labelbatch
-from losses import niu_loss
+from helper_files.losses import niu_loss
 from helper_files.helper import set_all_seeds, set_deterministic
 from helper_files.plotting import plot_training_loss, plot_mae, plot_accuracy
 from helper_files.plotting import plot_per_class_mae
@@ -117,11 +116,7 @@ elif args.dataset == 'afad-balanced':
 
 elif args.dataset == 'aes':
     from helper_files.constants import AES_INFO as DATASET_INFO
-    from helper_files.dataset import AESDataset as PyTorchDataset
-
-elif args.dataset == 'aes':
-    from helper_files.constants import AES_INFO as DATASET_INFO
-    from dataset import AesDataset as PyTorchDataset
+    from helper_files.dataset import AesDataset as PyTorchDataset
 else:
     raise ValueError("Dataset choice not supported")
 
@@ -270,7 +265,7 @@ info_dict["settings"]["num classes"] = NUM_CLASSES
 ##########################
 
 model = torch.hub.load("pytorch/vision:v0.10.0", "vgg16", pretrained=True)
-model.classifier[-1] = torch.nn.Linear(4096, NUM_CLASSES)
+model.classifier[-1] = torch.nn.Linear(4096, (NUM_CLASSES-1)*2)
 
 
 def forward_with_probas(self, x):
@@ -278,7 +273,8 @@ def forward_with_probas(self, x):
     x = self.avgpool(x)
     x = torch.flatten(x, start_dim=1)
     logits = self.classifier(x)
-    probas = torch.nn.functional.softmax(logits, dim=1)
+    logits = logits.view(-1, (NUM_CLASSES-1), 2)
+    probas = torch.nn.functional.softmax(logits, dim=2)[:, :, 1]
     return logits, probas
 
 

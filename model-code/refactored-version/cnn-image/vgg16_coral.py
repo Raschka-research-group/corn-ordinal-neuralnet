@@ -28,7 +28,6 @@ from helper_files.trainingeval import (
     create_logfile,
 )
 from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
-from helper_files.resnet34 import BasicBlock
 from helper_files.layers import CoralLayer
 from helper_files.dataset import levels_from_labelbatch
 from helper_files.losses import coral_loss
@@ -118,11 +117,7 @@ elif args.dataset == 'afad-balanced':
 
 elif args.dataset == 'aes':
     from helper_files.constants import AES_INFO as DATASET_INFO
-    from helper_files.dataset import AESDataset as PyTorchDataset
-
-elif args.dataset == 'aes':
-    from helper_files.constants import AES_INFO as DATASET_INFO
-    from dataset import AesDataset as PyTorchDataset
+    from helper_files.dataset import AesDataset as PyTorchDataset
 else:
     raise ValueError("Dataset choice not supported")
 
@@ -271,7 +266,7 @@ info_dict["settings"]["num classes"] = NUM_CLASSES
 ##########################
 
 model = torch.hub.load("pytorch/vision:v0.10.0", "vgg16", pretrained=True)
-model.classifier[-1] = torch.nn.Linear(4096, NUM_CLASSES)
+model.classifier[-1] = CoralLayer(4096, NUM_CLASSES)
 
 
 def forward_with_probas(self, x):
