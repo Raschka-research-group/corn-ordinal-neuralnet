@@ -25,4 +25,11 @@ AFAD_BALANCED_INFO = {
     'IMAGE_PATH': '/home/raschka/code/github/ordinal-conditional/data/processed/afad/afad/jpg',
     'CLASS_COLUMN': 'age'}
 
+AES_INFO = {
+    'TRAIN_CSV_PATH': '/home/raschka/code/github/ordinal-conditional/data/processed/aes/aes_train_balanced.csv',
+    'TEST_CSV_PATH': '/home/raschka/code/github/ordinal-conditional/data/processed/aes/aes_valid_balanced.csv',
+    'VALID_CSV_PATH': '/home/raschka/code/github/ordinal-conditional/data/processed/aes/aes_test_balanced.csv',
+    'IMAGE_PATH': '/home/raschka/code/github/ordinal-conditional/data/processed/aes/aes/jpg',
+    'CLASS_COLUMN': 'beauty_scores'}
+
 MNIST_INFO = {}
