@@ -1,5 +1,13 @@
 # coding: utf-8
 
+# Like v2, and in contrast to v1, this version removes the cumprod from the forward pass
+
+# In addition, it uses a different conditional loss function compared to v2.
+# Here, the loss is computed as the average loss of the total samples, 
+# instead of firstly averaging the cross entropy inside each task and then averaging over tasks equally. 
+# The weight of each task will be adjusted
+# for the sample size used for training each task naturally without manually setting the weights.
+
 # Imports
 
 import os
@@ -23,9 +31,8 @@ from helper_files.trainingeval import (iteration_logging, epoch_logging,
                           create_logfile)
 from helper_files.trainingeval import compute_per_class_mae, compute_selfentropy_for_mae
 from helper_files.resnet34 import BasicBlock
-from helper_files.layers import CoralLayer
 from helper_files.dataset import levels_from_labelbatch
-from helper_files.losses import coral_loss
+from helper_files.losses import loss_conditional_v2_ablation
 from helper_files.helper import set_all_seeds, set_deterministic
 from helper_files.plotting import plot_training_loss, plot_mae, plot_accuracy
 from helper_files.plotting import plot_per_class_mae
@@ -172,7 +179,7 @@ else:
 
     GRAYSCALE = False
     RESNET34_AVGPOOLSIZE = 4
-
+    
     if args.dataset_train_csv_path:
         DATASET_INFO['TRAIN_CSV_PATH'] = args.dataset_train_csv_path
 
@@ -184,7 +191,7 @@ else:
         
     if args.dataset_img_path:
         DATASET_INFO['IMAGE_PATH'] = args.dataset_img_path
-    
+
     df = pd.read_csv(DATASET_INFO['TRAIN_CSV_PATH'], index_col=0)
     classes = df[DATASET_INFO['CLASS_COLUMN']].values
     del df
@@ -249,9 +256,7 @@ class ResNet(nn.Module):
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
         self.avgpool = nn.AvgPool2d(RESNET34_AVGPOOLSIZE)
-        # ## Specify CORAL layer
-        self.fc = CoralLayer(size_in=512, num_classes=num_classes)
-        # ##--------------------------------------------------------------------###
+        self.fc = nn.Linear(512, (self.num_classes-1))
 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
@@ -291,11 +296,9 @@ class ResNet(nn.Module):
 
         x = self.avgpool(x)
         x = x.view(x.size(0), -1)
-
-        # #### Use CORAL layer #####
         logits = self.fc(x)
+        logits = logits.view(-1, (self.num_classes-1))
         probas = torch.sigmoid(logits)
-        # ##--------------------------------------------------------------------###
         return logits, probas
 
 
@@ -354,19 +357,14 @@ for epoch in range(1, NUM_EPOCHS+1):
     model.train()
     for batch_idx, (features, targets) in enumerate(train_loader):
 
-        # #### Convert class labels for CORAL
-        levels = levels_from_labelbatch(targets,
-                                        num_classes=NUM_CLASSES)
-        # ##--------------------------------------------------------------------###
-
         features = features.to(DEVICE)
-        levels = levels.to(DEVICE)
+        targets = targets.to(DEVICE)
 
         # FORWARD AND BACK PROP
         logits, probas = model(features)
 
-        # ### CORAL loss
-        loss = coral_loss(logits, levels)
+        # ### Ordinal loss
+        loss = loss_conditional_v2_ablation(logits, targets, NUM_CLASSES)
         # ##--------------------------------------------------------------------###
 
         optimizer.zero_grad()
@@ -383,7 +381,7 @@ for epoch in range(1, NUM_EPOCHS+1):
     best_mae = epoch_logging(info_dict=info_dict,
                              model=model, train_loader=train_loader,
                              valid_loader=valid_loader,
-                             which_model='ordinal',
+                             which_model='conditional',
                              loss=loss, epoch=epoch, start_time=start_time,
                              skip_train_eval=SKIP_TRAIN_EVAL)
 
@@ -397,14 +395,14 @@ info_dict['last'] = {}
 aftertraining_logging(model=model, which='last', info_dict=info_dict,
                       train_loader=train_loader,
                       valid_loader=valid_loader, test_loader=test_loader,
-                      which_model='ordinal',
+                      which_model='conditional',
                       start_time=start_time)
 
 info_dict['best'] = {}
 aftertraining_logging(model=model, which='best', info_dict=info_dict,
                       train_loader=train_loader,
                       valid_loader=valid_loader, test_loader=test_loader,
-                      which_model='ordinal',
+                      which_model='conditional',
                       start_time=start_time)
 
 # ######### MAKE PLOTS ######
@@ -434,7 +432,7 @@ for best_or_last in ('best', 'last'):
         # ######### SAVE PREDICTIONS ######
         all_probas, all_predictions = save_predictions(model=model,
                                                        which=best_or_last,
-                                                       which_model='ordinal',
+                                                       which_model='conditional',
                                                        info_dict=info_dict,
                                                        data_loader=data_loader,
                                                        prefix=names[i])
