@@ -35,7 +35,6 @@ from helper_train import train_model_v2, create_logfile
 
 from helper_plotting import plot_training_loss, plot_accuracy, plot_confusion_matrix
 from helper_data import get_data_loaders_fireman
-from helper_layers import CoralLayer
 from helper_parser import parse_cmdline_args
 
 
@@ -83,9 +82,9 @@ set_deterministic()
 
 train_loader, valid_loader, test_loader = get_data_loaders_fireman(
     batch_size=BATCH_SIZE,
-    train_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_train.csv',
-    valid_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_valid.csv',
-    test_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_test.csv',
+    train_csv_path='../../../datasets/firemen/fireman_example_balanced_train.csv',
+    valid_csv_path='../../../datasets/firemen/fireman_example_balanced_valid.csv',
+    test_csv_path='../../../datasets/firemen/fireman_example/fireman_example_balanced_test.csv',
     balanced=True,
     num_classes=16,
 )
