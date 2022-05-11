@@ -56,7 +56,7 @@ def parse_cmdline_args(parser=None):
 
     parser.add_argument('--dataset',
                         type=str,
-                        choices=['mnist', 'morph2', 'morph2-balanced', 'aes'],
+                        choices=['mnist', 'morph2', 'morph2-balanced', 'aes', 'fireman'],
                         default='mnist')
 
     parser.add_argument('--skip_train_eval',

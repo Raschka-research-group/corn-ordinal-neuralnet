@@ -1,7 +1,6 @@
 import os
 from helper_evaluate import compute_accuracy, compute_mae_and_mse
-from helper_evaluate import compute_epoch_loss
-from helper_losses import niu_loss, coral_loss, conditional_loss
+from helper_losses import niu_loss, coral_loss, conditional_loss, conditional_loss_ablation
 from helper_data import levels_from_labelbatch
 
 import time
@@ -34,10 +33,10 @@ def iteration_logging(info_dict, batch_idx,
 
 
 def epoch_logging(info_dict, model, loss, epoch,
-                  start_time, which_model,
+                  start_time, which_model, device,
                   train_loader, valid_loader,
                   skip_train_eval=False):
-    device = torch.device('cpu')
+    #device = torch.device('cpu')
     path = info_dict['settings']['output path']
     logfile = info_dict['settings']['training logfile']
 
@@ -104,13 +103,11 @@ def epoch_logging(info_dict, model, loss, epoch,
     #     print(f'Time elapsed: {elapsed:.2f} min')
         
 
-    
 
-def aftertraining_logging(model, which, info_dict, train_loader,
+def aftertraining_logging(model, which, info_dict, train_loader, device,
                           valid_loader, test_loader, which_model,
                           start_time=None):
 
-    device = torch.device('cpu')
     path = info_dict['settings']['output path']
     logfile = info_dict['settings']['training logfile']
 
@@ -340,9 +337,13 @@ def train_model_v2(model, num_epochs, train_loader,
                 
             elif which_model == 'categorical':
                 loss = torch.nn.functional.cross_entropy(logits, targets)
+
             elif which_model == 'conditional':
                 loss = conditional_loss(logits, targets, num_classes=model.num_classes)
-                
+
+            elif which_model == 'conditional-ablation':
+                loss = conditional_loss_ablation(logits, targets, num_classes=model.num_classes)
+              
             else:
                 raise ValueError('This which_model choice is not supported.')
                 
@@ -368,6 +369,7 @@ def train_model_v2(model, num_epochs, train_loader,
         #epoch logging
         epoch_logging(info_dict=info_dict,
                                model=model, train_loader=train_loader,
+                               device=device,
                                valid_loader=valid_loader,
                                which_model=which_model,
                                loss=loss, epoch=epoch, start_time=start_time)
@@ -435,6 +437,7 @@ def train_model_v2(model, num_epochs, train_loader,
     #     print(s)
     info_dict['best'] = {}
     aftertraining_logging(model=model, which='best', info_dict=info_dict,
+                        device=device,
                         train_loader=train_loader,
                         valid_loader=valid_loader, test_loader=test_loader,
                         which_model=which_model,

@@ -192,7 +192,7 @@ train_model_v2(
     logging_interval=100,
     info_dict=info_dict,
     with_embedding=False,
-    which_model='conditional')
+    which_model='conditional-ablation')
 
 
 json.dump(info_dict, open(os.path.join(PATH, 'info_dict.json'), 'w'), indent=4)
