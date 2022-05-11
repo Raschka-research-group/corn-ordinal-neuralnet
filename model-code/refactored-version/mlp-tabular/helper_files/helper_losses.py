@@ -82,3 +82,22 @@ def niu_loss(logits, levels):
     val = (-torch.sum((F.log_softmax(logits, dim=2)[:, :, 1]*levels
                       + F.log_softmax(logits, dim=2)[:, :, 0]*(1-levels)), dim=1))
     return torch.mean(val)
+
+def conditional_loss(logits, y_train,num_classes):
+    sets = []
+    for i in range(num_classes-1):
+        label_mask = y_train > i-1
+        label_tensor = (y_train[label_mask] > i).to(torch.int64)
+        sets.append((label_mask, label_tensor))
+
+    losses = 0
+    for task_index, s in enumerate(sets):
+        train_examples = s[0]
+        train_labels = s[1]
+        if len(s[1]) < 1:
+            continue
+        pred = logits[train_examples, task_index]
+        loss = -torch.mean( F.logsigmoid(pred)*train_labels 
+                           + (F.logsigmoid(pred) - pred)*(1-train_labels) )
+        losses+=loss   
+    return losses/len(sets)

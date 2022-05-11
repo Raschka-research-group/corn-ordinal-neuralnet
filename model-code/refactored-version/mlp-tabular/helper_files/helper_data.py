@@ -310,3 +310,459 @@ def get_dataloaders_cifar10(batch_size, num_workers=0,
         return train_loader, test_loader
     else:
         return train_loader, valid_loader, test_loader
+
+
+######################################################################################
+
+class HotspotDataset_v1(Dataset):
+
+    def __init__(self, csv_path):
+    
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['ddG'].values).to(torch.int64)
+        df = df.drop('ddG', axis=1)
+        self.features = torch.from_numpy(df.values).to(torch.float32)
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        label = self.y[index]
+        return features, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+    
+    
+def get_dataloaders_hotspot_v1(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0):
+
+    train_dataset = HotspotDataset_v1(csv_path=train_csv_path)
+    test_dataset = HotspotDataset_v1(csv_path=test_csv_path)
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+
+
+class HotspotDataset_v2_2class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain", "hotspot ratio"]
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['2-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        label = self.y[index]
+        return features, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+def get_dataloaders_hotspot_v2(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0, num_classes=2):
+
+    if num_classes == 2:
+        train_dataset = HotspotDataset_v2_2class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v2_2class(csv_path=test_csv_path)
+    elif num_classes == 3:
+        raise NotImplementedError('Not implemented yet')
+    else:
+        raise ValueError('num_classes option invalid')        
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+
+
+#############################################
+
+
+class HotspotDataset_v3_2class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain", "hotspot ratio"]
+        
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['2-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        ## add One-hot encoded amino acids
+        codes = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 
+                 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+        code_to_int = {c:i for i,c in enumerate(codes)}     
+        df['residue'] = df['residue'].map(code_to_int)
+        tensor = torch.from_numpy(df['residue'].values)
+        onehot = torch.nn.functional.one_hot(tensor).to(torch.float32)
+        self.features = torch.cat((self.features, onehot), dim=1)
+        
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        label = self.y[index]
+        return features, label
+
+    def __len__(self):
+        return self.y.shape[0]
+    
+    
+def get_dataloaders_hotspot_v3(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0, num_classes=2):
+
+    if num_classes == 2:
+        train_dataset = HotspotDataset_v3_2class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v3_2class(csv_path=test_csv_path)
+    elif num_classes == 3:
+        raise NotImplementedError('Not implemented yet')
+    else:
+        raise ValueError('num_classes option invalid')        
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+
+
+#############################################
+
+
+
+class HotspotDataset_v3_2_2class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain"]
+        
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['2-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        ## add One-hot encoded amino acids
+        codes = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 
+                 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+        code_to_int = {c:i for i,c in enumerate(codes)}     
+        df['residue'] = df['residue'].map(code_to_int)
+        tensor = torch.from_numpy(df['residue'].values)
+        onehot = torch.nn.functional.one_hot(tensor).to(torch.float32)
+        self.features = torch.cat((self.features, onehot), dim=1)
+        
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        label = self.y[index]
+        return features, label
+
+    def __len__(self):
+        return self.y.shape[0]
+    
+    
+def get_dataloaders_hotspot_v3_2(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0, num_classes=2):
+
+    if num_classes == 2:
+        train_dataset = HotspotDataset_v3_2_2class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v3_2_2class(csv_path=test_csv_path)
+    elif num_classes == 3:
+        raise NotImplementedError('Not implemented yet')
+    else:
+        raise ValueError('num_classes option invalid')        
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+
+
+#############################################
+
+class HotspotDataset_v4_2class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain", "hotspot ratio"]
+        
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['2-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        # convert aa char to int
+        codes = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 
+                 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+        code_to_int = {c:i for i,c in enumerate(codes)}     
+        self.residues = df['residue'].map(code_to_int)
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        residue = self.residues[index]
+        label = self.y[index]
+        return (features, residue), label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+def get_dataloaders_hotspot_v4(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0, num_classes=2):
+
+    if num_classes == 2:
+        train_dataset = HotspotDataset_v4_2class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v4_2class(csv_path=test_csv_path)
+    elif num_classes == 3:
+        raise NotImplementedError('Not implemented yet')
+    else:
+        raise ValueError('num_classes option invalid')        
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+
+
+#############################################
+
+class HotspotDataset_v4_2_2class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain"]
+        
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['2-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        # convert aa char to int
+        codes = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 
+                 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+        code_to_int = {c:i for i,c in enumerate(codes)}     
+        self.residues = df['residue'].map(code_to_int)
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        residue = self.residues[index]
+        label = self.y[index]
+        return (features, residue), label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+    
+class HotspotDataset_v4_2_3class(Dataset):
+
+    def __init__(self, csv_path):
+    
+        feature_list = ['avg bond number', 'Hbond', 
+            'Hphob', 'consurf', "B' side chain"]
+        
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['3-class'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        # convert aa char to int
+        codes = ['A', 'R', 'N', 'D', 'C', 'E', 'Q', 'G', 'H', 
+                 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+        code_to_int = {c:i for i,c in enumerate(codes)}     
+        self.residues = df['residue'].map(code_to_int)
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        residue = self.residues[index]
+        label = self.y[index]
+        return (features, residue), label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+class Fireman(Dataset):
+
+    def __init__(self, csv_path):
+        feature_list = ['V1','V2','V3','V4','V5','V6','V7','V8','V9','V10']
+        df = pd.read_csv(csv_path)
+        self.y = torch.from_numpy(df['response'].values).to(torch.int64)
+        self.features = torch.from_numpy(df[feature_list].values).to(torch.float32)
+        
+        # convert aa char to int
+
+    def __getitem__(self, index):
+        features = self.features[index]
+        label = self.y[index]
+        return features, label
+
+    def __len__(self):
+        return self.y.shape[0]    
+
+def get_data_loaders_fireman(batch_size, train_csv_path, valid_csv_path, test_csv_path, balanced=True, num_workers=0, num_classes=16):
+    train_dataset = Fireman(csv_path=train_csv_path)
+    valid_dataset = Fireman(csv_path=valid_csv_path)
+    test_dataset = Fireman(csv_path=test_csv_path)
+
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+    
+    valid_loader = DataLoader(dataset=valid_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, valid_loader, test_loader
+
+def get_dataloaders_hotspot_v4_2(batch_size, train_csv_path, test_csv_path, balanced=False, num_workers=0, num_classes=2):
+
+    if num_classes == 2:
+        train_dataset = HotspotDataset_v4_2_2class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v4_2_2class(csv_path=test_csv_path)
+    elif num_classes == 3:
+        train_dataset = HotspotDataset_v4_2_3class(csv_path=train_csv_path)
+        test_dataset = HotspotDataset_v4_2_3class(csv_path=test_csv_path)
+    else:
+        raise ValueError('num_classes option invalid')        
+    
+    
+    if balanced:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=False,
+                                  sampler=BalancedBatchSampler(train_dataset, labels=train_dataset.y),
+                                  num_workers=num_workers)
+
+    else:
+        train_loader = DataLoader(dataset=train_dataset,
+                                  batch_size=batch_size,
+                                  drop_last=True,
+                                  shuffle=True,
+                                  num_workers=num_workers)
+
+        
+    test_loader = DataLoader(dataset=test_dataset,
+                             batch_size=batch_size,
+                             drop_last=False,
+                             shuffle=False,
+                             num_workers=num_workers)
+
+    return train_loader, test_loader
+

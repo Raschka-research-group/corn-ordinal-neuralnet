@@ -21,7 +21,7 @@ def parse_cmdline_args(parser=None):
 
     parser.add_argument('--seed',
                         type=int,
-                        default=-1)
+                        default=0)
 
     parser.add_argument('--numworkers',
                         type=int,
@@ -38,11 +38,11 @@ def parse_cmdline_args(parser=None):
 
     parser.add_argument('--batchsize',
                         type=int,
-                        default=256)
+                        default=64)
 
     parser.add_argument('--epochs',
                         type=int,
-                        default=200)
+                        default=100)
 
     parser.add_argument('--optimizer',
                         type=str,
@@ -56,29 +56,13 @@ def parse_cmdline_args(parser=None):
 
     parser.add_argument('--dataset',
                         type=str,
-                        choices=['mnist', 'morph2', 'morph2-balanced', 'aes', 'afad-balanced'],
+                        choices=['mnist', 'morph2', 'morph2-balanced', 'aes'],
                         default='mnist')
 
-    parser.add_argument('--dataset_img_path',
-                        type=str,
-                        default='')
-
-    parser.add_argument('--dataset_train_csv_path',
-                        type=str,
-                        default='')    
-    
-    parser.add_argument('--dataset_valid_csv_path',
-                        type=str,
-                        default='')   
-
-    parser.add_argument('--dataset_test_csv_path',
-                        type=str,
-                        default='')   
-    
     parser.add_argument('--skip_train_eval',
                         type=str,
                         choices=['true', 'false'],
-                        default='false')
+                        default='true')
 
     parser.set_defaults(feature=True)
     args = parser.parse_args()
