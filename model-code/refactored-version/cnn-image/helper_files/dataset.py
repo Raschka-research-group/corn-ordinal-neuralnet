@@ -252,6 +252,97 @@ class AesDataset(Dataset):
         return self.y.shape[0]
 
 
+class AesDatasetNature(Dataset):
+    def __init__(self,
+                 csv_path, img_dir, transform=None):
+        df = pd.read_csv(csv_path, index_col=0)
+        df = df[df['category'] == 'nature']
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_names = df.index.values
+        self.y = df['beauty_scores'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_names[index])).convert('RGB')
+        if self.transform is not None:
+            img = self.transform(img)
+        label = self.y[index]
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+class AesDatasetAnimal(Dataset):
+    def __init__(self,
+                 csv_path, img_dir, transform=None):
+        df = pd.read_csv(csv_path, index_col=0)
+        df = df[df['category'] == 'animal']
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_names = df.index.values
+        self.y = df['beauty_scores'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_names[index])).convert('RGB')
+        if self.transform is not None:
+            img = self.transform(img)
+        label = self.y[index]
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+class AesDatasetPeople(Dataset):
+    def __init__(self,
+                 csv_path, img_dir, transform=None):
+        df = pd.read_csv(csv_path, index_col=0)
+        df = df[df['category'] == 'people']
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_names = df.index.values
+        self.y = df['beauty_scores'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_names[index])).convert('RGB')
+        if self.transform is not None:
+            img = self.transform(img)
+        label = self.y[index]
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
+class AesDatasetUrban(Dataset):
+    def __init__(self,
+                 csv_path, img_dir, transform=None):
+        df = pd.read_csv(csv_path, index_col=0)
+        df = df[df['category'] == 'urban']
+        self.img_dir = img_dir
+        self.csv_path = csv_path
+        self.img_names = df.index.values
+        self.y = df['beauty_scores'].values
+        self.transform = transform
+
+    def __getitem__(self, index):
+        img = Image.open(os.path.join(self.img_dir,
+                                      self.img_names[index])).convert('RGB')
+        if self.transform is not None:
+            img = self.transform(img)
+        label = self.y[index]
+        return img, label
+
+    def __len__(self):
+        return self.y.shape[0]
+
+
 def aes_train_transform():
     return transforms.Compose([transforms.CenterCrop((140, 140)),
                                transforms.Resize((128, 128)),

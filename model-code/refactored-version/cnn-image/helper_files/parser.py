@@ -56,7 +56,9 @@ def parse_cmdline_args(parser=None):
 
     parser.add_argument('--dataset',
                         type=str,
-                        choices=['mnist', 'morph2', 'morph2-balanced', 'aes', 'afad-balanced'],
+                        choices=['mnist', 'morph2',
+                                 'morph2-balanced', 'aes', 'afad-balanced',
+                                 'aes-nature', 'aes-people', 'aes-urban', 'aes-animal'],
                         default='mnist')
 
     parser.add_argument('--dataset_img_path',

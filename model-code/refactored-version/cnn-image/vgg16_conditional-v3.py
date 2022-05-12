@@ -125,6 +125,22 @@ elif args.dataset == 'afad-balanced':
 elif args.dataset == 'aes':
     from helper_files.constants import AES_INFO as DATASET_INFO
     from helper_files.dataset import AesDataset as PyTorchDataset
+
+elif args.dataset == 'aes-nature':
+    from helper_files.constants import AES_INFO as DATASET_INFO
+    from helper_files.dataset import AesDatasetNature as PyTorchDataset
+
+elif args.dataset == 'aes-people':
+    from helper_files.constants import AES_INFO as DATASET_INFO
+    from helper_files.dataset import AesDatasetPeople as PyTorchDataset
+
+elif args.dataset == 'aes-urban':
+    from helper_files.constants import AES_INFO as DATASET_INFO
+    from helper_files.dataset import AesDatasetUrban as PyTorchDataset
+
+elif args.dataset == 'aes-animal':
+    from helper_files.constants import AES_INFO as DATASET_INFO
+
 else:
     raise ValueError("Dataset choice not supported")
 
