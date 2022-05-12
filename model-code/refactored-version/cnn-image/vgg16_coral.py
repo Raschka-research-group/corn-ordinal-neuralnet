@@ -133,6 +133,7 @@ elif args.dataset == 'aes-urban':
 
 elif args.dataset == 'aes-animal':
     from helper_files.constants import AES_INFO as DATASET_INFO
+    from helper_files.dataset import AesDatasetAnimal as PyTorchDataset
 
 else:
     raise ValueError("Dataset choice not supported")
