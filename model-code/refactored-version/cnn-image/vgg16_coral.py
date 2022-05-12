@@ -131,7 +131,7 @@ elif args.dataset == 'aes-urban':
     from helper_files.constants import AES_INFO as DATASET_INFO
     from helper_files.dataset import AesDatasetUrban as PyTorchDataset
 
-elif args.dataset == 'aes-animal':
+elif args.dataset == 'aes-animals':
     from helper_files.constants import AES_INFO as DATASET_INFO
     from helper_files.dataset import AesDatasetAnimal as PyTorchDataset
 
