@@ -118,7 +118,8 @@ def compute_mae_and_mse(model, data_loader, device, which_model,
                 targets = targets.to(device)   
                 if which_model != 'categorical':
                     logits, probas = model(features)
-                    _, predicted_labels = proba_to_label(probas).float()
+                    # _, predicted_labels = torch.max(probas, 1)
+                    predicted_labels = proba_to_label(probas).float()
                 else:
                     logits = model(features)
                     _, predicted_labels = torch.max(logits, 1)

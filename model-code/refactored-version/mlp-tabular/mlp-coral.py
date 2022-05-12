@@ -68,7 +68,10 @@ PATH = args.outpath
 if not os.path.exists(PATH):
   os.mkdir(PATH)
 
-DEVICE = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+if args.cuda >= 0 and torch.cuda.is_available():
+    DEVICE = torch.device(f'cuda:{args.cuda}')
+else:
+    DEVICE = torch.device('cpu')
 
 
 # In[5]:
@@ -83,9 +86,9 @@ set_deterministic()
 
 train_loader, valid_loader, test_loader = get_data_loaders_fireman(
     batch_size=BATCH_SIZE,
-    train_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_train.csv',
-    valid_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_valid.csv',
-    test_csv_path='/Users/xintongshi/Desktop/GitHub/ordinal-conditional/data/processed/fireman_example/fireman_example_balanced_test.csv',
+    train_csv_path='../../../datasets/firemen/fireman_example_balanced_train.csv',
+    valid_csv_path='../../../datasets/firemen/fireman_example_balanced_valid.csv',
+    test_csv_path='../../../datasets/firemen/fireman_example_balanced_test.csv',
     balanced=True,
     num_classes=16,
 )
