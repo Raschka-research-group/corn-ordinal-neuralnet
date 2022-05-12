@@ -278,7 +278,7 @@ class AesDatasetAnimal(Dataset):
     def __init__(self,
                  csv_path, img_dir, transform=None):
         df = pd.read_csv(csv_path, index_col=0)
-        df = df[df['category'] == 'animal']
+        df = df[df['category'] == 'animals']
         self.img_dir = img_dir
         self.csv_path = csv_path
         self.img_names = df.index.values
