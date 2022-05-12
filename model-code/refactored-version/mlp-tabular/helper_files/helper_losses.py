@@ -105,29 +105,20 @@ def conditional_loss(logits, y_train, num_classes):
 
 
 def conditional_loss_ablation(logits, y_train, num_classes):
-    """Same as loss_conditional_v2 but without training subsets
-    to faciliate an ablation study.
-    """
     sets = []
     for i in range(num_classes-1):
-        i = 0  # this basically eliminates subsets. 
-        label_mask = y_train > i-1
+        label_mask = y_train > 0  # eliminates subsets
         label_tensor = (y_train[label_mask] > i).to(torch.int64)
         sets.append((label_mask, label_tensor))
 
-    num_examples = 0
-    losses = 0.
+    losses = 0
     for task_index, s in enumerate(sets):
         train_examples = s[0]
         train_labels = s[1]
-
-        if len(train_labels) < 1:
+        if len(s[1]) < 1:
             continue
-
-        num_examples += len(train_labels)
         pred = logits[train_examples, task_index]
-        
-        loss = -torch.sum( F.logsigmoid(pred)*train_labels
-                                + (F.logsigmoid(pred) - pred)*(1-train_labels) )
-        losses += loss
-    return losses/num_examples
+        loss = -torch.mean( F.logsigmoid(pred)*train_labels 
+                           + (F.logsigmoid(pred) - pred)*(1-train_labels) )
+        losses += loss   
+    return losses/len(sets)

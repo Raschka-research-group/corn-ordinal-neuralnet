@@ -136,13 +136,9 @@ def loss_conditional_v2(logits, y_train, NUM_CLASSES):
 
 
 def loss_conditional_v2_ablation(logits, y_train, NUM_CLASSES):
-    """Same as loss_conditional_v2 but without training subsets
-    to faciliate an ablation study.
-    """
     sets = []
     for i in range(NUM_CLASSES-1):
-        i = 0  # this basically eliminates subsets. 
-        label_mask = y_train > i-1
+        label_mask = y_train > 0  # elminate subset selection
         label_tensor = (y_train[label_mask] > i).to(torch.int64)
         sets.append((label_mask, label_tensor))
 
