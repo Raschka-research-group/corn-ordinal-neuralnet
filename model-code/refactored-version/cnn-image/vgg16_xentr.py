@@ -279,7 +279,7 @@ info_dict["settings"]["num classes"] = NUM_CLASSES
 # MODEL
 ##########################
 
-model = torch.hub.load("pytorch/vision:v0.10.0", "vgg16", pretrained=True)
+model = torch.hub.load("pytorch/vision:v0.10.0", "vgg16_bn", pretrained=True)
 model.classifier[-1] = torch.nn.Linear(4096, NUM_CLASSES)
 
 
