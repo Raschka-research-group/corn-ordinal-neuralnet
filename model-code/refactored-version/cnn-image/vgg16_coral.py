@@ -291,7 +291,7 @@ def forward_with_probas(self, x):
     x = self.avgpool(x)
     x = torch.flatten(x, start_dim=1)
     logits = self.classifier(x)
-    probas = torch.nn.functional.softmax(logits, dim=1)
+    probas = torch.sigmoid(logits)
     return logits, probas
 
 
