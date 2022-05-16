@@ -290,7 +290,7 @@ info_dict["settings"]["num classes"] = NUM_CLASSES
 ##########################
 
 model = torch.hub.load("pytorch/vision:v0.10.0", "vgg16_bn", pretrained=True)
-model.classifier[-1] = torch.nn.Linear(4096, NUM_CLASSES)
+model.classifier[-1] = torch.nn.Linear(4096, NUM_CLASSES-1)
 
 
 def forward_with_probas(self, x):
@@ -298,7 +298,8 @@ def forward_with_probas(self, x):
     x = self.avgpool(x)
     x = torch.flatten(x, start_dim=1)
     logits = self.classifier(x)
-    probas = torch.nn.functional.softmax(logits, dim=1)
+    logits = logits.view(-1, (NUM_CLASSES-1))
+    probas = torch.sigmoid(logits)
     return logits, probas
 
 
