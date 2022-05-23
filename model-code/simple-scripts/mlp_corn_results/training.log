@@ -1,0 +1,226 @@
+Script: /Users/sebastian/code/github_Raschka-research-group/corn-ordinal-neuralnet/model-code/simple-scripts/mlp_corn.py
+PyTorch version: 1.10.0
+Device: cpu
+Learning rate: 0.0005
+Batch size: 32
+
+Epoch: 001/010 | Batch 0000/0966 | Loss: 0.7319
+Epoch: 001/010 | Batch 0050/0966 | Loss: 0.5085
+Epoch: 001/010 | Batch 0100/0966 | Loss: 0.4928
+Epoch: 001/010 | Batch 0150/0966 | Loss: 0.3725
+Epoch: 001/010 | Batch 0200/0966 | Loss: 0.3289
+Epoch: 001/010 | Batch 0250/0966 | Loss: 0.2862
+Epoch: 001/010 | Batch 0300/0966 | Loss: 0.2595
+Epoch: 001/010 | Batch 0350/0966 | Loss: 0.2608
+Epoch: 001/010 | Batch 0400/0966 | Loss: 0.2483
+Epoch: 001/010 | Batch 0450/0966 | Loss: 0.2538
+Epoch: 001/010 | Batch 0500/0966 | Loss: 0.2453
+Epoch: 001/010 | Batch 0550/0966 | Loss: 0.2508
+Epoch: 001/010 | Batch 0600/0966 | Loss: 0.2414
+Epoch: 001/010 | Batch 0650/0966 | Loss: 0.2252
+Epoch: 001/010 | Batch 0700/0966 | Loss: 0.2305
+Epoch: 001/010 | Batch 0750/0966 | Loss: 0.2804
+Epoch: 001/010 | Batch 0800/0966 | Loss: 0.2370
+Epoch: 001/010 | Batch 0850/0966 | Loss: 0.2207
+Epoch: 001/010 | Batch 0900/0966 | Loss: 0.2413
+Epoch: 001/010 | Batch 0950/0966 | Loss: 0.2292
+MAE Current Valid: 1.10 Ep. 1 | Best Valid: 1.10 Ep. 1
+Time elapsed: 0.04 min
+Epoch: 002/010 | Batch 0000/0966 | Loss: 0.2247
+Epoch: 002/010 | Batch 0050/0966 | Loss: 0.2238
+Epoch: 002/010 | Batch 0100/0966 | Loss: 0.2479
+Epoch: 002/010 | Batch 0150/0966 | Loss: 0.2050
+Epoch: 002/010 | Batch 0200/0966 | Loss: 0.1947
+Epoch: 002/010 | Batch 0250/0966 | Loss: 0.2177
+Epoch: 002/010 | Batch 0300/0966 | Loss: 0.2036
+Epoch: 002/010 | Batch 0350/0966 | Loss: 0.2073
+Epoch: 002/010 | Batch 0400/0966 | Loss: 0.2122
+Epoch: 002/010 | Batch 0450/0966 | Loss: 0.2172
+Epoch: 002/010 | Batch 0500/0966 | Loss: 0.2615
+Epoch: 002/010 | Batch 0550/0966 | Loss: 0.2352
+Epoch: 002/010 | Batch 0600/0966 | Loss: 0.2442
+Epoch: 002/010 | Batch 0650/0966 | Loss: 0.2241
+Epoch: 002/010 | Batch 0700/0966 | Loss: 0.2054
+Epoch: 002/010 | Batch 0750/0966 | Loss: 0.2810
+Epoch: 002/010 | Batch 0800/0966 | Loss: 0.2097
+Epoch: 002/010 | Batch 0850/0966 | Loss: 0.1766
+Epoch: 002/010 | Batch 0900/0966 | Loss: 0.2387
+Epoch: 002/010 | Batch 0950/0966 | Loss: 0.2262
+MAE Current Valid: 1.02 Ep. 2 | Best Valid: 1.02 Ep. 2
+Time elapsed: 0.09 min
+Epoch: 003/010 | Batch 0000/0966 | Loss: 0.2134
+Epoch: 003/010 | Batch 0050/0966 | Loss: 0.2198
+Epoch: 003/010 | Batch 0100/0966 | Loss: 0.1952
+Epoch: 003/010 | Batch 0150/0966 | Loss: 0.1876
+Epoch: 003/010 | Batch 0200/0966 | Loss: 0.1884
+Epoch: 003/010 | Batch 0250/0966 | Loss: 0.2099
+Epoch: 003/010 | Batch 0300/0966 | Loss: 0.1868
+Epoch: 003/010 | Batch 0350/0966 | Loss: 0.2121
+Epoch: 003/010 | Batch 0400/0966 | Loss: 0.2024
+Epoch: 003/010 | Batch 0450/0966 | Loss: 0.2019
+Epoch: 003/010 | Batch 0500/0966 | Loss: 0.2261
+Epoch: 003/010 | Batch 0550/0966 | Loss: 0.1846
+Epoch: 003/010 | Batch 0600/0966 | Loss: 0.1976
+Epoch: 003/010 | Batch 0650/0966 | Loss: 0.2298
+Epoch: 003/010 | Batch 0700/0966 | Loss: 0.1809
+Epoch: 003/010 | Batch 0750/0966 | Loss: 0.2371
+Epoch: 003/010 | Batch 0800/0966 | Loss: 0.2327
+Epoch: 003/010 | Batch 0850/0966 | Loss: 0.1698
+Epoch: 003/010 | Batch 0900/0966 | Loss: 0.2066
+Epoch: 003/010 | Batch 0950/0966 | Loss: 0.2183
+MAE Current Valid: 0.92 Ep. 3 | Best Valid: 0.92 Ep. 3
+Time elapsed: 0.13 min
+Epoch: 004/010 | Batch 0000/0966 | Loss: 0.2116
+Epoch: 004/010 | Batch 0050/0966 | Loss: 0.2032
+Epoch: 004/010 | Batch 0100/0966 | Loss: 0.2082
+Epoch: 004/010 | Batch 0150/0966 | Loss: 0.1893
+Epoch: 004/010 | Batch 0200/0966 | Loss: 0.1960
+Epoch: 004/010 | Batch 0250/0966 | Loss: 0.2182
+Epoch: 004/010 | Batch 0300/0966 | Loss: 0.1834
+Epoch: 004/010 | Batch 0350/0966 | Loss: 0.1883
+Epoch: 004/010 | Batch 0400/0966 | Loss: 0.2211
+Epoch: 004/010 | Batch 0450/0966 | Loss: 0.1984
+Epoch: 004/010 | Batch 0500/0966 | Loss: 0.2123
+Epoch: 004/010 | Batch 0550/0966 | Loss: 0.2109
+Epoch: 004/010 | Batch 0600/0966 | Loss: 0.2050
+Epoch: 004/010 | Batch 0650/0966 | Loss: 0.2133
+Epoch: 004/010 | Batch 0700/0966 | Loss: 0.1845
+Epoch: 004/010 | Batch 0750/0966 | Loss: 0.2583
+Epoch: 004/010 | Batch 0800/0966 | Loss: 0.2084
+Epoch: 004/010 | Batch 0850/0966 | Loss: 0.1860
+Epoch: 004/010 | Batch 0900/0966 | Loss: 0.2113
+Epoch: 004/010 | Batch 0950/0966 | Loss: 0.1999
+MAE Current Valid: 0.87 Ep. 4 | Best Valid: 0.87 Ep. 4
+Time elapsed: 0.18 min
+Epoch: 005/010 | Batch 0000/0966 | Loss: 0.2074
+Epoch: 005/010 | Batch 0050/0966 | Loss: 0.1940
+Epoch: 005/010 | Batch 0100/0966 | Loss: 0.1944
+Epoch: 005/010 | Batch 0150/0966 | Loss: 0.1926
+Epoch: 005/010 | Batch 0200/0966 | Loss: 0.2066
+Epoch: 005/010 | Batch 0250/0966 | Loss: 0.1951
+Epoch: 005/010 | Batch 0300/0966 | Loss: 0.1850
+Epoch: 005/010 | Batch 0350/0966 | Loss: 0.1864
+Epoch: 005/010 | Batch 0400/0966 | Loss: 0.2335
+Epoch: 005/010 | Batch 0450/0966 | Loss: 0.2100
+Epoch: 005/010 | Batch 0500/0966 | Loss: 0.2126
+Epoch: 005/010 | Batch 0550/0966 | Loss: 0.1843
+Epoch: 005/010 | Batch 0600/0966 | Loss: 0.2121
+Epoch: 005/010 | Batch 0650/0966 | Loss: 0.2172
+Epoch: 005/010 | Batch 0700/0966 | Loss: 0.1858
+Epoch: 005/010 | Batch 0750/0966 | Loss: 0.2443
+Epoch: 005/010 | Batch 0800/0966 | Loss: 0.2116
+Epoch: 005/010 | Batch 0850/0966 | Loss: 0.1802
+Epoch: 005/010 | Batch 0900/0966 | Loss: 0.2188
+Epoch: 005/010 | Batch 0950/0966 | Loss: 0.1967
+MAE Current Valid: 0.86 Ep. 5 | Best Valid: 0.86 Ep. 5
+Time elapsed: 0.23 min
+Epoch: 006/010 | Batch 0000/0966 | Loss: 0.2184
+Epoch: 006/010 | Batch 0050/0966 | Loss: 0.2161
+Epoch: 006/010 | Batch 0100/0966 | Loss: 0.2199
+Epoch: 006/010 | Batch 0150/0966 | Loss: 0.1922
+Epoch: 006/010 | Batch 0200/0966 | Loss: 0.2022
+Epoch: 006/010 | Batch 0250/0966 | Loss: 0.1952
+Epoch: 006/010 | Batch 0300/0966 | Loss: 0.1866
+Epoch: 006/010 | Batch 0350/0966 | Loss: 0.1885
+Epoch: 006/010 | Batch 0400/0966 | Loss: 0.2023
+Epoch: 006/010 | Batch 0450/0966 | Loss: 0.1944
+Epoch: 006/010 | Batch 0500/0966 | Loss: 0.2508
+Epoch: 006/010 | Batch 0550/0966 | Loss: 0.1916
+Epoch: 006/010 | Batch 0600/0966 | Loss: 0.2004
+Epoch: 006/010 | Batch 0650/0966 | Loss: 0.2158
+Epoch: 006/010 | Batch 0700/0966 | Loss: 0.1721
+Epoch: 006/010 | Batch 0750/0966 | Loss: 0.2367
+Epoch: 006/010 | Batch 0800/0966 | Loss: 0.2035
+Epoch: 006/010 | Batch 0850/0966 | Loss: 0.1718
+Epoch: 006/010 | Batch 0900/0966 | Loss: 0.2294
+Epoch: 006/010 | Batch 0950/0966 | Loss: 0.2167
+MAE Current Valid: 0.85 Ep. 6 | Best Valid: 0.85 Ep. 6
+Time elapsed: 0.29 min
+Epoch: 007/010 | Batch 0000/0966 | Loss: 0.1970
+Epoch: 007/010 | Batch 0050/0966 | Loss: 0.1934
+Epoch: 007/010 | Batch 0100/0966 | Loss: 0.2152
+Epoch: 007/010 | Batch 0150/0966 | Loss: 0.1862
+Epoch: 007/010 | Batch 0200/0966 | Loss: 0.1905
+Epoch: 007/010 | Batch 0250/0966 | Loss: 0.1795
+Epoch: 007/010 | Batch 0300/0966 | Loss: 0.1976
+Epoch: 007/010 | Batch 0350/0966 | Loss: 0.1716
+Epoch: 007/010 | Batch 0400/0966 | Loss: 0.2199
+Epoch: 007/010 | Batch 0450/0966 | Loss: 0.2086
+Epoch: 007/010 | Batch 0500/0966 | Loss: 0.2022
+Epoch: 007/010 | Batch 0550/0966 | Loss: 0.1868
+Epoch: 007/010 | Batch 0600/0966 | Loss: 0.2043
+Epoch: 007/010 | Batch 0650/0966 | Loss: 0.2315
+Epoch: 007/010 | Batch 0700/0966 | Loss: 0.1855
+Epoch: 007/010 | Batch 0750/0966 | Loss: 0.2370
+Epoch: 007/010 | Batch 0800/0966 | Loss: 0.1880
+Epoch: 007/010 | Batch 0850/0966 | Loss: 0.1866
+Epoch: 007/010 | Batch 0900/0966 | Loss: 0.2239
+Epoch: 007/010 | Batch 0950/0966 | Loss: 0.2097
+MAE Current Valid: 0.81 Ep. 7 | Best Valid: 0.81 Ep. 7
+Time elapsed: 0.34 min
+Epoch: 008/010 | Batch 0000/0966 | Loss: 0.1890
+Epoch: 008/010 | Batch 0050/0966 | Loss: 0.2128
+Epoch: 008/010 | Batch 0100/0966 | Loss: 0.1657
+Epoch: 008/010 | Batch 0150/0966 | Loss: 0.1815
+Epoch: 008/010 | Batch 0200/0966 | Loss: 0.1818
+Epoch: 008/010 | Batch 0250/0966 | Loss: 0.1893
+Epoch: 008/010 | Batch 0300/0966 | Loss: 0.1952
+Epoch: 008/010 | Batch 0350/0966 | Loss: 0.1852
+Epoch: 008/010 | Batch 0400/0966 | Loss: 0.1989
+Epoch: 008/010 | Batch 0450/0966 | Loss: 0.1742
+Epoch: 008/010 | Batch 0500/0966 | Loss: 0.2119
+Epoch: 008/010 | Batch 0550/0966 | Loss: 0.1733
+Epoch: 008/010 | Batch 0600/0966 | Loss: 0.1889
+Epoch: 008/010 | Batch 0650/0966 | Loss: 0.2119
+Epoch: 008/010 | Batch 0700/0966 | Loss: 0.1850
+Epoch: 008/010 | Batch 0750/0966 | Loss: 0.2436
+Epoch: 008/010 | Batch 0800/0966 | Loss: 0.2353
+Epoch: 008/010 | Batch 0850/0966 | Loss: 0.1782
+Epoch: 008/010 | Batch 0900/0966 | Loss: 0.2002
+Epoch: 008/010 | Batch 0950/0966 | Loss: 0.1858
+MAE Current Valid: 0.83 Ep. 8 | Best Valid: 0.81 Ep. 7
+Time elapsed: 0.39 min
+Epoch: 009/010 | Batch 0000/0966 | Loss: 0.1961
+Epoch: 009/010 | Batch 0050/0966 | Loss: 0.1920
+Epoch: 009/010 | Batch 0100/0966 | Loss: 0.2032
+Epoch: 009/010 | Batch 0150/0966 | Loss: 0.1733
+Epoch: 009/010 | Batch 0200/0966 | Loss: 0.1901
+Epoch: 009/010 | Batch 0250/0966 | Loss: 0.1731
+Epoch: 009/010 | Batch 0300/0966 | Loss: 0.1805
+Epoch: 009/010 | Batch 0350/0966 | Loss: 0.1806
+Epoch: 009/010 | Batch 0400/0966 | Loss: 0.1875
+Epoch: 009/010 | Batch 0450/0966 | Loss: 0.1928
+Epoch: 009/010 | Batch 0500/0966 | Loss: 0.1968
+Epoch: 009/010 | Batch 0550/0966 | Loss: 0.1848
+Epoch: 009/010 | Batch 0600/0966 | Loss: 0.1925
+Epoch: 009/010 | Batch 0650/0966 | Loss: 0.2009
+Epoch: 009/010 | Batch 0700/0966 | Loss: 0.1587
+Epoch: 009/010 | Batch 0750/0966 | Loss: 0.2318
+Epoch: 009/010 | Batch 0800/0966 | Loss: 0.1950
+Epoch: 009/010 | Batch 0850/0966 | Loss: 0.1753
+Epoch: 009/010 | Batch 0900/0966 | Loss: 0.1975
+Epoch: 009/010 | Batch 0950/0966 | Loss: 0.1907
+MAE Current Valid: 0.83 Ep. 9 | Best Valid: 0.81 Ep. 7
+Time elapsed: 0.43 min
+Epoch: 010/010 | Batch 0000/0966 | Loss: 0.1839
+Epoch: 010/010 | Batch 0050/0966 | Loss: 0.1815
+Epoch: 010/010 | Batch 0100/0966 | Loss: 0.2007
+Epoch: 010/010 | Batch 0150/0966 | Loss: 0.2032
+Epoch: 010/010 | Batch 0200/0966 | Loss: 0.1728
+Epoch: 010/010 | Batch 0250/0966 | Loss: 0.1990
+Epoch: 010/010 | Batch 0300/0966 | Loss: 0.1843
+Epoch: 010/010 | Batch 0350/0966 | Loss: 0.1887
+Epoch: 010/010 | Batch 0400/0966 | Loss: 0.2120
+Epoch: 010/010 | Batch 0450/0966 | Loss: 0.1880
+Epoch: 010/010 | Batch 0500/0966 | Loss: 0.2155
+Epoch: 010/010 | Batch 0550/0966 | Loss: 0.1763
+Epoch: 010/010 | Batch 0600/0966 | Loss: 0.1733
+Epoch: 010/010 | Batch 0650/0966 | Loss: 0.2134
+Epoch: 010/010 | Batch 0700/0966 | Loss: 0.1737
+Epoch: 010/010 | Batch 0750/0966 | Loss: 0.2472
+Epoch: 010/010 | Batch 0800/0966 | Loss: 0.1851
+Epoch: 010/010 | Batch 0850/0966 | Loss: 0.1724
+Epoch: 010/010 | Batch 0900/0966 | Loss: 0.2180
+Epoch: 010/010 | Batch 0950/0966 | Loss: 0.1824
+MAE Current Valid: 0.81 Ep. 10 | Best Valid: 0.81 Ep. 7
+Time elapsed: 0.48 min
