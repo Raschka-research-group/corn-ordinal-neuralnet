@@ -1,0 +1,2410 @@
+This script: mlp-coral.py
+PyTorch Version: 1.8.0
+Random seed: 0
+Learning rate: 0.0005
+Epochs: 200
+Batch size: 64
+Output path: runs/coral/mlp-coral-seed0-epochs200-batchsize64-learningrate0.0005_best-rmse
+Epoch: 001/200 | Batch 0000/0483 | Loss: 10.0275
+Epoch: 001/200 | Batch 0050/0483 | Loss: 8.0972
+Epoch: 001/200 | Batch 0100/0483 | Loss: 7.8793
+Epoch: 001/200 | Batch 0150/0483 | Loss: 7.5808
+Epoch: 001/200 | Batch 0200/0483 | Loss: 7.3444
+Epoch: 001/200 | Batch 0250/0483 | Loss: 7.7600
+Epoch: 001/200 | Batch 0300/0483 | Loss: 7.2708
+Epoch: 001/200 | Batch 0350/0483 | Loss: 6.9148
+Epoch: 001/200 | Batch 0400/0483 | Loss: 7.1213
+Epoch: 001/200 | Batch 0450/0483 | Loss: 7.1514
+MAE/RMSE/ACC: Current Valid: 3.13/3.94/14.31 Ep. 1 | Best Valid: 3.13/3.94/14.31 | Ep. 1
+Time elapsed: 0.05 min
+Epoch: 002/200 | Batch 0000/0483 | Loss: 7.1788
+Epoch: 002/200 | Batch 0050/0483 | Loss: 6.7465
+Epoch: 002/200 | Batch 0100/0483 | Loss: 6.6515
+Epoch: 002/200 | Batch 0150/0483 | Loss: 6.6442
+Epoch: 002/200 | Batch 0200/0483 | Loss: 6.5541
+Epoch: 002/200 | Batch 0250/0483 | Loss: 6.6200
+Epoch: 002/200 | Batch 0300/0483 | Loss: 6.4957
+Epoch: 002/200 | Batch 0350/0483 | Loss: 6.2955
+Epoch: 002/200 | Batch 0400/0483 | Loss: 6.4267
+Epoch: 002/200 | Batch 0450/0483 | Loss: 6.4112
+MAE/RMSE/ACC: Current Valid: 2.57/3.29/17.08 Ep. 2 | Best Valid: 2.57/3.29/17.08 | Ep. 2
+Time elapsed: 0.11 min
+Epoch: 003/200 | Batch 0000/0483 | Loss: 6.3703
+Epoch: 003/200 | Batch 0050/0483 | Loss: 6.1509
+Epoch: 003/200 | Batch 0100/0483 | Loss: 6.0924
+Epoch: 003/200 | Batch 0150/0483 | Loss: 6.0092
+Epoch: 003/200 | Batch 0200/0483 | Loss: 6.1460
+Epoch: 003/200 | Batch 0250/0483 | Loss: 5.9586
+Epoch: 003/200 | Batch 0300/0483 | Loss: 5.9807
+Epoch: 003/200 | Batch 0350/0483 | Loss: 5.7974
+Epoch: 003/200 | Batch 0400/0483 | Loss: 5.8516
+Epoch: 003/200 | Batch 0450/0483 | Loss: 5.9334
+MAE/RMSE/ACC: Current Valid: 2.19/2.84/19.16 Ep. 3 | Best Valid: 2.19/2.84/19.16 | Ep. 3
+Time elapsed: 0.16 min
+Epoch: 004/200 | Batch 0000/0483 | Loss: 5.8748
+Epoch: 004/200 | Batch 0050/0483 | Loss: 5.8578
+Epoch: 004/200 | Batch 0100/0483 | Loss: 5.5526
+Epoch: 004/200 | Batch 0150/0483 | Loss: 5.6617
+Epoch: 004/200 | Batch 0200/0483 | Loss: 5.6379
+Epoch: 004/200 | Batch 0250/0483 | Loss: 5.6421
+Epoch: 004/200 | Batch 0300/0483 | Loss: 5.5159
+Epoch: 004/200 | Batch 0350/0483 | Loss: 5.4612
+Epoch: 004/200 | Batch 0400/0483 | Loss: 5.4542
+Epoch: 004/200 | Batch 0450/0483 | Loss: 5.4418
+MAE/RMSE/ACC: Current Valid: 1.96/2.56/20.70 Ep. 4 | Best Valid: 1.96/2.56/20.70 | Ep. 4
+Time elapsed: 0.21 min
+Epoch: 005/200 | Batch 0000/0483 | Loss: 5.3985
+Epoch: 005/200 | Batch 0050/0483 | Loss: 5.3913
+Epoch: 005/200 | Batch 0100/0483 | Loss: 5.1825
+Epoch: 005/200 | Batch 0150/0483 | Loss: 5.1189
+Epoch: 005/200 | Batch 0200/0483 | Loss: 5.3111
+Epoch: 005/200 | Batch 0250/0483 | Loss: 5.2262
+Epoch: 005/200 | Batch 0300/0483 | Loss: 5.1558
+Epoch: 005/200 | Batch 0350/0483 | Loss: 5.1225
+Epoch: 005/200 | Batch 0400/0483 | Loss: 5.0004
+Epoch: 005/200 | Batch 0450/0483 | Loss: 5.1308
+MAE/RMSE/ACC: Current Valid: 1.74/2.30/22.91 Ep. 5 | Best Valid: 1.74/2.30/22.91 | Ep. 5
+Time elapsed: 0.27 min
+Epoch: 006/200 | Batch 0000/0483 | Loss: 5.1800
+Epoch: 006/200 | Batch 0050/0483 | Loss: 5.0768
+Epoch: 006/200 | Batch 0100/0483 | Loss: 4.8735
+Epoch: 006/200 | Batch 0150/0483 | Loss: 5.0097
+Epoch: 006/200 | Batch 0200/0483 | Loss: 4.9938
+Epoch: 006/200 | Batch 0250/0483 | Loss: 5.0493
+Epoch: 006/200 | Batch 0300/0483 | Loss: 4.7706
+Epoch: 006/200 | Batch 0350/0483 | Loss: 4.9002
+Epoch: 006/200 | Batch 0400/0483 | Loss: 4.8385
+Epoch: 006/200 | Batch 0450/0483 | Loss: 4.9063
+MAE/RMSE/ACC: Current Valid: 1.58/2.09/24.39 Ep. 6 | Best Valid: 1.58/2.09/24.39 | Ep. 6
+Time elapsed: 0.32 min
+Epoch: 007/200 | Batch 0000/0483 | Loss: 4.7725
+Epoch: 007/200 | Batch 0050/0483 | Loss: 4.6641
+Epoch: 007/200 | Batch 0100/0483 | Loss: 4.6818
+Epoch: 007/200 | Batch 0150/0483 | Loss: 4.6430
+Epoch: 007/200 | Batch 0200/0483 | Loss: 4.7247
+Epoch: 007/200 | Batch 0250/0483 | Loss: 4.7537
+Epoch: 007/200 | Batch 0300/0483 | Loss: 4.6958
+Epoch: 007/200 | Batch 0350/0483 | Loss: 4.5092
+Epoch: 007/200 | Batch 0400/0483 | Loss: 4.6746
+Epoch: 007/200 | Batch 0450/0483 | Loss: 4.6961
+MAE/RMSE/ACC: Current Valid: 1.44/1.92/25.00 Ep. 7 | Best Valid: 1.44/1.92/25.00 | Ep. 7
+Time elapsed: 0.38 min
+Epoch: 008/200 | Batch 0000/0483 | Loss: 4.6269
+Epoch: 008/200 | Batch 0050/0483 | Loss: 4.5167
+Epoch: 008/200 | Batch 0100/0483 | Loss: 4.5283
+Epoch: 008/200 | Batch 0150/0483 | Loss: 4.4096
+Epoch: 008/200 | Batch 0200/0483 | Loss: 4.5693
+Epoch: 008/200 | Batch 0250/0483 | Loss: 4.4099
+Epoch: 008/200 | Batch 0300/0483 | Loss: 4.4003
+Epoch: 008/200 | Batch 0350/0483 | Loss: 4.3354
+Epoch: 008/200 | Batch 0400/0483 | Loss: 4.4028
+Epoch: 008/200 | Batch 0450/0483 | Loss: 4.3684
+MAE/RMSE/ACC: Current Valid: 1.31/1.73/26.47 Ep. 8 | Best Valid: 1.31/1.73/26.47 | Ep. 8
+Time elapsed: 0.43 min
+Epoch: 009/200 | Batch 0000/0483 | Loss: 4.5150
+Epoch: 009/200 | Batch 0050/0483 | Loss: 4.2995
+Epoch: 009/200 | Batch 0100/0483 | Loss: 4.2743
+Epoch: 009/200 | Batch 0150/0483 | Loss: 4.4382
+Epoch: 009/200 | Batch 0200/0483 | Loss: 4.4076
+Epoch: 009/200 | Batch 0250/0483 | Loss: 4.3978
+Epoch: 009/200 | Batch 0300/0483 | Loss: 4.3116
+Epoch: 009/200 | Batch 0350/0483 | Loss: 4.1425
+Epoch: 009/200 | Batch 0400/0483 | Loss: 4.1925
+Epoch: 009/200 | Batch 0450/0483 | Loss: 4.2493
+MAE/RMSE/ACC: Current Valid: 1.23/1.64/28.38 Ep. 9 | Best Valid: 1.23/1.64/28.38 | Ep. 9
+Time elapsed: 0.49 min
+Epoch: 010/200 | Batch 0000/0483 | Loss: 4.2130
+Epoch: 010/200 | Batch 0050/0483 | Loss: 4.1304
+Epoch: 010/200 | Batch 0100/0483 | Loss: 4.1442
+Epoch: 010/200 | Batch 0150/0483 | Loss: 4.1974
+Epoch: 010/200 | Batch 0200/0483 | Loss: 4.2293
+Epoch: 010/200 | Batch 0250/0483 | Loss: 4.1287
+Epoch: 010/200 | Batch 0300/0483 | Loss: 4.0724
+Epoch: 010/200 | Batch 0350/0483 | Loss: 4.0501
+Epoch: 010/200 | Batch 0400/0483 | Loss: 4.1980
+Epoch: 010/200 | Batch 0450/0483 | Loss: 4.0347
+MAE/RMSE/ACC: Current Valid: 1.19/1.58/29.24 Ep. 10 | Best Valid: 1.19/1.58/29.24 | Ep. 10
+Time elapsed: 0.53 min
+Epoch: 011/200 | Batch 0000/0483 | Loss: 4.1194
+Epoch: 011/200 | Batch 0050/0483 | Loss: 3.9932
+Epoch: 011/200 | Batch 0100/0483 | Loss: 3.9547
+Epoch: 011/200 | Batch 0150/0483 | Loss: 4.0154
+Epoch: 011/200 | Batch 0200/0483 | Loss: 3.9781
+Epoch: 011/200 | Batch 0250/0483 | Loss: 3.9288
+Epoch: 011/200 | Batch 0300/0483 | Loss: 4.0187
+Epoch: 011/200 | Batch 0350/0483 | Loss: 3.8330
+Epoch: 011/200 | Batch 0400/0483 | Loss: 3.9957
+Epoch: 011/200 | Batch 0450/0483 | Loss: 4.0220
+MAE/RMSE/ACC: Current Valid: 1.14/1.52/30.65 Ep. 11 | Best Valid: 1.14/1.52/30.65 | Ep. 11
+Time elapsed: 0.58 min
+Epoch: 012/200 | Batch 0000/0483 | Loss: 3.9780
+Epoch: 012/200 | Batch 0050/0483 | Loss: 3.9903
+Epoch: 012/200 | Batch 0100/0483 | Loss: 3.8672
+Epoch: 012/200 | Batch 0150/0483 | Loss: 3.9701
+Epoch: 012/200 | Batch 0200/0483 | Loss: 4.0457
+Epoch: 012/200 | Batch 0250/0483 | Loss: 3.8819
+Epoch: 012/200 | Batch 0300/0483 | Loss: 3.7823
+Epoch: 012/200 | Batch 0350/0483 | Loss: 3.7387
+Epoch: 012/200 | Batch 0400/0483 | Loss: 3.7297
+Epoch: 012/200 | Batch 0450/0483 | Loss: 3.9642
+MAE/RMSE/ACC: Current Valid: 1.08/1.44/30.77 Ep. 12 | Best Valid: 1.08/1.44/30.77 | Ep. 12
+Time elapsed: 0.63 min
+Epoch: 013/200 | Batch 0000/0483 | Loss: 3.8210
+Epoch: 013/200 | Batch 0050/0483 | Loss: 3.8839
+Epoch: 013/200 | Batch 0100/0483 | Loss: 3.8949
+Epoch: 013/200 | Batch 0150/0483 | Loss: 3.8239
+Epoch: 013/200 | Batch 0200/0483 | Loss: 3.7602
+Epoch: 013/200 | Batch 0250/0483 | Loss: 3.7864
+Epoch: 013/200 | Batch 0300/0483 | Loss: 3.7432
+Epoch: 013/200 | Batch 0350/0483 | Loss: 3.6652
+Epoch: 013/200 | Batch 0400/0483 | Loss: 3.7387
+Epoch: 013/200 | Batch 0450/0483 | Loss: 3.7998
+MAE/RMSE/ACC: Current Valid: 1.06/1.42/31.27 Ep. 13 | Best Valid: 1.06/1.42/31.27 | Ep. 13
+Time elapsed: 0.68 min
+Epoch: 014/200 | Batch 0000/0483 | Loss: 3.8281
+Epoch: 014/200 | Batch 0050/0483 | Loss: 3.6861
+Epoch: 014/200 | Batch 0100/0483 | Loss: 3.7843
+Epoch: 014/200 | Batch 0150/0483 | Loss: 3.7427
+Epoch: 014/200 | Batch 0200/0483 | Loss: 3.6787
+Epoch: 014/200 | Batch 0250/0483 | Loss: 3.7522
+Epoch: 014/200 | Batch 0300/0483 | Loss: 3.5809
+Epoch: 014/200 | Batch 0350/0483 | Loss: 3.6174
+Epoch: 014/200 | Batch 0400/0483 | Loss: 3.6674
+Epoch: 014/200 | Batch 0450/0483 | Loss: 3.6059
+MAE/RMSE/ACC: Current Valid: 1.05/1.41/31.27 Ep. 14 | Best Valid: 1.05/1.41/31.27 | Ep. 14
+Time elapsed: 0.73 min
+Epoch: 015/200 | Batch 0000/0483 | Loss: 3.6873
+Epoch: 015/200 | Batch 0050/0483 | Loss: 3.5311
+Epoch: 015/200 | Batch 0100/0483 | Loss: 3.7233
+Epoch: 015/200 | Batch 0150/0483 | Loss: 3.6363
+Epoch: 015/200 | Batch 0200/0483 | Loss: 3.6207
+Epoch: 015/200 | Batch 0250/0483 | Loss: 3.5941
+Epoch: 015/200 | Batch 0300/0483 | Loss: 3.5262
+Epoch: 015/200 | Batch 0350/0483 | Loss: 3.5813
+Epoch: 015/200 | Batch 0400/0483 | Loss: 3.5868
+Epoch: 015/200 | Batch 0450/0483 | Loss: 3.6113
+MAE/RMSE/ACC: Current Valid: 1.03/1.39/32.13 Ep. 15 | Best Valid: 1.03/1.39/32.13 | Ep. 15
+Time elapsed: 0.78 min
+Epoch: 016/200 | Batch 0000/0483 | Loss: 3.5680
+Epoch: 016/200 | Batch 0050/0483 | Loss: 3.3919
+Epoch: 016/200 | Batch 0100/0483 | Loss: 3.3830
+Epoch: 016/200 | Batch 0150/0483 | Loss: 3.4604
+Epoch: 016/200 | Batch 0200/0483 | Loss: 3.6678
+Epoch: 016/200 | Batch 0250/0483 | Loss: 3.5191
+Epoch: 016/200 | Batch 0300/0483 | Loss: 3.4479
+Epoch: 016/200 | Batch 0350/0483 | Loss: 3.3450
+Epoch: 016/200 | Batch 0400/0483 | Loss: 3.4293
+Epoch: 016/200 | Batch 0450/0483 | Loss: 3.4761
+MAE/RMSE/ACC: Current Valid: 0.99/1.33/33.05 Ep. 16 | Best Valid: 0.99/1.33/33.05 | Ep. 16
+Time elapsed: 0.83 min
+Epoch: 017/200 | Batch 0000/0483 | Loss: 3.4505
+Epoch: 017/200 | Batch 0050/0483 | Loss: 3.4207
+Epoch: 017/200 | Batch 0100/0483 | Loss: 3.4135
+Epoch: 017/200 | Batch 0150/0483 | Loss: 3.4968
+Epoch: 017/200 | Batch 0200/0483 | Loss: 3.5778
+Epoch: 017/200 | Batch 0250/0483 | Loss: 3.4177
+Epoch: 017/200 | Batch 0300/0483 | Loss: 3.3221
+Epoch: 017/200 | Batch 0350/0483 | Loss: 3.3400
+Epoch: 017/200 | Batch 0400/0483 | Loss: 3.3527
+Epoch: 017/200 | Batch 0450/0483 | Loss: 3.3670
+MAE/RMSE/ACC: Current Valid: 0.96/1.31/34.09 Ep. 17 | Best Valid: 0.96/1.31/34.09 | Ep. 17
+Time elapsed: 0.88 min
+Epoch: 018/200 | Batch 0000/0483 | Loss: 3.3524
+Epoch: 018/200 | Batch 0050/0483 | Loss: 3.3752
+Epoch: 018/200 | Batch 0100/0483 | Loss: 3.3245
+Epoch: 018/200 | Batch 0150/0483 | Loss: 3.4167
+Epoch: 018/200 | Batch 0200/0483 | Loss: 3.3920
+Epoch: 018/200 | Batch 0250/0483 | Loss: 3.2842
+Epoch: 018/200 | Batch 0300/0483 | Loss: 3.3633
+Epoch: 018/200 | Batch 0350/0483 | Loss: 3.3461
+Epoch: 018/200 | Batch 0400/0483 | Loss: 3.3136
+Epoch: 018/200 | Batch 0450/0483 | Loss: 3.4162
+MAE/RMSE/ACC: Current Valid: 0.96/1.29/33.48 Ep. 18 | Best Valid: 0.96/1.29/33.48 | Ep. 18
+Time elapsed: 0.92 min
+Epoch: 019/200 | Batch 0000/0483 | Loss: 3.3482
+Epoch: 019/200 | Batch 0050/0483 | Loss: 3.3632
+Epoch: 019/200 | Batch 0100/0483 | Loss: 3.3285
+Epoch: 019/200 | Batch 0150/0483 | Loss: 3.3586
+Epoch: 019/200 | Batch 0200/0483 | Loss: 3.2653
+Epoch: 019/200 | Batch 0250/0483 | Loss: 3.3597
+Epoch: 019/200 | Batch 0300/0483 | Loss: 3.3549
+Epoch: 019/200 | Batch 0350/0483 | Loss: 3.1931
+Epoch: 019/200 | Batch 0400/0483 | Loss: 3.3978
+Epoch: 019/200 | Batch 0450/0483 | Loss: 3.2674
+MAE/RMSE/ACC: Current Valid: 0.99/1.33/33.48 Ep. 19 | Best Valid: 0.96/1.29/33.48 | Ep. 18
+Time elapsed: 0.97 min
+Epoch: 020/200 | Batch 0000/0483 | Loss: 3.3860
+Epoch: 020/200 | Batch 0050/0483 | Loss: 3.2275
+Epoch: 020/200 | Batch 0100/0483 | Loss: 3.3204
+Epoch: 020/200 | Batch 0150/0483 | Loss: 3.2585
+Epoch: 020/200 | Batch 0200/0483 | Loss: 3.3380
+Epoch: 020/200 | Batch 0250/0483 | Loss: 3.3529
+Epoch: 020/200 | Batch 0300/0483 | Loss: 3.3825
+Epoch: 020/200 | Batch 0350/0483 | Loss: 3.1270
+Epoch: 020/200 | Batch 0400/0483 | Loss: 3.3681
+Epoch: 020/200 | Batch 0450/0483 | Loss: 3.3856
+MAE/RMSE/ACC: Current Valid: 0.94/1.29/34.64 Ep. 20 | Best Valid: 0.94/1.29/34.64 | Ep. 20
+Time elapsed: 1.02 min
+Epoch: 021/200 | Batch 0000/0483 | Loss: 3.3614
+Epoch: 021/200 | Batch 0050/0483 | Loss: 3.2068
+Epoch: 021/200 | Batch 0100/0483 | Loss: 3.0788
+Epoch: 021/200 | Batch 0150/0483 | Loss: 3.2496
+Epoch: 021/200 | Batch 0200/0483 | Loss: 3.2378
+Epoch: 021/200 | Batch 0250/0483 | Loss: 3.2765
+Epoch: 021/200 | Batch 0300/0483 | Loss: 3.2353
+Epoch: 021/200 | Batch 0350/0483 | Loss: 3.0108
+Epoch: 021/200 | Batch 0400/0483 | Loss: 3.2925
+Epoch: 021/200 | Batch 0450/0483 | Loss: 3.2283
+MAE/RMSE/ACC: Current Valid: 0.94/1.27/34.58 Ep. 21 | Best Valid: 0.94/1.27/34.58 | Ep. 21
+Time elapsed: 1.08 min
+Epoch: 022/200 | Batch 0000/0483 | Loss: 3.1678
+Epoch: 022/200 | Batch 0050/0483 | Loss: 3.0569
+Epoch: 022/200 | Batch 0100/0483 | Loss: 3.0843
+Epoch: 022/200 | Batch 0150/0483 | Loss: 3.1183
+Epoch: 022/200 | Batch 0200/0483 | Loss: 3.3338
+Epoch: 022/200 | Batch 0250/0483 | Loss: 3.3550
+Epoch: 022/200 | Batch 0300/0483 | Loss: 3.2213
+Epoch: 022/200 | Batch 0350/0483 | Loss: 3.0551
+Epoch: 022/200 | Batch 0400/0483 | Loss: 3.1586
+Epoch: 022/200 | Batch 0450/0483 | Loss: 3.2165
+MAE/RMSE/ACC: Current Valid: 0.93/1.27/34.58 Ep. 22 | Best Valid: 0.94/1.27/34.58 | Ep. 21
+Time elapsed: 1.13 min
+Epoch: 023/200 | Batch 0000/0483 | Loss: 3.2313
+Epoch: 023/200 | Batch 0050/0483 | Loss: 3.1170
+Epoch: 023/200 | Batch 0100/0483 | Loss: 3.0885
+Epoch: 023/200 | Batch 0150/0483 | Loss: 3.1576
+Epoch: 023/200 | Batch 0200/0483 | Loss: 3.3083
+Epoch: 023/200 | Batch 0250/0483 | Loss: 3.1954
+Epoch: 023/200 | Batch 0300/0483 | Loss: 3.0726
+Epoch: 023/200 | Batch 0350/0483 | Loss: 3.0880
+Epoch: 023/200 | Batch 0400/0483 | Loss: 3.1273
+Epoch: 023/200 | Batch 0450/0483 | Loss: 3.2496
+MAE/RMSE/ACC: Current Valid: 0.91/1.24/35.14 Ep. 23 | Best Valid: 0.91/1.24/35.14 | Ep. 23
+Time elapsed: 1.18 min
+Epoch: 024/200 | Batch 0000/0483 | Loss: 3.1613
+Epoch: 024/200 | Batch 0050/0483 | Loss: 2.9923
+Epoch: 024/200 | Batch 0100/0483 | Loss: 2.9920
+Epoch: 024/200 | Batch 0150/0483 | Loss: 3.0950
+Epoch: 024/200 | Batch 0200/0483 | Loss: 3.0889
+Epoch: 024/200 | Batch 0250/0483 | Loss: 3.1712
+Epoch: 024/200 | Batch 0300/0483 | Loss: 3.0169
+Epoch: 024/200 | Batch 0350/0483 | Loss: 3.0501
+Epoch: 024/200 | Batch 0400/0483 | Loss: 3.0240
+Epoch: 024/200 | Batch 0450/0483 | Loss: 3.3236
+MAE/RMSE/ACC: Current Valid: 0.92/1.26/35.14 Ep. 24 | Best Valid: 0.91/1.24/35.14 | Ep. 23
+Time elapsed: 1.23 min
+Epoch: 025/200 | Batch 0000/0483 | Loss: 3.0210
+Epoch: 025/200 | Batch 0050/0483 | Loss: 2.9902
+Epoch: 025/200 | Batch 0100/0483 | Loss: 3.0950
+Epoch: 025/200 | Batch 0150/0483 | Loss: 3.3045
+Epoch: 025/200 | Batch 0200/0483 | Loss: 3.1844
+Epoch: 025/200 | Batch 0250/0483 | Loss: 3.2864
+Epoch: 025/200 | Batch 0300/0483 | Loss: 3.1560
+Epoch: 025/200 | Batch 0350/0483 | Loss: 2.9741
+Epoch: 025/200 | Batch 0400/0483 | Loss: 2.9559
+Epoch: 025/200 | Batch 0450/0483 | Loss: 3.0482
+MAE/RMSE/ACC: Current Valid: 0.90/1.23/35.07 Ep. 25 | Best Valid: 0.90/1.23/35.07 | Ep. 25
+Time elapsed: 1.29 min
+Epoch: 026/200 | Batch 0000/0483 | Loss: 2.9583
+Epoch: 026/200 | Batch 0050/0483 | Loss: 2.9666
+Epoch: 026/200 | Batch 0100/0483 | Loss: 2.9608
+Epoch: 026/200 | Batch 0150/0483 | Loss: 3.1365
+Epoch: 026/200 | Batch 0200/0483 | Loss: 3.1520
+Epoch: 026/200 | Batch 0250/0483 | Loss: 3.1624
+Epoch: 026/200 | Batch 0300/0483 | Loss: 2.9022
+Epoch: 026/200 | Batch 0350/0483 | Loss: 3.0101
+Epoch: 026/200 | Batch 0400/0483 | Loss: 3.0290
+Epoch: 026/200 | Batch 0450/0483 | Loss: 3.0961
+MAE/RMSE/ACC: Current Valid: 0.90/1.23/35.07 Ep. 26 | Best Valid: 0.90/1.23/35.07 | Ep. 25
+Time elapsed: 1.34 min
+Epoch: 027/200 | Batch 0000/0483 | Loss: 2.9288
+Epoch: 027/200 | Batch 0050/0483 | Loss: 2.9443
+Epoch: 027/200 | Batch 0100/0483 | Loss: 3.0206
+Epoch: 027/200 | Batch 0150/0483 | Loss: 3.0500
+Epoch: 027/200 | Batch 0200/0483 | Loss: 3.0061
+Epoch: 027/200 | Batch 0250/0483 | Loss: 3.0390
+Epoch: 027/200 | Batch 0300/0483 | Loss: 2.8104
+Epoch: 027/200 | Batch 0350/0483 | Loss: 2.8133
+Epoch: 027/200 | Batch 0400/0483 | Loss: 3.0800
+Epoch: 027/200 | Batch 0450/0483 | Loss: 2.9497
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/36.61 Ep. 27 | Best Valid: 0.89/1.23/36.61 | Ep. 27
+Time elapsed: 1.39 min
+Epoch: 028/200 | Batch 0000/0483 | Loss: 3.0055
+Epoch: 028/200 | Batch 0050/0483 | Loss: 2.8696
+Epoch: 028/200 | Batch 0100/0483 | Loss: 2.9210
+Epoch: 028/200 | Batch 0150/0483 | Loss: 2.9259
+Epoch: 028/200 | Batch 0200/0483 | Loss: 2.9536
+Epoch: 028/200 | Batch 0250/0483 | Loss: 3.0735
+Epoch: 028/200 | Batch 0300/0483 | Loss: 3.0314
+Epoch: 028/200 | Batch 0350/0483 | Loss: 2.9545
+Epoch: 028/200 | Batch 0400/0483 | Loss: 2.8791
+Epoch: 028/200 | Batch 0450/0483 | Loss: 3.0998
+MAE/RMSE/ACC: Current Valid: 0.90/1.23/36.61 Ep. 28 | Best Valid: 0.89/1.23/36.61 | Ep. 27
+Time elapsed: 1.44 min
+Epoch: 029/200 | Batch 0000/0483 | Loss: 2.9019
+Epoch: 029/200 | Batch 0050/0483 | Loss: 2.7569
+Epoch: 029/200 | Batch 0100/0483 | Loss: 3.1069
+Epoch: 029/200 | Batch 0150/0483 | Loss: 2.9615
+Epoch: 029/200 | Batch 0200/0483 | Loss: 2.9379
+Epoch: 029/200 | Batch 0250/0483 | Loss: 2.9458
+Epoch: 029/200 | Batch 0300/0483 | Loss: 2.9608
+Epoch: 029/200 | Batch 0350/0483 | Loss: 2.9305
+Epoch: 029/200 | Batch 0400/0483 | Loss: 2.9334
+Epoch: 029/200 | Batch 0450/0483 | Loss: 3.0721
+MAE/RMSE/ACC: Current Valid: 0.91/1.25/36.61 Ep. 29 | Best Valid: 0.89/1.23/36.61 | Ep. 27
+Time elapsed: 1.49 min
+Epoch: 030/200 | Batch 0000/0483 | Loss: 2.9665
+Epoch: 030/200 | Batch 0050/0483 | Loss: 2.8734
+Epoch: 030/200 | Batch 0100/0483 | Loss: 2.8884
+Epoch: 030/200 | Batch 0150/0483 | Loss: 2.9830
+Epoch: 030/200 | Batch 0200/0483 | Loss: 2.9579
+Epoch: 030/200 | Batch 0250/0483 | Loss: 2.9492
+Epoch: 030/200 | Batch 0300/0483 | Loss: 2.6915
+Epoch: 030/200 | Batch 0350/0483 | Loss: 2.7504
+Epoch: 030/200 | Batch 0400/0483 | Loss: 2.9544
+Epoch: 030/200 | Batch 0450/0483 | Loss: 3.0610
+MAE/RMSE/ACC: Current Valid: 0.89/1.22/36.43 Ep. 30 | Best Valid: 0.89/1.22/36.43 | Ep. 30
+Time elapsed: 1.54 min
+Epoch: 031/200 | Batch 0000/0483 | Loss: 2.8390
+Epoch: 031/200 | Batch 0050/0483 | Loss: 2.9855
+Epoch: 031/200 | Batch 0100/0483 | Loss: 2.9139
+Epoch: 031/200 | Batch 0150/0483 | Loss: 2.9919
+Epoch: 031/200 | Batch 0200/0483 | Loss: 3.0734
+Epoch: 031/200 | Batch 0250/0483 | Loss: 2.8527
+Epoch: 031/200 | Batch 0300/0483 | Loss: 2.8203
+Epoch: 031/200 | Batch 0350/0483 | Loss: 2.7831
+Epoch: 031/200 | Batch 0400/0483 | Loss: 3.0827
+Epoch: 031/200 | Batch 0450/0483 | Loss: 2.8149
+MAE/RMSE/ACC: Current Valid: 0.87/1.20/36.73 Ep. 31 | Best Valid: 0.87/1.20/36.73 | Ep. 31
+Time elapsed: 1.59 min
+Epoch: 032/200 | Batch 0000/0483 | Loss: 2.8396
+Epoch: 032/200 | Batch 0050/0483 | Loss: 2.7404
+Epoch: 032/200 | Batch 0100/0483 | Loss: 2.9912
+Epoch: 032/200 | Batch 0150/0483 | Loss: 2.7820
+Epoch: 032/200 | Batch 0200/0483 | Loss: 2.9426
+Epoch: 032/200 | Batch 0250/0483 | Loss: 2.9818
+Epoch: 032/200 | Batch 0300/0483 | Loss: 2.9200
+Epoch: 032/200 | Batch 0350/0483 | Loss: 2.8544
+Epoch: 032/200 | Batch 0400/0483 | Loss: 2.8324
+Epoch: 032/200 | Batch 0450/0483 | Loss: 2.9502
+MAE/RMSE/ACC: Current Valid: 0.85/1.17/38.08 Ep. 32 | Best Valid: 0.85/1.17/38.08 | Ep. 32
+Time elapsed: 1.64 min
+Epoch: 033/200 | Batch 0000/0483 | Loss: 2.8278
+Epoch: 033/200 | Batch 0050/0483 | Loss: 2.7049
+Epoch: 033/200 | Batch 0100/0483 | Loss: 2.8156
+Epoch: 033/200 | Batch 0150/0483 | Loss: 2.9377
+Epoch: 033/200 | Batch 0200/0483 | Loss: 2.9585
+Epoch: 033/200 | Batch 0250/0483 | Loss: 2.8699
+Epoch: 033/200 | Batch 0300/0483 | Loss: 2.7695
+Epoch: 033/200 | Batch 0350/0483 | Loss: 2.8115
+Epoch: 033/200 | Batch 0400/0483 | Loss: 2.9590
+Epoch: 033/200 | Batch 0450/0483 | Loss: 3.0037
+MAE/RMSE/ACC: Current Valid: 0.87/1.20/38.08 Ep. 33 | Best Valid: 0.85/1.17/38.08 | Ep. 32
+Time elapsed: 1.68 min
+Epoch: 034/200 | Batch 0000/0483 | Loss: 2.7788
+Epoch: 034/200 | Batch 0050/0483 | Loss: 2.7851
+Epoch: 034/200 | Batch 0100/0483 | Loss: 2.8086
+Epoch: 034/200 | Batch 0150/0483 | Loss: 2.8249
+Epoch: 034/200 | Batch 0200/0483 | Loss: 2.9757
+Epoch: 034/200 | Batch 0250/0483 | Loss: 2.9184
+Epoch: 034/200 | Batch 0300/0483 | Loss: 2.7270
+Epoch: 034/200 | Batch 0350/0483 | Loss: 2.6327
+Epoch: 034/200 | Batch 0400/0483 | Loss: 2.9116
+Epoch: 034/200 | Batch 0450/0483 | Loss: 2.8288
+MAE/RMSE/ACC: Current Valid: 0.84/1.17/38.27 Ep. 34 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.73 min
+Epoch: 035/200 | Batch 0000/0483 | Loss: 2.9102
+Epoch: 035/200 | Batch 0050/0483 | Loss: 2.6849
+Epoch: 035/200 | Batch 0100/0483 | Loss: 2.8787
+Epoch: 035/200 | Batch 0150/0483 | Loss: 2.8103
+Epoch: 035/200 | Batch 0200/0483 | Loss: 2.8935
+Epoch: 035/200 | Batch 0250/0483 | Loss: 2.7769
+Epoch: 035/200 | Batch 0300/0483 | Loss: 2.6381
+Epoch: 035/200 | Batch 0350/0483 | Loss: 2.6809
+Epoch: 035/200 | Batch 0400/0483 | Loss: 2.7129
+Epoch: 035/200 | Batch 0450/0483 | Loss: 2.9063
+MAE/RMSE/ACC: Current Valid: 0.89/1.22/38.27 Ep. 35 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.78 min
+Epoch: 036/200 | Batch 0000/0483 | Loss: 2.8529
+Epoch: 036/200 | Batch 0050/0483 | Loss: 2.7317
+Epoch: 036/200 | Batch 0100/0483 | Loss: 2.7957
+Epoch: 036/200 | Batch 0150/0483 | Loss: 2.8423
+Epoch: 036/200 | Batch 0200/0483 | Loss: 2.9433
+Epoch: 036/200 | Batch 0250/0483 | Loss: 2.8862
+Epoch: 036/200 | Batch 0300/0483 | Loss: 2.7177
+Epoch: 036/200 | Batch 0350/0483 | Loss: 2.6342
+Epoch: 036/200 | Batch 0400/0483 | Loss: 2.6346
+Epoch: 036/200 | Batch 0450/0483 | Loss: 2.8596
+MAE/RMSE/ACC: Current Valid: 0.85/1.17/38.27 Ep. 36 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.83 min
+Epoch: 037/200 | Batch 0000/0483 | Loss: 2.7926
+Epoch: 037/200 | Batch 0050/0483 | Loss: 2.7159
+Epoch: 037/200 | Batch 0100/0483 | Loss: 2.8534
+Epoch: 037/200 | Batch 0150/0483 | Loss: 2.8814
+Epoch: 037/200 | Batch 0200/0483 | Loss: 2.7721
+Epoch: 037/200 | Batch 0250/0483 | Loss: 2.9096
+Epoch: 037/200 | Batch 0300/0483 | Loss: 2.8838
+Epoch: 037/200 | Batch 0350/0483 | Loss: 2.5239
+Epoch: 037/200 | Batch 0400/0483 | Loss: 2.8250
+Epoch: 037/200 | Batch 0450/0483 | Loss: 2.8109
+MAE/RMSE/ACC: Current Valid: 0.87/1.20/38.27 Ep. 37 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.88 min
+Epoch: 038/200 | Batch 0000/0483 | Loss: 2.7278
+Epoch: 038/200 | Batch 0050/0483 | Loss: 2.6788
+Epoch: 038/200 | Batch 0100/0483 | Loss: 2.7156
+Epoch: 038/200 | Batch 0150/0483 | Loss: 2.7660
+Epoch: 038/200 | Batch 0200/0483 | Loss: 2.9007
+Epoch: 038/200 | Batch 0250/0483 | Loss: 3.0524
+Epoch: 038/200 | Batch 0300/0483 | Loss: 2.7712
+Epoch: 038/200 | Batch 0350/0483 | Loss: 2.7765
+Epoch: 038/200 | Batch 0400/0483 | Loss: 2.6942
+Epoch: 038/200 | Batch 0450/0483 | Loss: 2.6994
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/38.27 Ep. 38 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.93 min
+Epoch: 039/200 | Batch 0000/0483 | Loss: 2.6834
+Epoch: 039/200 | Batch 0050/0483 | Loss: 2.6303
+Epoch: 039/200 | Batch 0100/0483 | Loss: 2.6678
+Epoch: 039/200 | Batch 0150/0483 | Loss: 2.7291
+Epoch: 039/200 | Batch 0200/0483 | Loss: 2.7560
+Epoch: 039/200 | Batch 0250/0483 | Loss: 2.6923
+Epoch: 039/200 | Batch 0300/0483 | Loss: 2.6855
+Epoch: 039/200 | Batch 0350/0483 | Loss: 2.6469
+Epoch: 039/200 | Batch 0400/0483 | Loss: 2.9604
+Epoch: 039/200 | Batch 0450/0483 | Loss: 2.8248
+MAE/RMSE/ACC: Current Valid: 0.87/1.19/38.27 Ep. 39 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 1.98 min
+Epoch: 040/200 | Batch 0000/0483 | Loss: 2.6281
+Epoch: 040/200 | Batch 0050/0483 | Loss: 2.7553
+Epoch: 040/200 | Batch 0100/0483 | Loss: 2.6512
+Epoch: 040/200 | Batch 0150/0483 | Loss: 2.8682
+Epoch: 040/200 | Batch 0200/0483 | Loss: 2.7950
+Epoch: 040/200 | Batch 0250/0483 | Loss: 2.8481
+Epoch: 040/200 | Batch 0300/0483 | Loss: 2.6899
+Epoch: 040/200 | Batch 0350/0483 | Loss: 2.4709
+Epoch: 040/200 | Batch 0400/0483 | Loss: 2.8197
+Epoch: 040/200 | Batch 0450/0483 | Loss: 2.7178
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/38.27 Ep. 40 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 2.02 min
+Epoch: 041/200 | Batch 0000/0483 | Loss: 2.7823
+Epoch: 041/200 | Batch 0050/0483 | Loss: 2.5046
+Epoch: 041/200 | Batch 0100/0483 | Loss: 2.5857
+Epoch: 041/200 | Batch 0150/0483 | Loss: 2.7869
+Epoch: 041/200 | Batch 0200/0483 | Loss: 2.8102
+Epoch: 041/200 | Batch 0250/0483 | Loss: 2.7858
+Epoch: 041/200 | Batch 0300/0483 | Loss: 2.5762
+Epoch: 041/200 | Batch 0350/0483 | Loss: 2.6307
+Epoch: 041/200 | Batch 0400/0483 | Loss: 2.6519
+Epoch: 041/200 | Batch 0450/0483 | Loss: 2.6892
+MAE/RMSE/ACC: Current Valid: 0.88/1.21/38.27 Ep. 41 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 2.07 min
+Epoch: 042/200 | Batch 0000/0483 | Loss: 2.7508
+Epoch: 042/200 | Batch 0050/0483 | Loss: 2.6561
+Epoch: 042/200 | Batch 0100/0483 | Loss: 2.6817
+Epoch: 042/200 | Batch 0150/0483 | Loss: 2.8070
+Epoch: 042/200 | Batch 0200/0483 | Loss: 2.8498
+Epoch: 042/200 | Batch 0250/0483 | Loss: 2.7591
+Epoch: 042/200 | Batch 0300/0483 | Loss: 2.6459
+Epoch: 042/200 | Batch 0350/0483 | Loss: 2.6002
+Epoch: 042/200 | Batch 0400/0483 | Loss: 2.7690
+Epoch: 042/200 | Batch 0450/0483 | Loss: 2.8094
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/38.27 Ep. 42 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 2.12 min
+Epoch: 043/200 | Batch 0000/0483 | Loss: 2.6329
+Epoch: 043/200 | Batch 0050/0483 | Loss: 2.6133
+Epoch: 043/200 | Batch 0100/0483 | Loss: 2.7617
+Epoch: 043/200 | Batch 0150/0483 | Loss: 2.7366
+Epoch: 043/200 | Batch 0200/0483 | Loss: 2.6722
+Epoch: 043/200 | Batch 0250/0483 | Loss: 2.6960
+Epoch: 043/200 | Batch 0300/0483 | Loss: 2.5365
+Epoch: 043/200 | Batch 0350/0483 | Loss: 2.6131
+Epoch: 043/200 | Batch 0400/0483 | Loss: 2.6948
+Epoch: 043/200 | Batch 0450/0483 | Loss: 2.6756
+MAE/RMSE/ACC: Current Valid: 0.88/1.21/38.27 Ep. 43 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 2.17 min
+Epoch: 044/200 | Batch 0000/0483 | Loss: 2.6823
+Epoch: 044/200 | Batch 0050/0483 | Loss: 2.6691
+Epoch: 044/200 | Batch 0100/0483 | Loss: 2.6715
+Epoch: 044/200 | Batch 0150/0483 | Loss: 2.6631
+Epoch: 044/200 | Batch 0200/0483 | Loss: 2.7630
+Epoch: 044/200 | Batch 0250/0483 | Loss: 2.6454
+Epoch: 044/200 | Batch 0300/0483 | Loss: 2.5291
+Epoch: 044/200 | Batch 0350/0483 | Loss: 2.5640
+Epoch: 044/200 | Batch 0400/0483 | Loss: 2.6599
+Epoch: 044/200 | Batch 0450/0483 | Loss: 2.7126
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/38.27 Ep. 44 | Best Valid: 0.84/1.17/38.27 | Ep. 34
+Time elapsed: 2.21 min
+Epoch: 045/200 | Batch 0000/0483 | Loss: 2.6822
+Epoch: 045/200 | Batch 0050/0483 | Loss: 2.6146
+Epoch: 045/200 | Batch 0100/0483 | Loss: 2.7864
+Epoch: 045/200 | Batch 0150/0483 | Loss: 2.7257
+Epoch: 045/200 | Batch 0200/0483 | Loss: 2.6776
+Epoch: 045/200 | Batch 0250/0483 | Loss: 2.8178
+Epoch: 045/200 | Batch 0300/0483 | Loss: 2.5072
+Epoch: 045/200 | Batch 0350/0483 | Loss: 2.5075
+Epoch: 045/200 | Batch 0400/0483 | Loss: 2.8157
+Epoch: 045/200 | Batch 0450/0483 | Loss: 2.7458
+MAE/RMSE/ACC: Current Valid: 0.83/1.16/39.07 Ep. 45 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.26 min
+Epoch: 046/200 | Batch 0000/0483 | Loss: 2.6696
+Epoch: 046/200 | Batch 0050/0483 | Loss: 2.5899
+Epoch: 046/200 | Batch 0100/0483 | Loss: 2.6857
+Epoch: 046/200 | Batch 0150/0483 | Loss: 2.5897
+Epoch: 046/200 | Batch 0200/0483 | Loss: 2.8446
+Epoch: 046/200 | Batch 0250/0483 | Loss: 2.7558
+Epoch: 046/200 | Batch 0300/0483 | Loss: 2.4854
+Epoch: 046/200 | Batch 0350/0483 | Loss: 2.7005
+Epoch: 046/200 | Batch 0400/0483 | Loss: 2.5674
+Epoch: 046/200 | Batch 0450/0483 | Loss: 2.7720
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.07 Ep. 46 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.31 min
+Epoch: 047/200 | Batch 0000/0483 | Loss: 2.8398
+Epoch: 047/200 | Batch 0050/0483 | Loss: 2.4749
+Epoch: 047/200 | Batch 0100/0483 | Loss: 2.8419
+Epoch: 047/200 | Batch 0150/0483 | Loss: 2.7607
+Epoch: 047/200 | Batch 0200/0483 | Loss: 2.8481
+Epoch: 047/200 | Batch 0250/0483 | Loss: 2.6869
+Epoch: 047/200 | Batch 0300/0483 | Loss: 2.6204
+Epoch: 047/200 | Batch 0350/0483 | Loss: 2.7181
+Epoch: 047/200 | Batch 0400/0483 | Loss: 2.6715
+Epoch: 047/200 | Batch 0450/0483 | Loss: 2.7056
+MAE/RMSE/ACC: Current Valid: 0.86/1.21/39.07 Ep. 47 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.36 min
+Epoch: 048/200 | Batch 0000/0483 | Loss: 2.6322
+Epoch: 048/200 | Batch 0050/0483 | Loss: 2.8150
+Epoch: 048/200 | Batch 0100/0483 | Loss: 2.7791
+Epoch: 048/200 | Batch 0150/0483 | Loss: 2.6932
+Epoch: 048/200 | Batch 0200/0483 | Loss: 2.8206
+Epoch: 048/200 | Batch 0250/0483 | Loss: 2.7246
+Epoch: 048/200 | Batch 0300/0483 | Loss: 2.7617
+Epoch: 048/200 | Batch 0350/0483 | Loss: 2.6128
+Epoch: 048/200 | Batch 0400/0483 | Loss: 2.7414
+Epoch: 048/200 | Batch 0450/0483 | Loss: 2.5911
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.07 Ep. 48 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.41 min
+Epoch: 049/200 | Batch 0000/0483 | Loss: 2.6092
+Epoch: 049/200 | Batch 0050/0483 | Loss: 2.5498
+Epoch: 049/200 | Batch 0100/0483 | Loss: 2.6068
+Epoch: 049/200 | Batch 0150/0483 | Loss: 2.6825
+Epoch: 049/200 | Batch 0200/0483 | Loss: 2.7831
+Epoch: 049/200 | Batch 0250/0483 | Loss: 2.6014
+Epoch: 049/200 | Batch 0300/0483 | Loss: 2.6487
+Epoch: 049/200 | Batch 0350/0483 | Loss: 2.5379
+Epoch: 049/200 | Batch 0400/0483 | Loss: 2.6510
+Epoch: 049/200 | Batch 0450/0483 | Loss: 2.9295
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.07 Ep. 49 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.46 min
+Epoch: 050/200 | Batch 0000/0483 | Loss: 2.6443
+Epoch: 050/200 | Batch 0050/0483 | Loss: 2.6463
+Epoch: 050/200 | Batch 0100/0483 | Loss: 2.6850
+Epoch: 050/200 | Batch 0150/0483 | Loss: 2.5999
+Epoch: 050/200 | Batch 0200/0483 | Loss: 2.7545
+Epoch: 050/200 | Batch 0250/0483 | Loss: 2.5819
+Epoch: 050/200 | Batch 0300/0483 | Loss: 2.6221
+Epoch: 050/200 | Batch 0350/0483 | Loss: 2.7208
+Epoch: 050/200 | Batch 0400/0483 | Loss: 2.7051
+Epoch: 050/200 | Batch 0450/0483 | Loss: 2.7970
+MAE/RMSE/ACC: Current Valid: 0.93/1.28/39.07 Ep. 50 | Best Valid: 0.83/1.16/39.07 | Ep. 45
+Time elapsed: 2.50 min
+Epoch: 051/200 | Batch 0000/0483 | Loss: 2.5494
+Epoch: 051/200 | Batch 0050/0483 | Loss: 2.6615
+Epoch: 051/200 | Batch 0100/0483 | Loss: 2.6026
+Epoch: 051/200 | Batch 0150/0483 | Loss: 2.4978
+Epoch: 051/200 | Batch 0200/0483 | Loss: 2.6299
+Epoch: 051/200 | Batch 0250/0483 | Loss: 2.6711
+Epoch: 051/200 | Batch 0300/0483 | Loss: 2.6343
+Epoch: 051/200 | Batch 0350/0483 | Loss: 2.4052
+Epoch: 051/200 | Batch 0400/0483 | Loss: 2.5974
+Epoch: 051/200 | Batch 0450/0483 | Loss: 2.8541
+MAE/RMSE/ACC: Current Valid: 0.82/1.14/39.13 Ep. 51 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.55 min
+Epoch: 052/200 | Batch 0000/0483 | Loss: 2.7886
+Epoch: 052/200 | Batch 0050/0483 | Loss: 2.5628
+Epoch: 052/200 | Batch 0100/0483 | Loss: 2.6939
+Epoch: 052/200 | Batch 0150/0483 | Loss: 2.7086
+Epoch: 052/200 | Batch 0200/0483 | Loss: 2.6552
+Epoch: 052/200 | Batch 0250/0483 | Loss: 2.5360
+Epoch: 052/200 | Batch 0300/0483 | Loss: 2.6541
+Epoch: 052/200 | Batch 0350/0483 | Loss: 2.4890
+Epoch: 052/200 | Batch 0400/0483 | Loss: 2.7458
+Epoch: 052/200 | Batch 0450/0483 | Loss: 2.5885
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 52 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.60 min
+Epoch: 053/200 | Batch 0000/0483 | Loss: 2.7476
+Epoch: 053/200 | Batch 0050/0483 | Loss: 2.5126
+Epoch: 053/200 | Batch 0100/0483 | Loss: 2.5481
+Epoch: 053/200 | Batch 0150/0483 | Loss: 2.6937
+Epoch: 053/200 | Batch 0200/0483 | Loss: 2.5929
+Epoch: 053/200 | Batch 0250/0483 | Loss: 2.8889
+Epoch: 053/200 | Batch 0300/0483 | Loss: 2.5596
+Epoch: 053/200 | Batch 0350/0483 | Loss: 2.5045
+Epoch: 053/200 | Batch 0400/0483 | Loss: 2.5306
+Epoch: 053/200 | Batch 0450/0483 | Loss: 2.7284
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.13 Ep. 53 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.65 min
+Epoch: 054/200 | Batch 0000/0483 | Loss: 2.7387
+Epoch: 054/200 | Batch 0050/0483 | Loss: 2.3784
+Epoch: 054/200 | Batch 0100/0483 | Loss: 2.6056
+Epoch: 054/200 | Batch 0150/0483 | Loss: 2.5730
+Epoch: 054/200 | Batch 0200/0483 | Loss: 2.6844
+Epoch: 054/200 | Batch 0250/0483 | Loss: 2.7177
+Epoch: 054/200 | Batch 0300/0483 | Loss: 2.4928
+Epoch: 054/200 | Batch 0350/0483 | Loss: 2.5381
+Epoch: 054/200 | Batch 0400/0483 | Loss: 2.6584
+Epoch: 054/200 | Batch 0450/0483 | Loss: 2.6944
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/39.13 Ep. 54 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.70 min
+Epoch: 055/200 | Batch 0000/0483 | Loss: 2.5733
+Epoch: 055/200 | Batch 0050/0483 | Loss: 2.4703
+Epoch: 055/200 | Batch 0100/0483 | Loss: 2.7376
+Epoch: 055/200 | Batch 0150/0483 | Loss: 2.5926
+Epoch: 055/200 | Batch 0200/0483 | Loss: 2.5207
+Epoch: 055/200 | Batch 0250/0483 | Loss: 2.7685
+Epoch: 055/200 | Batch 0300/0483 | Loss: 2.4951
+Epoch: 055/200 | Batch 0350/0483 | Loss: 2.4988
+Epoch: 055/200 | Batch 0400/0483 | Loss: 2.6116
+Epoch: 055/200 | Batch 0450/0483 | Loss: 2.6799
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 55 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.76 min
+Epoch: 056/200 | Batch 0000/0483 | Loss: 2.5584
+Epoch: 056/200 | Batch 0050/0483 | Loss: 2.5771
+Epoch: 056/200 | Batch 0100/0483 | Loss: 2.5710
+Epoch: 056/200 | Batch 0150/0483 | Loss: 2.6299
+Epoch: 056/200 | Batch 0200/0483 | Loss: 2.6865
+Epoch: 056/200 | Batch 0250/0483 | Loss: 2.7449
+Epoch: 056/200 | Batch 0300/0483 | Loss: 2.5581
+Epoch: 056/200 | Batch 0350/0483 | Loss: 2.3827
+Epoch: 056/200 | Batch 0400/0483 | Loss: 2.6023
+Epoch: 056/200 | Batch 0450/0483 | Loss: 2.7090
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 56 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.81 min
+Epoch: 057/200 | Batch 0000/0483 | Loss: 2.5901
+Epoch: 057/200 | Batch 0050/0483 | Loss: 2.4814
+Epoch: 057/200 | Batch 0100/0483 | Loss: 2.6142
+Epoch: 057/200 | Batch 0150/0483 | Loss: 2.6604
+Epoch: 057/200 | Batch 0200/0483 | Loss: 2.7184
+Epoch: 057/200 | Batch 0250/0483 | Loss: 2.6364
+Epoch: 057/200 | Batch 0300/0483 | Loss: 2.5042
+Epoch: 057/200 | Batch 0350/0483 | Loss: 2.4704
+Epoch: 057/200 | Batch 0400/0483 | Loss: 2.7076
+Epoch: 057/200 | Batch 0450/0483 | Loss: 2.7614
+MAE/RMSE/ACC: Current Valid: 0.95/1.30/39.13 Ep. 57 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.86 min
+Epoch: 058/200 | Batch 0000/0483 | Loss: 2.5692
+Epoch: 058/200 | Batch 0050/0483 | Loss: 2.5077
+Epoch: 058/200 | Batch 0100/0483 | Loss: 2.5285
+Epoch: 058/200 | Batch 0150/0483 | Loss: 2.6486
+Epoch: 058/200 | Batch 0200/0483 | Loss: 2.5581
+Epoch: 058/200 | Batch 0250/0483 | Loss: 2.5183
+Epoch: 058/200 | Batch 0300/0483 | Loss: 2.6231
+Epoch: 058/200 | Batch 0350/0483 | Loss: 2.4527
+Epoch: 058/200 | Batch 0400/0483 | Loss: 2.5302
+Epoch: 058/200 | Batch 0450/0483 | Loss: 2.7070
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.13 Ep. 58 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.90 min
+Epoch: 059/200 | Batch 0000/0483 | Loss: 2.5170
+Epoch: 059/200 | Batch 0050/0483 | Loss: 2.6785
+Epoch: 059/200 | Batch 0100/0483 | Loss: 2.6316
+Epoch: 059/200 | Batch 0150/0483 | Loss: 2.6106
+Epoch: 059/200 | Batch 0200/0483 | Loss: 2.6490
+Epoch: 059/200 | Batch 0250/0483 | Loss: 2.6708
+Epoch: 059/200 | Batch 0300/0483 | Loss: 2.5526
+Epoch: 059/200 | Batch 0350/0483 | Loss: 2.4544
+Epoch: 059/200 | Batch 0400/0483 | Loss: 2.6362
+Epoch: 059/200 | Batch 0450/0483 | Loss: 2.5840
+MAE/RMSE/ACC: Current Valid: 0.82/1.14/39.13 Ep. 59 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 2.95 min
+Epoch: 060/200 | Batch 0000/0483 | Loss: 2.6621
+Epoch: 060/200 | Batch 0050/0483 | Loss: 2.5002
+Epoch: 060/200 | Batch 0100/0483 | Loss: 2.3560
+Epoch: 060/200 | Batch 0150/0483 | Loss: 2.5956
+Epoch: 060/200 | Batch 0200/0483 | Loss: 2.6741
+Epoch: 060/200 | Batch 0250/0483 | Loss: 2.7037
+Epoch: 060/200 | Batch 0300/0483 | Loss: 2.5765
+Epoch: 060/200 | Batch 0350/0483 | Loss: 2.5349
+Epoch: 060/200 | Batch 0400/0483 | Loss: 2.5165
+Epoch: 060/200 | Batch 0450/0483 | Loss: 2.8969
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 60 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.00 min
+Epoch: 061/200 | Batch 0000/0483 | Loss: 2.6394
+Epoch: 061/200 | Batch 0050/0483 | Loss: 2.4202
+Epoch: 061/200 | Batch 0100/0483 | Loss: 2.8012
+Epoch: 061/200 | Batch 0150/0483 | Loss: 2.7040
+Epoch: 061/200 | Batch 0200/0483 | Loss: 2.6794
+Epoch: 061/200 | Batch 0250/0483 | Loss: 2.6729
+Epoch: 061/200 | Batch 0300/0483 | Loss: 2.6391
+Epoch: 061/200 | Batch 0350/0483 | Loss: 2.4054
+Epoch: 061/200 | Batch 0400/0483 | Loss: 2.5892
+Epoch: 061/200 | Batch 0450/0483 | Loss: 2.5740
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/39.13 Ep. 61 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.05 min
+Epoch: 062/200 | Batch 0000/0483 | Loss: 2.4718
+Epoch: 062/200 | Batch 0050/0483 | Loss: 2.5473
+Epoch: 062/200 | Batch 0100/0483 | Loss: 2.4818
+Epoch: 062/200 | Batch 0150/0483 | Loss: 2.6865
+Epoch: 062/200 | Batch 0200/0483 | Loss: 2.6484
+Epoch: 062/200 | Batch 0250/0483 | Loss: 2.7230
+Epoch: 062/200 | Batch 0300/0483 | Loss: 2.4668
+Epoch: 062/200 | Batch 0350/0483 | Loss: 2.3031
+Epoch: 062/200 | Batch 0400/0483 | Loss: 2.5527
+Epoch: 062/200 | Batch 0450/0483 | Loss: 2.6821
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 62 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.10 min
+Epoch: 063/200 | Batch 0000/0483 | Loss: 2.6477
+Epoch: 063/200 | Batch 0050/0483 | Loss: 2.3309
+Epoch: 063/200 | Batch 0100/0483 | Loss: 2.5347
+Epoch: 063/200 | Batch 0150/0483 | Loss: 2.5780
+Epoch: 063/200 | Batch 0200/0483 | Loss: 2.7705
+Epoch: 063/200 | Batch 0250/0483 | Loss: 2.7228
+Epoch: 063/200 | Batch 0300/0483 | Loss: 2.3944
+Epoch: 063/200 | Batch 0350/0483 | Loss: 2.3751
+Epoch: 063/200 | Batch 0400/0483 | Loss: 2.4832
+Epoch: 063/200 | Batch 0450/0483 | Loss: 2.8418
+MAE/RMSE/ACC: Current Valid: 0.92/1.28/39.13 Ep. 63 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.14 min
+Epoch: 064/200 | Batch 0000/0483 | Loss: 2.8880
+Epoch: 064/200 | Batch 0050/0483 | Loss: 2.4896
+Epoch: 064/200 | Batch 0100/0483 | Loss: 2.6073
+Epoch: 064/200 | Batch 0150/0483 | Loss: 2.7137
+Epoch: 064/200 | Batch 0200/0483 | Loss: 2.6795
+Epoch: 064/200 | Batch 0250/0483 | Loss: 2.6126
+Epoch: 064/200 | Batch 0300/0483 | Loss: 2.4565
+Epoch: 064/200 | Batch 0350/0483 | Loss: 2.4026
+Epoch: 064/200 | Batch 0400/0483 | Loss: 2.6687
+Epoch: 064/200 | Batch 0450/0483 | Loss: 2.5804
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 64 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.19 min
+Epoch: 065/200 | Batch 0000/0483 | Loss: 2.6000
+Epoch: 065/200 | Batch 0050/0483 | Loss: 2.4438
+Epoch: 065/200 | Batch 0100/0483 | Loss: 2.5036
+Epoch: 065/200 | Batch 0150/0483 | Loss: 2.7137
+Epoch: 065/200 | Batch 0200/0483 | Loss: 2.5517
+Epoch: 065/200 | Batch 0250/0483 | Loss: 2.6521
+Epoch: 065/200 | Batch 0300/0483 | Loss: 2.4279
+Epoch: 065/200 | Batch 0350/0483 | Loss: 2.4112
+Epoch: 065/200 | Batch 0400/0483 | Loss: 2.7232
+Epoch: 065/200 | Batch 0450/0483 | Loss: 2.6308
+MAE/RMSE/ACC: Current Valid: 0.90/1.25/39.13 Ep. 65 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.24 min
+Epoch: 066/200 | Batch 0000/0483 | Loss: 2.7356
+Epoch: 066/200 | Batch 0050/0483 | Loss: 2.7230
+Epoch: 066/200 | Batch 0100/0483 | Loss: 2.5795
+Epoch: 066/200 | Batch 0150/0483 | Loss: 2.5831
+Epoch: 066/200 | Batch 0200/0483 | Loss: 2.5523
+Epoch: 066/200 | Batch 0250/0483 | Loss: 2.4757
+Epoch: 066/200 | Batch 0300/0483 | Loss: 2.6424
+Epoch: 066/200 | Batch 0350/0483 | Loss: 2.3725
+Epoch: 066/200 | Batch 0400/0483 | Loss: 2.6107
+Epoch: 066/200 | Batch 0450/0483 | Loss: 2.6123
+MAE/RMSE/ACC: Current Valid: 0.86/1.18/39.13 Ep. 66 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.29 min
+Epoch: 067/200 | Batch 0000/0483 | Loss: 2.6311
+Epoch: 067/200 | Batch 0050/0483 | Loss: 2.3604
+Epoch: 067/200 | Batch 0100/0483 | Loss: 2.1888
+Epoch: 067/200 | Batch 0150/0483 | Loss: 2.5765
+Epoch: 067/200 | Batch 0200/0483 | Loss: 2.7152
+Epoch: 067/200 | Batch 0250/0483 | Loss: 2.7466
+Epoch: 067/200 | Batch 0300/0483 | Loss: 2.5911
+Epoch: 067/200 | Batch 0350/0483 | Loss: 2.5247
+Epoch: 067/200 | Batch 0400/0483 | Loss: 2.7261
+Epoch: 067/200 | Batch 0450/0483 | Loss: 2.5818
+MAE/RMSE/ACC: Current Valid: 0.91/1.26/39.13 Ep. 67 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.34 min
+Epoch: 068/200 | Batch 0000/0483 | Loss: 2.4642
+Epoch: 068/200 | Batch 0050/0483 | Loss: 2.3213
+Epoch: 068/200 | Batch 0100/0483 | Loss: 2.4762
+Epoch: 068/200 | Batch 0150/0483 | Loss: 2.6997
+Epoch: 068/200 | Batch 0200/0483 | Loss: 2.7075
+Epoch: 068/200 | Batch 0250/0483 | Loss: 2.6026
+Epoch: 068/200 | Batch 0300/0483 | Loss: 2.5080
+Epoch: 068/200 | Batch 0350/0483 | Loss: 2.6486
+Epoch: 068/200 | Batch 0400/0483 | Loss: 2.4420
+Epoch: 068/200 | Batch 0450/0483 | Loss: 2.7372
+MAE/RMSE/ACC: Current Valid: 0.83/1.17/39.13 Ep. 68 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.38 min
+Epoch: 069/200 | Batch 0000/0483 | Loss: 2.6179
+Epoch: 069/200 | Batch 0050/0483 | Loss: 2.4757
+Epoch: 069/200 | Batch 0100/0483 | Loss: 2.6510
+Epoch: 069/200 | Batch 0150/0483 | Loss: 2.5294
+Epoch: 069/200 | Batch 0200/0483 | Loss: 2.6048
+Epoch: 069/200 | Batch 0250/0483 | Loss: 2.7207
+Epoch: 069/200 | Batch 0300/0483 | Loss: 2.3920
+Epoch: 069/200 | Batch 0350/0483 | Loss: 2.2969
+Epoch: 069/200 | Batch 0400/0483 | Loss: 2.6718
+Epoch: 069/200 | Batch 0450/0483 | Loss: 2.6696
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 69 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.43 min
+Epoch: 070/200 | Batch 0000/0483 | Loss: 2.7867
+Epoch: 070/200 | Batch 0050/0483 | Loss: 2.3771
+Epoch: 070/200 | Batch 0100/0483 | Loss: 2.4236
+Epoch: 070/200 | Batch 0150/0483 | Loss: 2.5469
+Epoch: 070/200 | Batch 0200/0483 | Loss: 2.5381
+Epoch: 070/200 | Batch 0250/0483 | Loss: 2.5588
+Epoch: 070/200 | Batch 0300/0483 | Loss: 2.4941
+Epoch: 070/200 | Batch 0350/0483 | Loss: 2.4613
+Epoch: 070/200 | Batch 0400/0483 | Loss: 2.7151
+Epoch: 070/200 | Batch 0450/0483 | Loss: 2.5671
+MAE/RMSE/ACC: Current Valid: 0.88/1.23/39.13 Ep. 70 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.48 min
+Epoch: 071/200 | Batch 0000/0483 | Loss: 2.5213
+Epoch: 071/200 | Batch 0050/0483 | Loss: 2.5203
+Epoch: 071/200 | Batch 0100/0483 | Loss: 2.5281
+Epoch: 071/200 | Batch 0150/0483 | Loss: 2.5798
+Epoch: 071/200 | Batch 0200/0483 | Loss: 2.6816
+Epoch: 071/200 | Batch 0250/0483 | Loss: 2.7145
+Epoch: 071/200 | Batch 0300/0483 | Loss: 2.5777
+Epoch: 071/200 | Batch 0350/0483 | Loss: 2.5595
+Epoch: 071/200 | Batch 0400/0483 | Loss: 2.5541
+Epoch: 071/200 | Batch 0450/0483 | Loss: 2.6122
+MAE/RMSE/ACC: Current Valid: 0.86/1.20/39.13 Ep. 71 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.53 min
+Epoch: 072/200 | Batch 0000/0483 | Loss: 2.3723
+Epoch: 072/200 | Batch 0050/0483 | Loss: 2.5858
+Epoch: 072/200 | Batch 0100/0483 | Loss: 2.5071
+Epoch: 072/200 | Batch 0150/0483 | Loss: 2.6443
+Epoch: 072/200 | Batch 0200/0483 | Loss: 2.7904
+Epoch: 072/200 | Batch 0250/0483 | Loss: 2.5369
+Epoch: 072/200 | Batch 0300/0483 | Loss: 2.6482
+Epoch: 072/200 | Batch 0350/0483 | Loss: 2.5863
+Epoch: 072/200 | Batch 0400/0483 | Loss: 2.6616
+Epoch: 072/200 | Batch 0450/0483 | Loss: 2.6909
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.13 Ep. 72 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.57 min
+Epoch: 073/200 | Batch 0000/0483 | Loss: 2.6605
+Epoch: 073/200 | Batch 0050/0483 | Loss: 2.5499
+Epoch: 073/200 | Batch 0100/0483 | Loss: 2.6246
+Epoch: 073/200 | Batch 0150/0483 | Loss: 2.6163
+Epoch: 073/200 | Batch 0200/0483 | Loss: 2.6860
+Epoch: 073/200 | Batch 0250/0483 | Loss: 2.4744
+Epoch: 073/200 | Batch 0300/0483 | Loss: 2.5417
+Epoch: 073/200 | Batch 0350/0483 | Loss: 2.3630
+Epoch: 073/200 | Batch 0400/0483 | Loss: 2.6498
+Epoch: 073/200 | Batch 0450/0483 | Loss: 2.6043
+MAE/RMSE/ACC: Current Valid: 0.82/1.16/39.13 Ep. 73 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.62 min
+Epoch: 074/200 | Batch 0000/0483 | Loss: 2.4424
+Epoch: 074/200 | Batch 0050/0483 | Loss: 2.4404
+Epoch: 074/200 | Batch 0100/0483 | Loss: 2.4789
+Epoch: 074/200 | Batch 0150/0483 | Loss: 2.5560
+Epoch: 074/200 | Batch 0200/0483 | Loss: 2.6374
+Epoch: 074/200 | Batch 0250/0483 | Loss: 2.8444
+Epoch: 074/200 | Batch 0300/0483 | Loss: 2.4883
+Epoch: 074/200 | Batch 0350/0483 | Loss: 2.3181
+Epoch: 074/200 | Batch 0400/0483 | Loss: 2.6140
+Epoch: 074/200 | Batch 0450/0483 | Loss: 2.6744
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 74 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.67 min
+Epoch: 075/200 | Batch 0000/0483 | Loss: 2.6072
+Epoch: 075/200 | Batch 0050/0483 | Loss: 2.4317
+Epoch: 075/200 | Batch 0100/0483 | Loss: 2.7072
+Epoch: 075/200 | Batch 0150/0483 | Loss: 2.5595
+Epoch: 075/200 | Batch 0200/0483 | Loss: 2.4569
+Epoch: 075/200 | Batch 0250/0483 | Loss: 2.7476
+Epoch: 075/200 | Batch 0300/0483 | Loss: 2.4158
+Epoch: 075/200 | Batch 0350/0483 | Loss: 2.4794
+Epoch: 075/200 | Batch 0400/0483 | Loss: 2.6410
+Epoch: 075/200 | Batch 0450/0483 | Loss: 2.4926
+MAE/RMSE/ACC: Current Valid: 0.90/1.25/39.13 Ep. 75 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.72 min
+Epoch: 076/200 | Batch 0000/0483 | Loss: 2.5579
+Epoch: 076/200 | Batch 0050/0483 | Loss: 2.4163
+Epoch: 076/200 | Batch 0100/0483 | Loss: 2.7702
+Epoch: 076/200 | Batch 0150/0483 | Loss: 2.6492
+Epoch: 076/200 | Batch 0200/0483 | Loss: 2.6110
+Epoch: 076/200 | Batch 0250/0483 | Loss: 2.6039
+Epoch: 076/200 | Batch 0300/0483 | Loss: 2.4276
+Epoch: 076/200 | Batch 0350/0483 | Loss: 2.5243
+Epoch: 076/200 | Batch 0400/0483 | Loss: 2.3665
+Epoch: 076/200 | Batch 0450/0483 | Loss: 2.6342
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 76 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.77 min
+Epoch: 077/200 | Batch 0000/0483 | Loss: 2.6180
+Epoch: 077/200 | Batch 0050/0483 | Loss: 2.4022
+Epoch: 077/200 | Batch 0100/0483 | Loss: 2.4937
+Epoch: 077/200 | Batch 0150/0483 | Loss: 2.5591
+Epoch: 077/200 | Batch 0200/0483 | Loss: 2.5033
+Epoch: 077/200 | Batch 0250/0483 | Loss: 2.7715
+Epoch: 077/200 | Batch 0300/0483 | Loss: 2.5309
+Epoch: 077/200 | Batch 0350/0483 | Loss: 2.4562
+Epoch: 077/200 | Batch 0400/0483 | Loss: 2.5912
+Epoch: 077/200 | Batch 0450/0483 | Loss: 2.7481
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 77 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.81 min
+Epoch: 078/200 | Batch 0000/0483 | Loss: 2.5021
+Epoch: 078/200 | Batch 0050/0483 | Loss: 2.5508
+Epoch: 078/200 | Batch 0100/0483 | Loss: 2.6566
+Epoch: 078/200 | Batch 0150/0483 | Loss: 2.5667
+Epoch: 078/200 | Batch 0200/0483 | Loss: 2.7394
+Epoch: 078/200 | Batch 0250/0483 | Loss: 2.6511
+Epoch: 078/200 | Batch 0300/0483 | Loss: 2.4067
+Epoch: 078/200 | Batch 0350/0483 | Loss: 2.3894
+Epoch: 078/200 | Batch 0400/0483 | Loss: 2.8218
+Epoch: 078/200 | Batch 0450/0483 | Loss: 2.4160
+MAE/RMSE/ACC: Current Valid: 0.84/1.18/39.13 Ep. 78 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.86 min
+Epoch: 079/200 | Batch 0000/0483 | Loss: 2.6384
+Epoch: 079/200 | Batch 0050/0483 | Loss: 2.7974
+Epoch: 079/200 | Batch 0100/0483 | Loss: 2.5469
+Epoch: 079/200 | Batch 0150/0483 | Loss: 2.6269
+Epoch: 079/200 | Batch 0200/0483 | Loss: 2.6880
+Epoch: 079/200 | Batch 0250/0483 | Loss: 2.6152
+Epoch: 079/200 | Batch 0300/0483 | Loss: 2.5042
+Epoch: 079/200 | Batch 0350/0483 | Loss: 2.3930
+Epoch: 079/200 | Batch 0400/0483 | Loss: 2.5959
+Epoch: 079/200 | Batch 0450/0483 | Loss: 2.9807
+MAE/RMSE/ACC: Current Valid: 0.88/1.23/39.13 Ep. 79 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.91 min
+Epoch: 080/200 | Batch 0000/0483 | Loss: 2.6656
+Epoch: 080/200 | Batch 0050/0483 | Loss: 2.5340
+Epoch: 080/200 | Batch 0100/0483 | Loss: 2.3860
+Epoch: 080/200 | Batch 0150/0483 | Loss: 2.4919
+Epoch: 080/200 | Batch 0200/0483 | Loss: 2.6421
+Epoch: 080/200 | Batch 0250/0483 | Loss: 2.6656
+Epoch: 080/200 | Batch 0300/0483 | Loss: 2.4352
+Epoch: 080/200 | Batch 0350/0483 | Loss: 2.4052
+Epoch: 080/200 | Batch 0400/0483 | Loss: 2.5889
+Epoch: 080/200 | Batch 0450/0483 | Loss: 2.7693
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 80 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 3.96 min
+Epoch: 081/200 | Batch 0000/0483 | Loss: 2.5222
+Epoch: 081/200 | Batch 0050/0483 | Loss: 2.5234
+Epoch: 081/200 | Batch 0100/0483 | Loss: 2.4678
+Epoch: 081/200 | Batch 0150/0483 | Loss: 2.4148
+Epoch: 081/200 | Batch 0200/0483 | Loss: 2.6629
+Epoch: 081/200 | Batch 0250/0483 | Loss: 2.7092
+Epoch: 081/200 | Batch 0300/0483 | Loss: 2.4812
+Epoch: 081/200 | Batch 0350/0483 | Loss: 2.3220
+Epoch: 081/200 | Batch 0400/0483 | Loss: 2.5131
+Epoch: 081/200 | Batch 0450/0483 | Loss: 2.5262
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 81 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.00 min
+Epoch: 082/200 | Batch 0000/0483 | Loss: 2.7555
+Epoch: 082/200 | Batch 0050/0483 | Loss: 2.4585
+Epoch: 082/200 | Batch 0100/0483 | Loss: 2.5583
+Epoch: 082/200 | Batch 0150/0483 | Loss: 2.5633
+Epoch: 082/200 | Batch 0200/0483 | Loss: 2.6808
+Epoch: 082/200 | Batch 0250/0483 | Loss: 2.5581
+Epoch: 082/200 | Batch 0300/0483 | Loss: 2.4414
+Epoch: 082/200 | Batch 0350/0483 | Loss: 2.3298
+Epoch: 082/200 | Batch 0400/0483 | Loss: 2.4616
+Epoch: 082/200 | Batch 0450/0483 | Loss: 2.6938
+MAE/RMSE/ACC: Current Valid: 0.95/1.30/39.13 Ep. 82 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.05 min
+Epoch: 083/200 | Batch 0000/0483 | Loss: 2.5513
+Epoch: 083/200 | Batch 0050/0483 | Loss: 2.3785
+Epoch: 083/200 | Batch 0100/0483 | Loss: 2.4731
+Epoch: 083/200 | Batch 0150/0483 | Loss: 2.4703
+Epoch: 083/200 | Batch 0200/0483 | Loss: 2.7131
+Epoch: 083/200 | Batch 0250/0483 | Loss: 2.6574
+Epoch: 083/200 | Batch 0300/0483 | Loss: 2.5890
+Epoch: 083/200 | Batch 0350/0483 | Loss: 2.4495
+Epoch: 083/200 | Batch 0400/0483 | Loss: 2.5979
+Epoch: 083/200 | Batch 0450/0483 | Loss: 2.9873
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 83 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.10 min
+Epoch: 084/200 | Batch 0000/0483 | Loss: 2.7734
+Epoch: 084/200 | Batch 0050/0483 | Loss: 2.6022
+Epoch: 084/200 | Batch 0100/0483 | Loss: 2.5568
+Epoch: 084/200 | Batch 0150/0483 | Loss: 2.4819
+Epoch: 084/200 | Batch 0200/0483 | Loss: 2.6698
+Epoch: 084/200 | Batch 0250/0483 | Loss: 2.7161
+Epoch: 084/200 | Batch 0300/0483 | Loss: 2.5474
+Epoch: 084/200 | Batch 0350/0483 | Loss: 2.3607
+Epoch: 084/200 | Batch 0400/0483 | Loss: 2.4397
+Epoch: 084/200 | Batch 0450/0483 | Loss: 2.6664
+MAE/RMSE/ACC: Current Valid: 0.89/1.22/39.13 Ep. 84 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.15 min
+Epoch: 085/200 | Batch 0000/0483 | Loss: 2.5820
+Epoch: 085/200 | Batch 0050/0483 | Loss: 2.4197
+Epoch: 085/200 | Batch 0100/0483 | Loss: 2.4639
+Epoch: 085/200 | Batch 0150/0483 | Loss: 2.7533
+Epoch: 085/200 | Batch 0200/0483 | Loss: 2.6249
+Epoch: 085/200 | Batch 0250/0483 | Loss: 2.5031
+Epoch: 085/200 | Batch 0300/0483 | Loss: 2.4649
+Epoch: 085/200 | Batch 0350/0483 | Loss: 2.5695
+Epoch: 085/200 | Batch 0400/0483 | Loss: 2.5343
+Epoch: 085/200 | Batch 0450/0483 | Loss: 2.6577
+MAE/RMSE/ACC: Current Valid: 0.85/1.19/39.13 Ep. 85 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.20 min
+Epoch: 086/200 | Batch 0000/0483 | Loss: 2.6338
+Epoch: 086/200 | Batch 0050/0483 | Loss: 2.4308
+Epoch: 086/200 | Batch 0100/0483 | Loss: 2.5451
+Epoch: 086/200 | Batch 0150/0483 | Loss: 2.5440
+Epoch: 086/200 | Batch 0200/0483 | Loss: 2.6162
+Epoch: 086/200 | Batch 0250/0483 | Loss: 2.7904
+Epoch: 086/200 | Batch 0300/0483 | Loss: 2.5316
+Epoch: 086/200 | Batch 0350/0483 | Loss: 2.4027
+Epoch: 086/200 | Batch 0400/0483 | Loss: 2.4048
+Epoch: 086/200 | Batch 0450/0483 | Loss: 2.7167
+MAE/RMSE/ACC: Current Valid: 0.87/1.20/39.13 Ep. 86 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.24 min
+Epoch: 087/200 | Batch 0000/0483 | Loss: 2.7275
+Epoch: 087/200 | Batch 0050/0483 | Loss: 2.5207
+Epoch: 087/200 | Batch 0100/0483 | Loss: 2.4646
+Epoch: 087/200 | Batch 0150/0483 | Loss: 2.7874
+Epoch: 087/200 | Batch 0200/0483 | Loss: 2.6537
+Epoch: 087/200 | Batch 0250/0483 | Loss: 2.6882
+Epoch: 087/200 | Batch 0300/0483 | Loss: 2.4307
+Epoch: 087/200 | Batch 0350/0483 | Loss: 2.3957
+Epoch: 087/200 | Batch 0400/0483 | Loss: 2.4898
+Epoch: 087/200 | Batch 0450/0483 | Loss: 2.6166
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 87 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.29 min
+Epoch: 088/200 | Batch 0000/0483 | Loss: 2.4970
+Epoch: 088/200 | Batch 0050/0483 | Loss: 2.3770
+Epoch: 088/200 | Batch 0100/0483 | Loss: 2.5279
+Epoch: 088/200 | Batch 0150/0483 | Loss: 2.6022
+Epoch: 088/200 | Batch 0200/0483 | Loss: 2.5168
+Epoch: 088/200 | Batch 0250/0483 | Loss: 2.5233
+Epoch: 088/200 | Batch 0300/0483 | Loss: 2.2808
+Epoch: 088/200 | Batch 0350/0483 | Loss: 2.3852
+Epoch: 088/200 | Batch 0400/0483 | Loss: 2.5602
+Epoch: 088/200 | Batch 0450/0483 | Loss: 2.5999
+MAE/RMSE/ACC: Current Valid: 0.95/1.30/39.13 Ep. 88 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.34 min
+Epoch: 089/200 | Batch 0000/0483 | Loss: 2.6097
+Epoch: 089/200 | Batch 0050/0483 | Loss: 2.4923
+Epoch: 089/200 | Batch 0100/0483 | Loss: 2.4607
+Epoch: 089/200 | Batch 0150/0483 | Loss: 2.5927
+Epoch: 089/200 | Batch 0200/0483 | Loss: 2.4814
+Epoch: 089/200 | Batch 0250/0483 | Loss: 2.5402
+Epoch: 089/200 | Batch 0300/0483 | Loss: 2.3111
+Epoch: 089/200 | Batch 0350/0483 | Loss: 2.4709
+Epoch: 089/200 | Batch 0400/0483 | Loss: 2.4442
+Epoch: 089/200 | Batch 0450/0483 | Loss: 2.6425
+MAE/RMSE/ACC: Current Valid: 0.97/1.34/39.13 Ep. 89 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.39 min
+Epoch: 090/200 | Batch 0000/0483 | Loss: 2.6713
+Epoch: 090/200 | Batch 0050/0483 | Loss: 2.5794
+Epoch: 090/200 | Batch 0100/0483 | Loss: 2.4155
+Epoch: 090/200 | Batch 0150/0483 | Loss: 2.6377
+Epoch: 090/200 | Batch 0200/0483 | Loss: 2.5850
+Epoch: 090/200 | Batch 0250/0483 | Loss: 2.6724
+Epoch: 090/200 | Batch 0300/0483 | Loss: 2.4158
+Epoch: 090/200 | Batch 0350/0483 | Loss: 2.3894
+Epoch: 090/200 | Batch 0400/0483 | Loss: 2.4430
+Epoch: 090/200 | Batch 0450/0483 | Loss: 2.6571
+MAE/RMSE/ACC: Current Valid: 0.84/1.18/39.13 Ep. 90 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.43 min
+Epoch: 091/200 | Batch 0000/0483 | Loss: 2.5596
+Epoch: 091/200 | Batch 0050/0483 | Loss: 2.5212
+Epoch: 091/200 | Batch 0100/0483 | Loss: 2.5524
+Epoch: 091/200 | Batch 0150/0483 | Loss: 2.6235
+Epoch: 091/200 | Batch 0200/0483 | Loss: 2.7316
+Epoch: 091/200 | Batch 0250/0483 | Loss: 2.4279
+Epoch: 091/200 | Batch 0300/0483 | Loss: 2.5352
+Epoch: 091/200 | Batch 0350/0483 | Loss: 2.2997
+Epoch: 091/200 | Batch 0400/0483 | Loss: 2.5789
+Epoch: 091/200 | Batch 0450/0483 | Loss: 2.8331
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 91 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.48 min
+Epoch: 092/200 | Batch 0000/0483 | Loss: 2.7379
+Epoch: 092/200 | Batch 0050/0483 | Loss: 2.3851
+Epoch: 092/200 | Batch 0100/0483 | Loss: 2.5274
+Epoch: 092/200 | Batch 0150/0483 | Loss: 2.4803
+Epoch: 092/200 | Batch 0200/0483 | Loss: 2.4170
+Epoch: 092/200 | Batch 0250/0483 | Loss: 2.5325
+Epoch: 092/200 | Batch 0300/0483 | Loss: 2.5627
+Epoch: 092/200 | Batch 0350/0483 | Loss: 2.3627
+Epoch: 092/200 | Batch 0400/0483 | Loss: 2.5827
+Epoch: 092/200 | Batch 0450/0483 | Loss: 2.6477
+MAE/RMSE/ACC: Current Valid: 0.84/1.18/39.13 Ep. 92 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.53 min
+Epoch: 093/200 | Batch 0000/0483 | Loss: 2.6358
+Epoch: 093/200 | Batch 0050/0483 | Loss: 2.4930
+Epoch: 093/200 | Batch 0100/0483 | Loss: 2.6735
+Epoch: 093/200 | Batch 0150/0483 | Loss: 2.4982
+Epoch: 093/200 | Batch 0200/0483 | Loss: 2.5510
+Epoch: 093/200 | Batch 0250/0483 | Loss: 2.7437
+Epoch: 093/200 | Batch 0300/0483 | Loss: 2.4606
+Epoch: 093/200 | Batch 0350/0483 | Loss: 2.3877
+Epoch: 093/200 | Batch 0400/0483 | Loss: 2.5724
+Epoch: 093/200 | Batch 0450/0483 | Loss: 2.6949
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 93 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.58 min
+Epoch: 094/200 | Batch 0000/0483 | Loss: 2.4461
+Epoch: 094/200 | Batch 0050/0483 | Loss: 2.4330
+Epoch: 094/200 | Batch 0100/0483 | Loss: 2.5366
+Epoch: 094/200 | Batch 0150/0483 | Loss: 2.4512
+Epoch: 094/200 | Batch 0200/0483 | Loss: 2.5214
+Epoch: 094/200 | Batch 0250/0483 | Loss: 2.7678
+Epoch: 094/200 | Batch 0300/0483 | Loss: 2.4104
+Epoch: 094/200 | Batch 0350/0483 | Loss: 2.6316
+Epoch: 094/200 | Batch 0400/0483 | Loss: 2.4197
+Epoch: 094/200 | Batch 0450/0483 | Loss: 2.5689
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 94 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.63 min
+Epoch: 095/200 | Batch 0000/0483 | Loss: 2.5601
+Epoch: 095/200 | Batch 0050/0483 | Loss: 2.3807
+Epoch: 095/200 | Batch 0100/0483 | Loss: 2.6946
+Epoch: 095/200 | Batch 0150/0483 | Loss: 2.5954
+Epoch: 095/200 | Batch 0200/0483 | Loss: 2.5137
+Epoch: 095/200 | Batch 0250/0483 | Loss: 2.7999
+Epoch: 095/200 | Batch 0300/0483 | Loss: 2.5993
+Epoch: 095/200 | Batch 0350/0483 | Loss: 2.6066
+Epoch: 095/200 | Batch 0400/0483 | Loss: 2.6010
+Epoch: 095/200 | Batch 0450/0483 | Loss: 2.7165
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 95 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.67 min
+Epoch: 096/200 | Batch 0000/0483 | Loss: 2.5299
+Epoch: 096/200 | Batch 0050/0483 | Loss: 2.4220
+Epoch: 096/200 | Batch 0100/0483 | Loss: 2.4288
+Epoch: 096/200 | Batch 0150/0483 | Loss: 2.5020
+Epoch: 096/200 | Batch 0200/0483 | Loss: 2.5936
+Epoch: 096/200 | Batch 0250/0483 | Loss: 2.5901
+Epoch: 096/200 | Batch 0300/0483 | Loss: 2.6586
+Epoch: 096/200 | Batch 0350/0483 | Loss: 2.3745
+Epoch: 096/200 | Batch 0400/0483 | Loss: 2.5081
+Epoch: 096/200 | Batch 0450/0483 | Loss: 2.4379
+MAE/RMSE/ACC: Current Valid: 0.90/1.26/39.13 Ep. 96 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.72 min
+Epoch: 097/200 | Batch 0000/0483 | Loss: 2.6778
+Epoch: 097/200 | Batch 0050/0483 | Loss: 2.4584
+Epoch: 097/200 | Batch 0100/0483 | Loss: 2.6108
+Epoch: 097/200 | Batch 0150/0483 | Loss: 2.5231
+Epoch: 097/200 | Batch 0200/0483 | Loss: 2.3765
+Epoch: 097/200 | Batch 0250/0483 | Loss: 2.5946
+Epoch: 097/200 | Batch 0300/0483 | Loss: 2.3229
+Epoch: 097/200 | Batch 0350/0483 | Loss: 2.4503
+Epoch: 097/200 | Batch 0400/0483 | Loss: 2.6113
+Epoch: 097/200 | Batch 0450/0483 | Loss: 2.7468
+MAE/RMSE/ACC: Current Valid: 0.96/1.33/39.13 Ep. 97 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.77 min
+Epoch: 098/200 | Batch 0000/0483 | Loss: 2.5571
+Epoch: 098/200 | Batch 0050/0483 | Loss: 2.5792
+Epoch: 098/200 | Batch 0100/0483 | Loss: 2.5007
+Epoch: 098/200 | Batch 0150/0483 | Loss: 2.5878
+Epoch: 098/200 | Batch 0200/0483 | Loss: 2.6666
+Epoch: 098/200 | Batch 0250/0483 | Loss: 2.5486
+Epoch: 098/200 | Batch 0300/0483 | Loss: 2.3329
+Epoch: 098/200 | Batch 0350/0483 | Loss: 2.4373
+Epoch: 098/200 | Batch 0400/0483 | Loss: 2.5963
+Epoch: 098/200 | Batch 0450/0483 | Loss: 2.7003
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 98 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.82 min
+Epoch: 099/200 | Batch 0000/0483 | Loss: 2.5723
+Epoch: 099/200 | Batch 0050/0483 | Loss: 2.3102
+Epoch: 099/200 | Batch 0100/0483 | Loss: 2.4607
+Epoch: 099/200 | Batch 0150/0483 | Loss: 2.6859
+Epoch: 099/200 | Batch 0200/0483 | Loss: 2.6616
+Epoch: 099/200 | Batch 0250/0483 | Loss: 2.6066
+Epoch: 099/200 | Batch 0300/0483 | Loss: 2.3111
+Epoch: 099/200 | Batch 0350/0483 | Loss: 2.3042
+Epoch: 099/200 | Batch 0400/0483 | Loss: 2.7425
+Epoch: 099/200 | Batch 0450/0483 | Loss: 2.7030
+MAE/RMSE/ACC: Current Valid: 0.99/1.35/39.13 Ep. 99 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.87 min
+Epoch: 100/200 | Batch 0000/0483 | Loss: 2.4343
+Epoch: 100/200 | Batch 0050/0483 | Loss: 2.4561
+Epoch: 100/200 | Batch 0100/0483 | Loss: 2.4588
+Epoch: 100/200 | Batch 0150/0483 | Loss: 2.5564
+Epoch: 100/200 | Batch 0200/0483 | Loss: 2.6509
+Epoch: 100/200 | Batch 0250/0483 | Loss: 2.6607
+Epoch: 100/200 | Batch 0300/0483 | Loss: 2.5989
+Epoch: 100/200 | Batch 0350/0483 | Loss: 2.4675
+Epoch: 100/200 | Batch 0400/0483 | Loss: 2.4642
+Epoch: 100/200 | Batch 0450/0483 | Loss: 2.6268
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 100 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.91 min
+Epoch: 101/200 | Batch 0000/0483 | Loss: 2.5968
+Epoch: 101/200 | Batch 0050/0483 | Loss: 2.3269
+Epoch: 101/200 | Batch 0100/0483 | Loss: 2.6640
+Epoch: 101/200 | Batch 0150/0483 | Loss: 2.6439
+Epoch: 101/200 | Batch 0200/0483 | Loss: 2.6000
+Epoch: 101/200 | Batch 0250/0483 | Loss: 2.6488
+Epoch: 101/200 | Batch 0300/0483 | Loss: 2.5776
+Epoch: 101/200 | Batch 0350/0483 | Loss: 2.3493
+Epoch: 101/200 | Batch 0400/0483 | Loss: 2.6633
+Epoch: 101/200 | Batch 0450/0483 | Loss: 2.5502
+MAE/RMSE/ACC: Current Valid: 0.87/1.19/39.13 Ep. 101 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 4.96 min
+Epoch: 102/200 | Batch 0000/0483 | Loss: 2.5963
+Epoch: 102/200 | Batch 0050/0483 | Loss: 2.3139
+Epoch: 102/200 | Batch 0100/0483 | Loss: 2.4822
+Epoch: 102/200 | Batch 0150/0483 | Loss: 2.5944
+Epoch: 102/200 | Batch 0200/0483 | Loss: 2.5322
+Epoch: 102/200 | Batch 0250/0483 | Loss: 2.7294
+Epoch: 102/200 | Batch 0300/0483 | Loss: 2.4088
+Epoch: 102/200 | Batch 0350/0483 | Loss: 2.3491
+Epoch: 102/200 | Batch 0400/0483 | Loss: 2.7940
+Epoch: 102/200 | Batch 0450/0483 | Loss: 2.5159
+MAE/RMSE/ACC: Current Valid: 0.93/1.28/39.13 Ep. 102 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.01 min
+Epoch: 103/200 | Batch 0000/0483 | Loss: 2.5542
+Epoch: 103/200 | Batch 0050/0483 | Loss: 2.3220
+Epoch: 103/200 | Batch 0100/0483 | Loss: 2.4372
+Epoch: 103/200 | Batch 0150/0483 | Loss: 2.4709
+Epoch: 103/200 | Batch 0200/0483 | Loss: 2.7052
+Epoch: 103/200 | Batch 0250/0483 | Loss: 2.8152
+Epoch: 103/200 | Batch 0300/0483 | Loss: 2.4977
+Epoch: 103/200 | Batch 0350/0483 | Loss: 2.3933
+Epoch: 103/200 | Batch 0400/0483 | Loss: 2.5508
+Epoch: 103/200 | Batch 0450/0483 | Loss: 2.6700
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 103 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.06 min
+Epoch: 104/200 | Batch 0000/0483 | Loss: 2.6941
+Epoch: 104/200 | Batch 0050/0483 | Loss: 2.2952
+Epoch: 104/200 | Batch 0100/0483 | Loss: 2.3448
+Epoch: 104/200 | Batch 0150/0483 | Loss: 2.5797
+Epoch: 104/200 | Batch 0200/0483 | Loss: 2.5491
+Epoch: 104/200 | Batch 0250/0483 | Loss: 2.6159
+Epoch: 104/200 | Batch 0300/0483 | Loss: 2.4804
+Epoch: 104/200 | Batch 0350/0483 | Loss: 2.4242
+Epoch: 104/200 | Batch 0400/0483 | Loss: 2.4952
+Epoch: 104/200 | Batch 0450/0483 | Loss: 2.6403
+MAE/RMSE/ACC: Current Valid: 0.84/1.18/39.13 Ep. 104 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.11 min
+Epoch: 105/200 | Batch 0000/0483 | Loss: 2.4767
+Epoch: 105/200 | Batch 0050/0483 | Loss: 2.4973
+Epoch: 105/200 | Batch 0100/0483 | Loss: 2.6008
+Epoch: 105/200 | Batch 0150/0483 | Loss: 2.6779
+Epoch: 105/200 | Batch 0200/0483 | Loss: 2.9874
+Epoch: 105/200 | Batch 0250/0483 | Loss: 2.6236
+Epoch: 105/200 | Batch 0300/0483 | Loss: 2.6441
+Epoch: 105/200 | Batch 0350/0483 | Loss: 2.3302
+Epoch: 105/200 | Batch 0400/0483 | Loss: 2.5675
+Epoch: 105/200 | Batch 0450/0483 | Loss: 2.6676
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 105 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.15 min
+Epoch: 106/200 | Batch 0000/0483 | Loss: 2.4860
+Epoch: 106/200 | Batch 0050/0483 | Loss: 2.6674
+Epoch: 106/200 | Batch 0100/0483 | Loss: 2.5392
+Epoch: 106/200 | Batch 0150/0483 | Loss: 2.4543
+Epoch: 106/200 | Batch 0200/0483 | Loss: 2.8491
+Epoch: 106/200 | Batch 0250/0483 | Loss: 2.6271
+Epoch: 106/200 | Batch 0300/0483 | Loss: 2.5268
+Epoch: 106/200 | Batch 0350/0483 | Loss: 2.4105
+Epoch: 106/200 | Batch 0400/0483 | Loss: 2.5454
+Epoch: 106/200 | Batch 0450/0483 | Loss: 2.5369
+MAE/RMSE/ACC: Current Valid: 1.08/1.44/39.13 Ep. 106 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.20 min
+Epoch: 107/200 | Batch 0000/0483 | Loss: 2.6703
+Epoch: 107/200 | Batch 0050/0483 | Loss: 2.5087
+Epoch: 107/200 | Batch 0100/0483 | Loss: 2.5050
+Epoch: 107/200 | Batch 0150/0483 | Loss: 2.6125
+Epoch: 107/200 | Batch 0200/0483 | Loss: 2.5914
+Epoch: 107/200 | Batch 0250/0483 | Loss: 2.6500
+Epoch: 107/200 | Batch 0300/0483 | Loss: 2.2432
+Epoch: 107/200 | Batch 0350/0483 | Loss: 2.4117
+Epoch: 107/200 | Batch 0400/0483 | Loss: 2.6066
+Epoch: 107/200 | Batch 0450/0483 | Loss: 2.5619
+MAE/RMSE/ACC: Current Valid: 0.92/1.28/39.13 Ep. 107 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.25 min
+Epoch: 108/200 | Batch 0000/0483 | Loss: 2.6910
+Epoch: 108/200 | Batch 0050/0483 | Loss: 2.5412
+Epoch: 108/200 | Batch 0100/0483 | Loss: 2.5125
+Epoch: 108/200 | Batch 0150/0483 | Loss: 2.6823
+Epoch: 108/200 | Batch 0200/0483 | Loss: 2.6736
+Epoch: 108/200 | Batch 0250/0483 | Loss: 2.6278
+Epoch: 108/200 | Batch 0300/0483 | Loss: 2.5385
+Epoch: 108/200 | Batch 0350/0483 | Loss: 2.5122
+Epoch: 108/200 | Batch 0400/0483 | Loss: 2.4997
+Epoch: 108/200 | Batch 0450/0483 | Loss: 2.7462
+MAE/RMSE/ACC: Current Valid: 0.83/1.17/39.13 Ep. 108 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.30 min
+Epoch: 109/200 | Batch 0000/0483 | Loss: 2.4652
+Epoch: 109/200 | Batch 0050/0483 | Loss: 2.4089
+Epoch: 109/200 | Batch 0100/0483 | Loss: 2.4071
+Epoch: 109/200 | Batch 0150/0483 | Loss: 2.5529
+Epoch: 109/200 | Batch 0200/0483 | Loss: 2.6968
+Epoch: 109/200 | Batch 0250/0483 | Loss: 2.6520
+Epoch: 109/200 | Batch 0300/0483 | Loss: 2.5553
+Epoch: 109/200 | Batch 0350/0483 | Loss: 2.3447
+Epoch: 109/200 | Batch 0400/0483 | Loss: 2.5965
+Epoch: 109/200 | Batch 0450/0483 | Loss: 2.5693
+MAE/RMSE/ACC: Current Valid: 0.85/1.20/39.13 Ep. 109 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.35 min
+Epoch: 110/200 | Batch 0000/0483 | Loss: 2.5345
+Epoch: 110/200 | Batch 0050/0483 | Loss: 2.6146
+Epoch: 110/200 | Batch 0100/0483 | Loss: 2.5170
+Epoch: 110/200 | Batch 0150/0483 | Loss: 2.7045
+Epoch: 110/200 | Batch 0200/0483 | Loss: 2.6800
+Epoch: 110/200 | Batch 0250/0483 | Loss: 2.6820
+Epoch: 110/200 | Batch 0300/0483 | Loss: 2.4223
+Epoch: 110/200 | Batch 0350/0483 | Loss: 2.3826
+Epoch: 110/200 | Batch 0400/0483 | Loss: 2.4844
+Epoch: 110/200 | Batch 0450/0483 | Loss: 2.7327
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 110 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.39 min
+Epoch: 111/200 | Batch 0000/0483 | Loss: 2.5147
+Epoch: 111/200 | Batch 0050/0483 | Loss: 2.4142
+Epoch: 111/200 | Batch 0100/0483 | Loss: 2.4281
+Epoch: 111/200 | Batch 0150/0483 | Loss: 2.5779
+Epoch: 111/200 | Batch 0200/0483 | Loss: 2.6576
+Epoch: 111/200 | Batch 0250/0483 | Loss: 2.5966
+Epoch: 111/200 | Batch 0300/0483 | Loss: 2.4930
+Epoch: 111/200 | Batch 0350/0483 | Loss: 2.2339
+Epoch: 111/200 | Batch 0400/0483 | Loss: 2.5679
+Epoch: 111/200 | Batch 0450/0483 | Loss: 2.6489
+MAE/RMSE/ACC: Current Valid: 0.87/1.23/39.13 Ep. 111 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.44 min
+Epoch: 112/200 | Batch 0000/0483 | Loss: 2.7234
+Epoch: 112/200 | Batch 0050/0483 | Loss: 2.3834
+Epoch: 112/200 | Batch 0100/0483 | Loss: 2.4122
+Epoch: 112/200 | Batch 0150/0483 | Loss: 2.4864
+Epoch: 112/200 | Batch 0200/0483 | Loss: 2.7136
+Epoch: 112/200 | Batch 0250/0483 | Loss: 2.6626
+Epoch: 112/200 | Batch 0300/0483 | Loss: 2.3870
+Epoch: 112/200 | Batch 0350/0483 | Loss: 2.4598
+Epoch: 112/200 | Batch 0400/0483 | Loss: 2.7392
+Epoch: 112/200 | Batch 0450/0483 | Loss: 2.6079
+MAE/RMSE/ACC: Current Valid: 0.96/1.32/39.13 Ep. 112 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.49 min
+Epoch: 113/200 | Batch 0000/0483 | Loss: 2.4656
+Epoch: 113/200 | Batch 0050/0483 | Loss: 2.3436
+Epoch: 113/200 | Batch 0100/0483 | Loss: 2.4739
+Epoch: 113/200 | Batch 0150/0483 | Loss: 2.6003
+Epoch: 113/200 | Batch 0200/0483 | Loss: 2.6623
+Epoch: 113/200 | Batch 0250/0483 | Loss: 2.6241
+Epoch: 113/200 | Batch 0300/0483 | Loss: 2.4777
+Epoch: 113/200 | Batch 0350/0483 | Loss: 2.3351
+Epoch: 113/200 | Batch 0400/0483 | Loss: 2.5619
+Epoch: 113/200 | Batch 0450/0483 | Loss: 2.6178
+MAE/RMSE/ACC: Current Valid: 0.95/1.31/39.13 Ep. 113 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.54 min
+Epoch: 114/200 | Batch 0000/0483 | Loss: 2.7215
+Epoch: 114/200 | Batch 0050/0483 | Loss: 2.6351
+Epoch: 114/200 | Batch 0100/0483 | Loss: 2.7238
+Epoch: 114/200 | Batch 0150/0483 | Loss: 2.6853
+Epoch: 114/200 | Batch 0200/0483 | Loss: 2.5359
+Epoch: 114/200 | Batch 0250/0483 | Loss: 2.5649
+Epoch: 114/200 | Batch 0300/0483 | Loss: 2.3788
+Epoch: 114/200 | Batch 0350/0483 | Loss: 2.4883
+Epoch: 114/200 | Batch 0400/0483 | Loss: 2.4770
+Epoch: 114/200 | Batch 0450/0483 | Loss: 2.5212
+MAE/RMSE/ACC: Current Valid: 0.91/1.24/39.13 Ep. 114 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.58 min
+Epoch: 115/200 | Batch 0000/0483 | Loss: 2.6063
+Epoch: 115/200 | Batch 0050/0483 | Loss: 2.3546
+Epoch: 115/200 | Batch 0100/0483 | Loss: 2.5062
+Epoch: 115/200 | Batch 0150/0483 | Loss: 2.5472
+Epoch: 115/200 | Batch 0200/0483 | Loss: 2.6786
+Epoch: 115/200 | Batch 0250/0483 | Loss: 2.8070
+Epoch: 115/200 | Batch 0300/0483 | Loss: 2.4402
+Epoch: 115/200 | Batch 0350/0483 | Loss: 2.3506
+Epoch: 115/200 | Batch 0400/0483 | Loss: 2.5143
+Epoch: 115/200 | Batch 0450/0483 | Loss: 2.5172
+MAE/RMSE/ACC: Current Valid: 0.94/1.31/39.13 Ep. 115 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.63 min
+Epoch: 116/200 | Batch 0000/0483 | Loss: 2.5160
+Epoch: 116/200 | Batch 0050/0483 | Loss: 2.4452
+Epoch: 116/200 | Batch 0100/0483 | Loss: 2.3748
+Epoch: 116/200 | Batch 0150/0483 | Loss: 2.4898
+Epoch: 116/200 | Batch 0200/0483 | Loss: 2.5700
+Epoch: 116/200 | Batch 0250/0483 | Loss: 2.5698
+Epoch: 116/200 | Batch 0300/0483 | Loss: 2.5859
+Epoch: 116/200 | Batch 0350/0483 | Loss: 2.3733
+Epoch: 116/200 | Batch 0400/0483 | Loss: 2.4276
+Epoch: 116/200 | Batch 0450/0483 | Loss: 2.6116
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 116 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.68 min
+Epoch: 117/200 | Batch 0000/0483 | Loss: 2.7120
+Epoch: 117/200 | Batch 0050/0483 | Loss: 2.2618
+Epoch: 117/200 | Batch 0100/0483 | Loss: 2.6189
+Epoch: 117/200 | Batch 0150/0483 | Loss: 2.4890
+Epoch: 117/200 | Batch 0200/0483 | Loss: 2.6957
+Epoch: 117/200 | Batch 0250/0483 | Loss: 2.7232
+Epoch: 117/200 | Batch 0300/0483 | Loss: 2.3776
+Epoch: 117/200 | Batch 0350/0483 | Loss: 2.2561
+Epoch: 117/200 | Batch 0400/0483 | Loss: 2.4893
+Epoch: 117/200 | Batch 0450/0483 | Loss: 2.7228
+MAE/RMSE/ACC: Current Valid: 0.99/1.36/39.13 Ep. 117 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.73 min
+Epoch: 118/200 | Batch 0000/0483 | Loss: 2.6643
+Epoch: 118/200 | Batch 0050/0483 | Loss: 2.4662
+Epoch: 118/200 | Batch 0100/0483 | Loss: 2.4659
+Epoch: 118/200 | Batch 0150/0483 | Loss: 2.5941
+Epoch: 118/200 | Batch 0200/0483 | Loss: 2.5854
+Epoch: 118/200 | Batch 0250/0483 | Loss: 2.4512
+Epoch: 118/200 | Batch 0300/0483 | Loss: 2.4463
+Epoch: 118/200 | Batch 0350/0483 | Loss: 2.3443
+Epoch: 118/200 | Batch 0400/0483 | Loss: 2.4742
+Epoch: 118/200 | Batch 0450/0483 | Loss: 2.7209
+MAE/RMSE/ACC: Current Valid: 0.93/1.28/39.13 Ep. 118 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.78 min
+Epoch: 119/200 | Batch 0000/0483 | Loss: 2.4447
+Epoch: 119/200 | Batch 0050/0483 | Loss: 2.4044
+Epoch: 119/200 | Batch 0100/0483 | Loss: 2.4551
+Epoch: 119/200 | Batch 0150/0483 | Loss: 2.4014
+Epoch: 119/200 | Batch 0200/0483 | Loss: 2.4833
+Epoch: 119/200 | Batch 0250/0483 | Loss: 2.6596
+Epoch: 119/200 | Batch 0300/0483 | Loss: 2.4449
+Epoch: 119/200 | Batch 0350/0483 | Loss: 2.3603
+Epoch: 119/200 | Batch 0400/0483 | Loss: 2.5654
+Epoch: 119/200 | Batch 0450/0483 | Loss: 2.5894
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 119 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.82 min
+Epoch: 120/200 | Batch 0000/0483 | Loss: 2.6542
+Epoch: 120/200 | Batch 0050/0483 | Loss: 2.4595
+Epoch: 120/200 | Batch 0100/0483 | Loss: 2.4624
+Epoch: 120/200 | Batch 0150/0483 | Loss: 2.5545
+Epoch: 120/200 | Batch 0200/0483 | Loss: 2.6821
+Epoch: 120/200 | Batch 0250/0483 | Loss: 2.6056
+Epoch: 120/200 | Batch 0300/0483 | Loss: 2.4677
+Epoch: 120/200 | Batch 0350/0483 | Loss: 2.2079
+Epoch: 120/200 | Batch 0400/0483 | Loss: 2.5864
+Epoch: 120/200 | Batch 0450/0483 | Loss: 2.6176
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 120 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.87 min
+Epoch: 121/200 | Batch 0000/0483 | Loss: 2.7584
+Epoch: 121/200 | Batch 0050/0483 | Loss: 2.4113
+Epoch: 121/200 | Batch 0100/0483 | Loss: 2.3023
+Epoch: 121/200 | Batch 0150/0483 | Loss: 2.4936
+Epoch: 121/200 | Batch 0200/0483 | Loss: 2.6418
+Epoch: 121/200 | Batch 0250/0483 | Loss: 2.7984
+Epoch: 121/200 | Batch 0300/0483 | Loss: 2.5051
+Epoch: 121/200 | Batch 0350/0483 | Loss: 2.3215
+Epoch: 121/200 | Batch 0400/0483 | Loss: 2.6172
+Epoch: 121/200 | Batch 0450/0483 | Loss: 2.6646
+MAE/RMSE/ACC: Current Valid: 0.97/1.32/39.13 Ep. 121 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.92 min
+Epoch: 122/200 | Batch 0000/0483 | Loss: 2.3386
+Epoch: 122/200 | Batch 0050/0483 | Loss: 2.4707
+Epoch: 122/200 | Batch 0100/0483 | Loss: 2.5252
+Epoch: 122/200 | Batch 0150/0483 | Loss: 2.6276
+Epoch: 122/200 | Batch 0200/0483 | Loss: 2.5576
+Epoch: 122/200 | Batch 0250/0483 | Loss: 2.4058
+Epoch: 122/200 | Batch 0300/0483 | Loss: 2.4811
+Epoch: 122/200 | Batch 0350/0483 | Loss: 2.4299
+Epoch: 122/200 | Batch 0400/0483 | Loss: 2.5247
+Epoch: 122/200 | Batch 0450/0483 | Loss: 2.6422
+MAE/RMSE/ACC: Current Valid: 0.93/1.28/39.13 Ep. 122 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 5.97 min
+Epoch: 123/200 | Batch 0000/0483 | Loss: 2.6040
+Epoch: 123/200 | Batch 0050/0483 | Loss: 2.4283
+Epoch: 123/200 | Batch 0100/0483 | Loss: 2.5049
+Epoch: 123/200 | Batch 0150/0483 | Loss: 2.7732
+Epoch: 123/200 | Batch 0200/0483 | Loss: 2.5130
+Epoch: 123/200 | Batch 0250/0483 | Loss: 2.5102
+Epoch: 123/200 | Batch 0300/0483 | Loss: 2.4533
+Epoch: 123/200 | Batch 0350/0483 | Loss: 2.2106
+Epoch: 123/200 | Batch 0400/0483 | Loss: 2.4282
+Epoch: 123/200 | Batch 0450/0483 | Loss: 2.6652
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 123 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.02 min
+Epoch: 124/200 | Batch 0000/0483 | Loss: 2.5082
+Epoch: 124/200 | Batch 0050/0483 | Loss: 2.3914
+Epoch: 124/200 | Batch 0100/0483 | Loss: 2.4508
+Epoch: 124/200 | Batch 0150/0483 | Loss: 2.4382
+Epoch: 124/200 | Batch 0200/0483 | Loss: 2.5333
+Epoch: 124/200 | Batch 0250/0483 | Loss: 2.4764
+Epoch: 124/200 | Batch 0300/0483 | Loss: 2.3953
+Epoch: 124/200 | Batch 0350/0483 | Loss: 2.4230
+Epoch: 124/200 | Batch 0400/0483 | Loss: 2.6162
+Epoch: 124/200 | Batch 0450/0483 | Loss: 2.6393
+MAE/RMSE/ACC: Current Valid: 0.91/1.27/39.13 Ep. 124 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.06 min
+Epoch: 125/200 | Batch 0000/0483 | Loss: 2.4823
+Epoch: 125/200 | Batch 0050/0483 | Loss: 2.4891
+Epoch: 125/200 | Batch 0100/0483 | Loss: 2.6327
+Epoch: 125/200 | Batch 0150/0483 | Loss: 2.4073
+Epoch: 125/200 | Batch 0200/0483 | Loss: 2.5661
+Epoch: 125/200 | Batch 0250/0483 | Loss: 2.5823
+Epoch: 125/200 | Batch 0300/0483 | Loss: 2.3944
+Epoch: 125/200 | Batch 0350/0483 | Loss: 2.3673
+Epoch: 125/200 | Batch 0400/0483 | Loss: 2.5346
+Epoch: 125/200 | Batch 0450/0483 | Loss: 2.5923
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 125 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.11 min
+Epoch: 126/200 | Batch 0000/0483 | Loss: 2.6440
+Epoch: 126/200 | Batch 0050/0483 | Loss: 2.6022
+Epoch: 126/200 | Batch 0100/0483 | Loss: 2.4642
+Epoch: 126/200 | Batch 0150/0483 | Loss: 2.5278
+Epoch: 126/200 | Batch 0200/0483 | Loss: 2.5700
+Epoch: 126/200 | Batch 0250/0483 | Loss: 2.7414
+Epoch: 126/200 | Batch 0300/0483 | Loss: 2.4254
+Epoch: 126/200 | Batch 0350/0483 | Loss: 2.3622
+Epoch: 126/200 | Batch 0400/0483 | Loss: 2.5985
+Epoch: 126/200 | Batch 0450/0483 | Loss: 2.5748
+MAE/RMSE/ACC: Current Valid: 0.88/1.23/39.13 Ep. 126 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.16 min
+Epoch: 127/200 | Batch 0000/0483 | Loss: 2.4725
+Epoch: 127/200 | Batch 0050/0483 | Loss: 2.4279
+Epoch: 127/200 | Batch 0100/0483 | Loss: 2.5595
+Epoch: 127/200 | Batch 0150/0483 | Loss: 2.6492
+Epoch: 127/200 | Batch 0200/0483 | Loss: 2.5860
+Epoch: 127/200 | Batch 0250/0483 | Loss: 2.6934
+Epoch: 127/200 | Batch 0300/0483 | Loss: 2.6165
+Epoch: 127/200 | Batch 0350/0483 | Loss: 2.3836
+Epoch: 127/200 | Batch 0400/0483 | Loss: 2.5956
+Epoch: 127/200 | Batch 0450/0483 | Loss: 2.5125
+MAE/RMSE/ACC: Current Valid: 0.97/1.31/39.13 Ep. 127 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.21 min
+Epoch: 128/200 | Batch 0000/0483 | Loss: 2.6239
+Epoch: 128/200 | Batch 0050/0483 | Loss: 2.4737
+Epoch: 128/200 | Batch 0100/0483 | Loss: 2.4654
+Epoch: 128/200 | Batch 0150/0483 | Loss: 2.5071
+Epoch: 128/200 | Batch 0200/0483 | Loss: 2.7270
+Epoch: 128/200 | Batch 0250/0483 | Loss: 2.6879
+Epoch: 128/200 | Batch 0300/0483 | Loss: 2.5099
+Epoch: 128/200 | Batch 0350/0483 | Loss: 2.3341
+Epoch: 128/200 | Batch 0400/0483 | Loss: 2.7408
+Epoch: 128/200 | Batch 0450/0483 | Loss: 2.6238
+MAE/RMSE/ACC: Current Valid: 0.98/1.34/39.13 Ep. 128 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.26 min
+Epoch: 129/200 | Batch 0000/0483 | Loss: 2.4438
+Epoch: 129/200 | Batch 0050/0483 | Loss: 2.3982
+Epoch: 129/200 | Batch 0100/0483 | Loss: 2.3498
+Epoch: 129/200 | Batch 0150/0483 | Loss: 2.4474
+Epoch: 129/200 | Batch 0200/0483 | Loss: 2.6210
+Epoch: 129/200 | Batch 0250/0483 | Loss: 2.4619
+Epoch: 129/200 | Batch 0300/0483 | Loss: 2.4553
+Epoch: 129/200 | Batch 0350/0483 | Loss: 2.1720
+Epoch: 129/200 | Batch 0400/0483 | Loss: 2.5303
+Epoch: 129/200 | Batch 0450/0483 | Loss: 2.5650
+MAE/RMSE/ACC: Current Valid: 0.99/1.36/39.13 Ep. 129 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.30 min
+Epoch: 130/200 | Batch 0000/0483 | Loss: 2.3915
+Epoch: 130/200 | Batch 0050/0483 | Loss: 2.4672
+Epoch: 130/200 | Batch 0100/0483 | Loss: 2.3246
+Epoch: 130/200 | Batch 0150/0483 | Loss: 2.6211
+Epoch: 130/200 | Batch 0200/0483 | Loss: 2.5358
+Epoch: 130/200 | Batch 0250/0483 | Loss: 2.5328
+Epoch: 130/200 | Batch 0300/0483 | Loss: 2.4163
+Epoch: 130/200 | Batch 0350/0483 | Loss: 2.3435
+Epoch: 130/200 | Batch 0400/0483 | Loss: 2.4984
+Epoch: 130/200 | Batch 0450/0483 | Loss: 2.6515
+MAE/RMSE/ACC: Current Valid: 0.96/1.31/39.13 Ep. 130 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.35 min
+Epoch: 131/200 | Batch 0000/0483 | Loss: 2.6063
+Epoch: 131/200 | Batch 0050/0483 | Loss: 2.3777
+Epoch: 131/200 | Batch 0100/0483 | Loss: 2.4923
+Epoch: 131/200 | Batch 0150/0483 | Loss: 2.6027
+Epoch: 131/200 | Batch 0200/0483 | Loss: 2.6468
+Epoch: 131/200 | Batch 0250/0483 | Loss: 2.5038
+Epoch: 131/200 | Batch 0300/0483 | Loss: 2.4822
+Epoch: 131/200 | Batch 0350/0483 | Loss: 2.3737
+Epoch: 131/200 | Batch 0400/0483 | Loss: 2.5399
+Epoch: 131/200 | Batch 0450/0483 | Loss: 2.5702
+MAE/RMSE/ACC: Current Valid: 0.86/1.21/39.13 Ep. 131 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.40 min
+Epoch: 132/200 | Batch 0000/0483 | Loss: 2.4668
+Epoch: 132/200 | Batch 0050/0483 | Loss: 2.3747
+Epoch: 132/200 | Batch 0100/0483 | Loss: 2.4598
+Epoch: 132/200 | Batch 0150/0483 | Loss: 2.6094
+Epoch: 132/200 | Batch 0200/0483 | Loss: 2.5524
+Epoch: 132/200 | Batch 0250/0483 | Loss: 2.8087
+Epoch: 132/200 | Batch 0300/0483 | Loss: 2.4868
+Epoch: 132/200 | Batch 0350/0483 | Loss: 2.4467
+Epoch: 132/200 | Batch 0400/0483 | Loss: 2.7374
+Epoch: 132/200 | Batch 0450/0483 | Loss: 2.7555
+MAE/RMSE/ACC: Current Valid: 0.84/1.17/39.13 Ep. 132 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.45 min
+Epoch: 133/200 | Batch 0000/0483 | Loss: 2.4884
+Epoch: 133/200 | Batch 0050/0483 | Loss: 2.3380
+Epoch: 133/200 | Batch 0100/0483 | Loss: 2.5885
+Epoch: 133/200 | Batch 0150/0483 | Loss: 2.5529
+Epoch: 133/200 | Batch 0200/0483 | Loss: 2.6785
+Epoch: 133/200 | Batch 0250/0483 | Loss: 2.5962
+Epoch: 133/200 | Batch 0300/0483 | Loss: 2.3946
+Epoch: 133/200 | Batch 0350/0483 | Loss: 2.3453
+Epoch: 133/200 | Batch 0400/0483 | Loss: 2.4933
+Epoch: 133/200 | Batch 0450/0483 | Loss: 2.6290
+MAE/RMSE/ACC: Current Valid: 0.83/1.16/39.13 Ep. 133 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.50 min
+Epoch: 134/200 | Batch 0000/0483 | Loss: 2.4612
+Epoch: 134/200 | Batch 0050/0483 | Loss: 2.3867
+Epoch: 134/200 | Batch 0100/0483 | Loss: 2.5390
+Epoch: 134/200 | Batch 0150/0483 | Loss: 2.5850
+Epoch: 134/200 | Batch 0200/0483 | Loss: 2.4335
+Epoch: 134/200 | Batch 0250/0483 | Loss: 2.5479
+Epoch: 134/200 | Batch 0300/0483 | Loss: 2.5487
+Epoch: 134/200 | Batch 0350/0483 | Loss: 2.2531
+Epoch: 134/200 | Batch 0400/0483 | Loss: 2.6321
+Epoch: 134/200 | Batch 0450/0483 | Loss: 2.6881
+MAE/RMSE/ACC: Current Valid: 0.91/1.26/39.13 Ep. 134 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.54 min
+Epoch: 135/200 | Batch 0000/0483 | Loss: 2.5685
+Epoch: 135/200 | Batch 0050/0483 | Loss: 2.5546
+Epoch: 135/200 | Batch 0100/0483 | Loss: 2.6101
+Epoch: 135/200 | Batch 0150/0483 | Loss: 2.7888
+Epoch: 135/200 | Batch 0200/0483 | Loss: 2.6045
+Epoch: 135/200 | Batch 0250/0483 | Loss: 2.5505
+Epoch: 135/200 | Batch 0300/0483 | Loss: 2.3600
+Epoch: 135/200 | Batch 0350/0483 | Loss: 2.3379
+Epoch: 135/200 | Batch 0400/0483 | Loss: 2.5360
+Epoch: 135/200 | Batch 0450/0483 | Loss: 2.6935
+MAE/RMSE/ACC: Current Valid: 0.94/1.29/39.13 Ep. 135 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.59 min
+Epoch: 136/200 | Batch 0000/0483 | Loss: 2.5055
+Epoch: 136/200 | Batch 0050/0483 | Loss: 2.3761
+Epoch: 136/200 | Batch 0100/0483 | Loss: 2.5880
+Epoch: 136/200 | Batch 0150/0483 | Loss: 2.6258
+Epoch: 136/200 | Batch 0200/0483 | Loss: 2.4976
+Epoch: 136/200 | Batch 0250/0483 | Loss: 2.6224
+Epoch: 136/200 | Batch 0300/0483 | Loss: 2.2341
+Epoch: 136/200 | Batch 0350/0483 | Loss: 2.4339
+Epoch: 136/200 | Batch 0400/0483 | Loss: 2.5830
+Epoch: 136/200 | Batch 0450/0483 | Loss: 2.9013
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/39.13 Ep. 136 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.64 min
+Epoch: 137/200 | Batch 0000/0483 | Loss: 2.4334
+Epoch: 137/200 | Batch 0050/0483 | Loss: 2.5338
+Epoch: 137/200 | Batch 0100/0483 | Loss: 2.5520
+Epoch: 137/200 | Batch 0150/0483 | Loss: 2.7116
+Epoch: 137/200 | Batch 0200/0483 | Loss: 2.5347
+Epoch: 137/200 | Batch 0250/0483 | Loss: 2.5034
+Epoch: 137/200 | Batch 0300/0483 | Loss: 2.4465
+Epoch: 137/200 | Batch 0350/0483 | Loss: 2.5159
+Epoch: 137/200 | Batch 0400/0483 | Loss: 2.6342
+Epoch: 137/200 | Batch 0450/0483 | Loss: 2.6331
+MAE/RMSE/ACC: Current Valid: 0.87/1.22/39.13 Ep. 137 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.69 min
+Epoch: 138/200 | Batch 0000/0483 | Loss: 2.4437
+Epoch: 138/200 | Batch 0050/0483 | Loss: 2.4093
+Epoch: 138/200 | Batch 0100/0483 | Loss: 2.5938
+Epoch: 138/200 | Batch 0150/0483 | Loss: 2.5561
+Epoch: 138/200 | Batch 0200/0483 | Loss: 2.6057
+Epoch: 138/200 | Batch 0250/0483 | Loss: 2.6484
+Epoch: 138/200 | Batch 0300/0483 | Loss: 2.4524
+Epoch: 138/200 | Batch 0350/0483 | Loss: 2.3853
+Epoch: 138/200 | Batch 0400/0483 | Loss: 2.4336
+Epoch: 138/200 | Batch 0450/0483 | Loss: 2.6734
+MAE/RMSE/ACC: Current Valid: 0.95/1.31/39.13 Ep. 138 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.74 min
+Epoch: 139/200 | Batch 0000/0483 | Loss: 2.4485
+Epoch: 139/200 | Batch 0050/0483 | Loss: 2.5766
+Epoch: 139/200 | Batch 0100/0483 | Loss: 2.4523
+Epoch: 139/200 | Batch 0150/0483 | Loss: 2.5636
+Epoch: 139/200 | Batch 0200/0483 | Loss: 2.6040
+Epoch: 139/200 | Batch 0250/0483 | Loss: 2.6067
+Epoch: 139/200 | Batch 0300/0483 | Loss: 2.6571
+Epoch: 139/200 | Batch 0350/0483 | Loss: 2.3725
+Epoch: 139/200 | Batch 0400/0483 | Loss: 2.5509
+Epoch: 139/200 | Batch 0450/0483 | Loss: 2.7492
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 139 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.79 min
+Epoch: 140/200 | Batch 0000/0483 | Loss: 2.4222
+Epoch: 140/200 | Batch 0050/0483 | Loss: 2.3364
+Epoch: 140/200 | Batch 0100/0483 | Loss: 2.4383
+Epoch: 140/200 | Batch 0150/0483 | Loss: 2.5817
+Epoch: 140/200 | Batch 0200/0483 | Loss: 2.5920
+Epoch: 140/200 | Batch 0250/0483 | Loss: 2.7316
+Epoch: 140/200 | Batch 0300/0483 | Loss: 2.5333
+Epoch: 140/200 | Batch 0350/0483 | Loss: 2.5026
+Epoch: 140/200 | Batch 0400/0483 | Loss: 2.6841
+Epoch: 140/200 | Batch 0450/0483 | Loss: 2.6103
+MAE/RMSE/ACC: Current Valid: 0.84/1.18/39.13 Ep. 140 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.83 min
+Epoch: 141/200 | Batch 0000/0483 | Loss: 2.4233
+Epoch: 141/200 | Batch 0050/0483 | Loss: 2.2569
+Epoch: 141/200 | Batch 0100/0483 | Loss: 2.6650
+Epoch: 141/200 | Batch 0150/0483 | Loss: 2.6688
+Epoch: 141/200 | Batch 0200/0483 | Loss: 2.7066
+Epoch: 141/200 | Batch 0250/0483 | Loss: 2.5224
+Epoch: 141/200 | Batch 0300/0483 | Loss: 2.3025
+Epoch: 141/200 | Batch 0350/0483 | Loss: 2.2583
+Epoch: 141/200 | Batch 0400/0483 | Loss: 2.4454
+Epoch: 141/200 | Batch 0450/0483 | Loss: 2.5646
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 141 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.88 min
+Epoch: 142/200 | Batch 0000/0483 | Loss: 2.5114
+Epoch: 142/200 | Batch 0050/0483 | Loss: 2.3527
+Epoch: 142/200 | Batch 0100/0483 | Loss: 2.4361
+Epoch: 142/200 | Batch 0150/0483 | Loss: 2.7897
+Epoch: 142/200 | Batch 0200/0483 | Loss: 2.5495
+Epoch: 142/200 | Batch 0250/0483 | Loss: 2.5312
+Epoch: 142/200 | Batch 0300/0483 | Loss: 2.3606
+Epoch: 142/200 | Batch 0350/0483 | Loss: 2.3800
+Epoch: 142/200 | Batch 0400/0483 | Loss: 2.5379
+Epoch: 142/200 | Batch 0450/0483 | Loss: 2.8254
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.13 Ep. 142 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.93 min
+Epoch: 143/200 | Batch 0000/0483 | Loss: 2.6059
+Epoch: 143/200 | Batch 0050/0483 | Loss: 2.4158
+Epoch: 143/200 | Batch 0100/0483 | Loss: 2.7018
+Epoch: 143/200 | Batch 0150/0483 | Loss: 2.4867
+Epoch: 143/200 | Batch 0200/0483 | Loss: 2.6537
+Epoch: 143/200 | Batch 0250/0483 | Loss: 2.6181
+Epoch: 143/200 | Batch 0300/0483 | Loss: 2.3241
+Epoch: 143/200 | Batch 0350/0483 | Loss: 2.5062
+Epoch: 143/200 | Batch 0400/0483 | Loss: 2.3899
+Epoch: 143/200 | Batch 0450/0483 | Loss: 2.5843
+MAE/RMSE/ACC: Current Valid: 0.84/1.17/39.13 Ep. 143 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 6.98 min
+Epoch: 144/200 | Batch 0000/0483 | Loss: 2.6501
+Epoch: 144/200 | Batch 0050/0483 | Loss: 2.3338
+Epoch: 144/200 | Batch 0100/0483 | Loss: 2.4495
+Epoch: 144/200 | Batch 0150/0483 | Loss: 2.6056
+Epoch: 144/200 | Batch 0200/0483 | Loss: 2.4137
+Epoch: 144/200 | Batch 0250/0483 | Loss: 2.7814
+Epoch: 144/200 | Batch 0300/0483 | Loss: 2.5136
+Epoch: 144/200 | Batch 0350/0483 | Loss: 2.3763
+Epoch: 144/200 | Batch 0400/0483 | Loss: 2.6253
+Epoch: 144/200 | Batch 0450/0483 | Loss: 2.5857
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 144 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.03 min
+Epoch: 145/200 | Batch 0000/0483 | Loss: 2.4990
+Epoch: 145/200 | Batch 0050/0483 | Loss: 2.4083
+Epoch: 145/200 | Batch 0100/0483 | Loss: 2.4971
+Epoch: 145/200 | Batch 0150/0483 | Loss: 2.6890
+Epoch: 145/200 | Batch 0200/0483 | Loss: 2.5740
+Epoch: 145/200 | Batch 0250/0483 | Loss: 2.7797
+Epoch: 145/200 | Batch 0300/0483 | Loss: 2.5592
+Epoch: 145/200 | Batch 0350/0483 | Loss: 2.4088
+Epoch: 145/200 | Batch 0400/0483 | Loss: 2.5100
+Epoch: 145/200 | Batch 0450/0483 | Loss: 2.5877
+MAE/RMSE/ACC: Current Valid: 0.93/1.29/39.13 Ep. 145 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.07 min
+Epoch: 146/200 | Batch 0000/0483 | Loss: 2.5738
+Epoch: 146/200 | Batch 0050/0483 | Loss: 2.6175
+Epoch: 146/200 | Batch 0100/0483 | Loss: 2.5317
+Epoch: 146/200 | Batch 0150/0483 | Loss: 2.3877
+Epoch: 146/200 | Batch 0200/0483 | Loss: 2.7091
+Epoch: 146/200 | Batch 0250/0483 | Loss: 2.6123
+Epoch: 146/200 | Batch 0300/0483 | Loss: 2.4556
+Epoch: 146/200 | Batch 0350/0483 | Loss: 2.3566
+Epoch: 146/200 | Batch 0400/0483 | Loss: 2.5461
+Epoch: 146/200 | Batch 0450/0483 | Loss: 2.6360
+MAE/RMSE/ACC: Current Valid: 0.85/1.19/39.13 Ep. 146 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.12 min
+Epoch: 147/200 | Batch 0000/0483 | Loss: 2.6485
+Epoch: 147/200 | Batch 0050/0483 | Loss: 2.4609
+Epoch: 147/200 | Batch 0100/0483 | Loss: 2.4620
+Epoch: 147/200 | Batch 0150/0483 | Loss: 2.4587
+Epoch: 147/200 | Batch 0200/0483 | Loss: 2.6686
+Epoch: 147/200 | Batch 0250/0483 | Loss: 2.4996
+Epoch: 147/200 | Batch 0300/0483 | Loss: 2.5841
+Epoch: 147/200 | Batch 0350/0483 | Loss: 2.4692
+Epoch: 147/200 | Batch 0400/0483 | Loss: 2.4612
+Epoch: 147/200 | Batch 0450/0483 | Loss: 2.6574
+MAE/RMSE/ACC: Current Valid: 0.90/1.26/39.13 Ep. 147 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.17 min
+Epoch: 148/200 | Batch 0000/0483 | Loss: 2.4219
+Epoch: 148/200 | Batch 0050/0483 | Loss: 2.4420
+Epoch: 148/200 | Batch 0100/0483 | Loss: 2.4594
+Epoch: 148/200 | Batch 0150/0483 | Loss: 2.4686
+Epoch: 148/200 | Batch 0200/0483 | Loss: 2.5374
+Epoch: 148/200 | Batch 0250/0483 | Loss: 2.6634
+Epoch: 148/200 | Batch 0300/0483 | Loss: 2.4259
+Epoch: 148/200 | Batch 0350/0483 | Loss: 2.4781
+Epoch: 148/200 | Batch 0400/0483 | Loss: 2.4403
+Epoch: 148/200 | Batch 0450/0483 | Loss: 2.5759
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 148 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.22 min
+Epoch: 149/200 | Batch 0000/0483 | Loss: 2.4727
+Epoch: 149/200 | Batch 0050/0483 | Loss: 2.2324
+Epoch: 149/200 | Batch 0100/0483 | Loss: 2.3268
+Epoch: 149/200 | Batch 0150/0483 | Loss: 2.6417
+Epoch: 149/200 | Batch 0200/0483 | Loss: 2.5008
+Epoch: 149/200 | Batch 0250/0483 | Loss: 2.6087
+Epoch: 149/200 | Batch 0300/0483 | Loss: 2.5876
+Epoch: 149/200 | Batch 0350/0483 | Loss: 2.4151
+Epoch: 149/200 | Batch 0400/0483 | Loss: 2.4538
+Epoch: 149/200 | Batch 0450/0483 | Loss: 2.8678
+MAE/RMSE/ACC: Current Valid: 0.99/1.36/39.13 Ep. 149 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.27 min
+Epoch: 150/200 | Batch 0000/0483 | Loss: 2.5707
+Epoch: 150/200 | Batch 0050/0483 | Loss: 2.4919
+Epoch: 150/200 | Batch 0100/0483 | Loss: 2.5088
+Epoch: 150/200 | Batch 0150/0483 | Loss: 2.6245
+Epoch: 150/200 | Batch 0200/0483 | Loss: 2.7038
+Epoch: 150/200 | Batch 0250/0483 | Loss: 2.6921
+Epoch: 150/200 | Batch 0300/0483 | Loss: 2.5010
+Epoch: 150/200 | Batch 0350/0483 | Loss: 2.4431
+Epoch: 150/200 | Batch 0400/0483 | Loss: 2.4822
+Epoch: 150/200 | Batch 0450/0483 | Loss: 2.7830
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.13 Ep. 150 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.31 min
+Epoch: 151/200 | Batch 0000/0483 | Loss: 2.3826
+Epoch: 151/200 | Batch 0050/0483 | Loss: 2.2891
+Epoch: 151/200 | Batch 0100/0483 | Loss: 2.4659
+Epoch: 151/200 | Batch 0150/0483 | Loss: 2.4455
+Epoch: 151/200 | Batch 0200/0483 | Loss: 2.6821
+Epoch: 151/200 | Batch 0250/0483 | Loss: 2.5086
+Epoch: 151/200 | Batch 0300/0483 | Loss: 2.6079
+Epoch: 151/200 | Batch 0350/0483 | Loss: 2.3670
+Epoch: 151/200 | Batch 0400/0483 | Loss: 2.4819
+Epoch: 151/200 | Batch 0450/0483 | Loss: 2.6828
+MAE/RMSE/ACC: Current Valid: 0.92/1.26/39.13 Ep. 151 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.36 min
+Epoch: 152/200 | Batch 0000/0483 | Loss: 2.5879
+Epoch: 152/200 | Batch 0050/0483 | Loss: 2.4442
+Epoch: 152/200 | Batch 0100/0483 | Loss: 2.5125
+Epoch: 152/200 | Batch 0150/0483 | Loss: 2.4100
+Epoch: 152/200 | Batch 0200/0483 | Loss: 2.4861
+Epoch: 152/200 | Batch 0250/0483 | Loss: 2.5799
+Epoch: 152/200 | Batch 0300/0483 | Loss: 2.4758
+Epoch: 152/200 | Batch 0350/0483 | Loss: 2.4922
+Epoch: 152/200 | Batch 0400/0483 | Loss: 2.4137
+Epoch: 152/200 | Batch 0450/0483 | Loss: 2.6536
+MAE/RMSE/ACC: Current Valid: 0.83/1.16/39.13 Ep. 152 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.41 min
+Epoch: 153/200 | Batch 0000/0483 | Loss: 2.5628
+Epoch: 153/200 | Batch 0050/0483 | Loss: 2.3742
+Epoch: 153/200 | Batch 0100/0483 | Loss: 2.3309
+Epoch: 153/200 | Batch 0150/0483 | Loss: 2.5255
+Epoch: 153/200 | Batch 0200/0483 | Loss: 2.6519
+Epoch: 153/200 | Batch 0250/0483 | Loss: 2.4675
+Epoch: 153/200 | Batch 0300/0483 | Loss: 2.5240
+Epoch: 153/200 | Batch 0350/0483 | Loss: 2.3306
+Epoch: 153/200 | Batch 0400/0483 | Loss: 2.3724
+Epoch: 153/200 | Batch 0450/0483 | Loss: 2.5059
+MAE/RMSE/ACC: Current Valid: 0.83/1.16/39.13 Ep. 153 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.46 min
+Epoch: 154/200 | Batch 0000/0483 | Loss: 2.6918
+Epoch: 154/200 | Batch 0050/0483 | Loss: 2.3965
+Epoch: 154/200 | Batch 0100/0483 | Loss: 2.4431
+Epoch: 154/200 | Batch 0150/0483 | Loss: 2.6480
+Epoch: 154/200 | Batch 0200/0483 | Loss: 2.3823
+Epoch: 154/200 | Batch 0250/0483 | Loss: 2.6256
+Epoch: 154/200 | Batch 0300/0483 | Loss: 2.4750
+Epoch: 154/200 | Batch 0350/0483 | Loss: 2.4979
+Epoch: 154/200 | Batch 0400/0483 | Loss: 2.4456
+Epoch: 154/200 | Batch 0450/0483 | Loss: 2.5926
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/39.13 Ep. 154 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.51 min
+Epoch: 155/200 | Batch 0000/0483 | Loss: 2.4828
+Epoch: 155/200 | Batch 0050/0483 | Loss: 2.5005
+Epoch: 155/200 | Batch 0100/0483 | Loss: 2.5875
+Epoch: 155/200 | Batch 0150/0483 | Loss: 2.6101
+Epoch: 155/200 | Batch 0200/0483 | Loss: 2.6580
+Epoch: 155/200 | Batch 0250/0483 | Loss: 2.7845
+Epoch: 155/200 | Batch 0300/0483 | Loss: 2.5378
+Epoch: 155/200 | Batch 0350/0483 | Loss: 2.2891
+Epoch: 155/200 | Batch 0400/0483 | Loss: 2.6579
+Epoch: 155/200 | Batch 0450/0483 | Loss: 2.5938
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 155 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.55 min
+Epoch: 156/200 | Batch 0000/0483 | Loss: 2.4311
+Epoch: 156/200 | Batch 0050/0483 | Loss: 2.3632
+Epoch: 156/200 | Batch 0100/0483 | Loss: 2.6441
+Epoch: 156/200 | Batch 0150/0483 | Loss: 2.5448
+Epoch: 156/200 | Batch 0200/0483 | Loss: 2.6543
+Epoch: 156/200 | Batch 0250/0483 | Loss: 2.6039
+Epoch: 156/200 | Batch 0300/0483 | Loss: 2.4783
+Epoch: 156/200 | Batch 0350/0483 | Loss: 2.3381
+Epoch: 156/200 | Batch 0400/0483 | Loss: 2.5525
+Epoch: 156/200 | Batch 0450/0483 | Loss: 2.5672
+MAE/RMSE/ACC: Current Valid: 0.92/1.28/39.13 Ep. 156 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.60 min
+Epoch: 157/200 | Batch 0000/0483 | Loss: 2.5425
+Epoch: 157/200 | Batch 0050/0483 | Loss: 2.4583
+Epoch: 157/200 | Batch 0100/0483 | Loss: 2.3572
+Epoch: 157/200 | Batch 0150/0483 | Loss: 2.4979
+Epoch: 157/200 | Batch 0200/0483 | Loss: 2.5582
+Epoch: 157/200 | Batch 0250/0483 | Loss: 2.6302
+Epoch: 157/200 | Batch 0300/0483 | Loss: 2.4246
+Epoch: 157/200 | Batch 0350/0483 | Loss: 2.2791
+Epoch: 157/200 | Batch 0400/0483 | Loss: 2.3702
+Epoch: 157/200 | Batch 0450/0483 | Loss: 2.5871
+MAE/RMSE/ACC: Current Valid: 0.88/1.20/39.13 Ep. 157 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.65 min
+Epoch: 158/200 | Batch 0000/0483 | Loss: 2.4949
+Epoch: 158/200 | Batch 0050/0483 | Loss: 2.2579
+Epoch: 158/200 | Batch 0100/0483 | Loss: 2.3817
+Epoch: 158/200 | Batch 0150/0483 | Loss: 2.4307
+Epoch: 158/200 | Batch 0200/0483 | Loss: 2.4753
+Epoch: 158/200 | Batch 0250/0483 | Loss: 2.6619
+Epoch: 158/200 | Batch 0300/0483 | Loss: 2.5085
+Epoch: 158/200 | Batch 0350/0483 | Loss: 2.4801
+Epoch: 158/200 | Batch 0400/0483 | Loss: 2.6186
+Epoch: 158/200 | Batch 0450/0483 | Loss: 2.5619
+MAE/RMSE/ACC: Current Valid: 0.89/1.25/39.13 Ep. 158 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.70 min
+Epoch: 159/200 | Batch 0000/0483 | Loss: 2.6626
+Epoch: 159/200 | Batch 0050/0483 | Loss: 2.4526
+Epoch: 159/200 | Batch 0100/0483 | Loss: 2.5737
+Epoch: 159/200 | Batch 0150/0483 | Loss: 2.4980
+Epoch: 159/200 | Batch 0200/0483 | Loss: 2.6286
+Epoch: 159/200 | Batch 0250/0483 | Loss: 2.6615
+Epoch: 159/200 | Batch 0300/0483 | Loss: 2.6267
+Epoch: 159/200 | Batch 0350/0483 | Loss: 2.2769
+Epoch: 159/200 | Batch 0400/0483 | Loss: 2.4192
+Epoch: 159/200 | Batch 0450/0483 | Loss: 2.7189
+MAE/RMSE/ACC: Current Valid: 0.89/1.22/39.13 Ep. 159 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.75 min
+Epoch: 160/200 | Batch 0000/0483 | Loss: 2.5406
+Epoch: 160/200 | Batch 0050/0483 | Loss: 2.3267
+Epoch: 160/200 | Batch 0100/0483 | Loss: 2.4644
+Epoch: 160/200 | Batch 0150/0483 | Loss: 2.5340
+Epoch: 160/200 | Batch 0200/0483 | Loss: 2.6237
+Epoch: 160/200 | Batch 0250/0483 | Loss: 2.6369
+Epoch: 160/200 | Batch 0300/0483 | Loss: 2.4189
+Epoch: 160/200 | Batch 0350/0483 | Loss: 2.3669
+Epoch: 160/200 | Batch 0400/0483 | Loss: 2.4378
+Epoch: 160/200 | Batch 0450/0483 | Loss: 2.6444
+MAE/RMSE/ACC: Current Valid: 0.89/1.24/39.13 Ep. 160 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.79 min
+Epoch: 161/200 | Batch 0000/0483 | Loss: 2.6944
+Epoch: 161/200 | Batch 0050/0483 | Loss: 2.3934
+Epoch: 161/200 | Batch 0100/0483 | Loss: 2.4231
+Epoch: 161/200 | Batch 0150/0483 | Loss: 2.4488
+Epoch: 161/200 | Batch 0200/0483 | Loss: 2.4971
+Epoch: 161/200 | Batch 0250/0483 | Loss: 2.5761
+Epoch: 161/200 | Batch 0300/0483 | Loss: 2.3515
+Epoch: 161/200 | Batch 0350/0483 | Loss: 2.4118
+Epoch: 161/200 | Batch 0400/0483 | Loss: 2.4742
+Epoch: 161/200 | Batch 0450/0483 | Loss: 2.6628
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/39.13 Ep. 161 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.84 min
+Epoch: 162/200 | Batch 0000/0483 | Loss: 2.3988
+Epoch: 162/200 | Batch 0050/0483 | Loss: 2.2620
+Epoch: 162/200 | Batch 0100/0483 | Loss: 2.5845
+Epoch: 162/200 | Batch 0150/0483 | Loss: 2.5316
+Epoch: 162/200 | Batch 0200/0483 | Loss: 2.6165
+Epoch: 162/200 | Batch 0250/0483 | Loss: 2.6000
+Epoch: 162/200 | Batch 0300/0483 | Loss: 2.6619
+Epoch: 162/200 | Batch 0350/0483 | Loss: 2.3263
+Epoch: 162/200 | Batch 0400/0483 | Loss: 2.5937
+Epoch: 162/200 | Batch 0450/0483 | Loss: 2.5028
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 162 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.89 min
+Epoch: 163/200 | Batch 0000/0483 | Loss: 2.4968
+Epoch: 163/200 | Batch 0050/0483 | Loss: 2.3215
+Epoch: 163/200 | Batch 0100/0483 | Loss: 2.5118
+Epoch: 163/200 | Batch 0150/0483 | Loss: 2.7525
+Epoch: 163/200 | Batch 0200/0483 | Loss: 2.5109
+Epoch: 163/200 | Batch 0250/0483 | Loss: 2.4797
+Epoch: 163/200 | Batch 0300/0483 | Loss: 2.3394
+Epoch: 163/200 | Batch 0350/0483 | Loss: 2.2263
+Epoch: 163/200 | Batch 0400/0483 | Loss: 2.5365
+Epoch: 163/200 | Batch 0450/0483 | Loss: 2.7775
+MAE/RMSE/ACC: Current Valid: 0.94/1.30/39.13 Ep. 163 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.94 min
+Epoch: 164/200 | Batch 0000/0483 | Loss: 2.8167
+Epoch: 164/200 | Batch 0050/0483 | Loss: 2.3986
+Epoch: 164/200 | Batch 0100/0483 | Loss: 2.5077
+Epoch: 164/200 | Batch 0150/0483 | Loss: 2.6127
+Epoch: 164/200 | Batch 0200/0483 | Loss: 2.6070
+Epoch: 164/200 | Batch 0250/0483 | Loss: 2.6633
+Epoch: 164/200 | Batch 0300/0483 | Loss: 2.6356
+Epoch: 164/200 | Batch 0350/0483 | Loss: 2.2400
+Epoch: 164/200 | Batch 0400/0483 | Loss: 2.4842
+Epoch: 164/200 | Batch 0450/0483 | Loss: 2.6382
+MAE/RMSE/ACC: Current Valid: 0.87/1.21/39.13 Ep. 164 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 7.99 min
+Epoch: 165/200 | Batch 0000/0483 | Loss: 2.4491
+Epoch: 165/200 | Batch 0050/0483 | Loss: 2.5332
+Epoch: 165/200 | Batch 0100/0483 | Loss: 2.5060
+Epoch: 165/200 | Batch 0150/0483 | Loss: 2.5621
+Epoch: 165/200 | Batch 0200/0483 | Loss: 2.5591
+Epoch: 165/200 | Batch 0250/0483 | Loss: 2.6205
+Epoch: 165/200 | Batch 0300/0483 | Loss: 2.4083
+Epoch: 165/200 | Batch 0350/0483 | Loss: 2.4595
+Epoch: 165/200 | Batch 0400/0483 | Loss: 2.4832
+Epoch: 165/200 | Batch 0450/0483 | Loss: 2.6368
+MAE/RMSE/ACC: Current Valid: 0.87/1.20/39.13 Ep. 165 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.03 min
+Epoch: 166/200 | Batch 0000/0483 | Loss: 2.6830
+Epoch: 166/200 | Batch 0050/0483 | Loss: 2.4588
+Epoch: 166/200 | Batch 0100/0483 | Loss: 2.4487
+Epoch: 166/200 | Batch 0150/0483 | Loss: 2.5342
+Epoch: 166/200 | Batch 0200/0483 | Loss: 2.5832
+Epoch: 166/200 | Batch 0250/0483 | Loss: 2.5900
+Epoch: 166/200 | Batch 0300/0483 | Loss: 2.4217
+Epoch: 166/200 | Batch 0350/0483 | Loss: 2.5044
+Epoch: 166/200 | Batch 0400/0483 | Loss: 2.5327
+Epoch: 166/200 | Batch 0450/0483 | Loss: 2.5817
+MAE/RMSE/ACC: Current Valid: 0.92/1.26/39.13 Ep. 166 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.08 min
+Epoch: 167/200 | Batch 0000/0483 | Loss: 2.4793
+Epoch: 167/200 | Batch 0050/0483 | Loss: 2.5963
+Epoch: 167/200 | Batch 0100/0483 | Loss: 2.6348
+Epoch: 167/200 | Batch 0150/0483 | Loss: 2.7066
+Epoch: 167/200 | Batch 0200/0483 | Loss: 2.8437
+Epoch: 167/200 | Batch 0250/0483 | Loss: 2.5065
+Epoch: 167/200 | Batch 0300/0483 | Loss: 2.5844
+Epoch: 167/200 | Batch 0350/0483 | Loss: 2.3633
+Epoch: 167/200 | Batch 0400/0483 | Loss: 2.6293
+Epoch: 167/200 | Batch 0450/0483 | Loss: 2.5669
+MAE/RMSE/ACC: Current Valid: 0.85/1.19/39.13 Ep. 167 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.13 min
+Epoch: 168/200 | Batch 0000/0483 | Loss: 2.4786
+Epoch: 168/200 | Batch 0050/0483 | Loss: 2.3437
+Epoch: 168/200 | Batch 0100/0483 | Loss: 2.6218
+Epoch: 168/200 | Batch 0150/0483 | Loss: 2.4896
+Epoch: 168/200 | Batch 0200/0483 | Loss: 2.6171
+Epoch: 168/200 | Batch 0250/0483 | Loss: 2.4771
+Epoch: 168/200 | Batch 0300/0483 | Loss: 2.6008
+Epoch: 168/200 | Batch 0350/0483 | Loss: 2.4195
+Epoch: 168/200 | Batch 0400/0483 | Loss: 2.4886
+Epoch: 168/200 | Batch 0450/0483 | Loss: 2.9624
+MAE/RMSE/ACC: Current Valid: 0.92/1.27/39.13 Ep. 168 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.18 min
+Epoch: 169/200 | Batch 0000/0483 | Loss: 2.5094
+Epoch: 169/200 | Batch 0050/0483 | Loss: 2.2869
+Epoch: 169/200 | Batch 0100/0483 | Loss: 2.3037
+Epoch: 169/200 | Batch 0150/0483 | Loss: 2.4468
+Epoch: 169/200 | Batch 0200/0483 | Loss: 2.5328
+Epoch: 169/200 | Batch 0250/0483 | Loss: 2.6902
+Epoch: 169/200 | Batch 0300/0483 | Loss: 2.4417
+Epoch: 169/200 | Batch 0350/0483 | Loss: 2.3428
+Epoch: 169/200 | Batch 0400/0483 | Loss: 2.4484
+Epoch: 169/200 | Batch 0450/0483 | Loss: 2.3485
+MAE/RMSE/ACC: Current Valid: 0.92/1.28/39.13 Ep. 169 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.22 min
+Epoch: 170/200 | Batch 0000/0483 | Loss: 2.6896
+Epoch: 170/200 | Batch 0050/0483 | Loss: 2.4910
+Epoch: 170/200 | Batch 0100/0483 | Loss: 2.6981
+Epoch: 170/200 | Batch 0150/0483 | Loss: 2.4693
+Epoch: 170/200 | Batch 0200/0483 | Loss: 2.6208
+Epoch: 170/200 | Batch 0250/0483 | Loss: 2.4148
+Epoch: 170/200 | Batch 0300/0483 | Loss: 2.4908
+Epoch: 170/200 | Batch 0350/0483 | Loss: 2.3811
+Epoch: 170/200 | Batch 0400/0483 | Loss: 2.5744
+Epoch: 170/200 | Batch 0450/0483 | Loss: 2.6320
+MAE/RMSE/ACC: Current Valid: 0.93/1.29/39.13 Ep. 170 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.27 min
+Epoch: 171/200 | Batch 0000/0483 | Loss: 2.6889
+Epoch: 171/200 | Batch 0050/0483 | Loss: 2.4803
+Epoch: 171/200 | Batch 0100/0483 | Loss: 2.4658
+Epoch: 171/200 | Batch 0150/0483 | Loss: 2.6014
+Epoch: 171/200 | Batch 0200/0483 | Loss: 2.5567
+Epoch: 171/200 | Batch 0250/0483 | Loss: 2.7945
+Epoch: 171/200 | Batch 0300/0483 | Loss: 2.5910
+Epoch: 171/200 | Batch 0350/0483 | Loss: 2.3974
+Epoch: 171/200 | Batch 0400/0483 | Loss: 2.4323
+Epoch: 171/200 | Batch 0450/0483 | Loss: 2.8237
+MAE/RMSE/ACC: Current Valid: 0.90/1.25/39.13 Ep. 171 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.32 min
+Epoch: 172/200 | Batch 0000/0483 | Loss: 2.6010
+Epoch: 172/200 | Batch 0050/0483 | Loss: 2.4776
+Epoch: 172/200 | Batch 0100/0483 | Loss: 2.4127
+Epoch: 172/200 | Batch 0150/0483 | Loss: 2.4610
+Epoch: 172/200 | Batch 0200/0483 | Loss: 2.5710
+Epoch: 172/200 | Batch 0250/0483 | Loss: 2.4588
+Epoch: 172/200 | Batch 0300/0483 | Loss: 2.4615
+Epoch: 172/200 | Batch 0350/0483 | Loss: 2.4853
+Epoch: 172/200 | Batch 0400/0483 | Loss: 2.5710
+Epoch: 172/200 | Batch 0450/0483 | Loss: 2.8406
+MAE/RMSE/ACC: Current Valid: 0.88/1.22/39.13 Ep. 172 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.37 min
+Epoch: 173/200 | Batch 0000/0483 | Loss: 2.4840
+Epoch: 173/200 | Batch 0050/0483 | Loss: 2.4504
+Epoch: 173/200 | Batch 0100/0483 | Loss: 2.3376
+Epoch: 173/200 | Batch 0150/0483 | Loss: 2.4578
+Epoch: 173/200 | Batch 0200/0483 | Loss: 2.5951
+Epoch: 173/200 | Batch 0250/0483 | Loss: 2.6569
+Epoch: 173/200 | Batch 0300/0483 | Loss: 2.5494
+Epoch: 173/200 | Batch 0350/0483 | Loss: 2.2494
+Epoch: 173/200 | Batch 0400/0483 | Loss: 2.5989
+Epoch: 173/200 | Batch 0450/0483 | Loss: 2.9963
+MAE/RMSE/ACC: Current Valid: 0.96/1.32/39.13 Ep. 173 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.42 min
+Epoch: 174/200 | Batch 0000/0483 | Loss: 2.4682
+Epoch: 174/200 | Batch 0050/0483 | Loss: 2.5793
+Epoch: 174/200 | Batch 0100/0483 | Loss: 2.5660
+Epoch: 174/200 | Batch 0150/0483 | Loss: 2.6678
+Epoch: 174/200 | Batch 0200/0483 | Loss: 2.7026
+Epoch: 174/200 | Batch 0250/0483 | Loss: 2.5900
+Epoch: 174/200 | Batch 0300/0483 | Loss: 2.4979
+Epoch: 174/200 | Batch 0350/0483 | Loss: 2.4224
+Epoch: 174/200 | Batch 0400/0483 | Loss: 2.5301
+Epoch: 174/200 | Batch 0450/0483 | Loss: 2.7715
+MAE/RMSE/ACC: Current Valid: 0.86/1.19/39.13 Ep. 174 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.47 min
+Epoch: 175/200 | Batch 0000/0483 | Loss: 2.5986
+Epoch: 175/200 | Batch 0050/0483 | Loss: 2.3314
+Epoch: 175/200 | Batch 0100/0483 | Loss: 2.6404
+Epoch: 175/200 | Batch 0150/0483 | Loss: 2.5431
+Epoch: 175/200 | Batch 0200/0483 | Loss: 2.5564
+Epoch: 175/200 | Batch 0250/0483 | Loss: 2.6696
+Epoch: 175/200 | Batch 0300/0483 | Loss: 2.4096
+Epoch: 175/200 | Batch 0350/0483 | Loss: 2.2885
+Epoch: 175/200 | Batch 0400/0483 | Loss: 2.5270
+Epoch: 175/200 | Batch 0450/0483 | Loss: 2.5309
+MAE/RMSE/ACC: Current Valid: 0.98/1.34/39.13 Ep. 175 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.51 min
+Epoch: 176/200 | Batch 0000/0483 | Loss: 2.7380
+Epoch: 176/200 | Batch 0050/0483 | Loss: 2.2696
+Epoch: 176/200 | Batch 0100/0483 | Loss: 2.6268
+Epoch: 176/200 | Batch 0150/0483 | Loss: 2.3818
+Epoch: 176/200 | Batch 0200/0483 | Loss: 2.6350
+Epoch: 176/200 | Batch 0250/0483 | Loss: 2.5244
+Epoch: 176/200 | Batch 0300/0483 | Loss: 2.3513
+Epoch: 176/200 | Batch 0350/0483 | Loss: 2.2239
+Epoch: 176/200 | Batch 0400/0483 | Loss: 2.5408
+Epoch: 176/200 | Batch 0450/0483 | Loss: 2.8195
+MAE/RMSE/ACC: Current Valid: 0.86/1.20/39.13 Ep. 176 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.56 min
+Epoch: 177/200 | Batch 0000/0483 | Loss: 2.4516
+Epoch: 177/200 | Batch 0050/0483 | Loss: 2.4465
+Epoch: 177/200 | Batch 0100/0483 | Loss: 2.2546
+Epoch: 177/200 | Batch 0150/0483 | Loss: 2.6248
+Epoch: 177/200 | Batch 0200/0483 | Loss: 2.5328
+Epoch: 177/200 | Batch 0250/0483 | Loss: 2.7859
+Epoch: 177/200 | Batch 0300/0483 | Loss: 2.3834
+Epoch: 177/200 | Batch 0350/0483 | Loss: 2.4854
+Epoch: 177/200 | Batch 0400/0483 | Loss: 2.6461
+Epoch: 177/200 | Batch 0450/0483 | Loss: 2.4644
+MAE/RMSE/ACC: Current Valid: 0.83/1.16/39.13 Ep. 177 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.61 min
+Epoch: 178/200 | Batch 0000/0483 | Loss: 2.6889
+Epoch: 178/200 | Batch 0050/0483 | Loss: 2.3438
+Epoch: 178/200 | Batch 0100/0483 | Loss: 2.3980
+Epoch: 178/200 | Batch 0150/0483 | Loss: 2.7165
+Epoch: 178/200 | Batch 0200/0483 | Loss: 2.5586
+Epoch: 178/200 | Batch 0250/0483 | Loss: 2.6358
+Epoch: 178/200 | Batch 0300/0483 | Loss: 2.4130
+Epoch: 178/200 | Batch 0350/0483 | Loss: 2.3196
+Epoch: 178/200 | Batch 0400/0483 | Loss: 2.5416
+Epoch: 178/200 | Batch 0450/0483 | Loss: 2.7028
+MAE/RMSE/ACC: Current Valid: 0.96/1.31/39.13 Ep. 178 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.66 min
+Epoch: 179/200 | Batch 0000/0483 | Loss: 2.6839
+Epoch: 179/200 | Batch 0050/0483 | Loss: 2.4327
+Epoch: 179/200 | Batch 0100/0483 | Loss: 2.2937
+Epoch: 179/200 | Batch 0150/0483 | Loss: 2.4764
+Epoch: 179/200 | Batch 0200/0483 | Loss: 2.5552
+Epoch: 179/200 | Batch 0250/0483 | Loss: 2.5814
+Epoch: 179/200 | Batch 0300/0483 | Loss: 2.6217
+Epoch: 179/200 | Batch 0350/0483 | Loss: 2.4258
+Epoch: 179/200 | Batch 0400/0483 | Loss: 2.5006
+Epoch: 179/200 | Batch 0450/0483 | Loss: 2.7262
+MAE/RMSE/ACC: Current Valid: 0.95/1.31/39.13 Ep. 179 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.71 min
+Epoch: 180/200 | Batch 0000/0483 | Loss: 2.4859
+Epoch: 180/200 | Batch 0050/0483 | Loss: 2.5082
+Epoch: 180/200 | Batch 0100/0483 | Loss: 2.5213
+Epoch: 180/200 | Batch 0150/0483 | Loss: 2.5112
+Epoch: 180/200 | Batch 0200/0483 | Loss: 2.5325
+Epoch: 180/200 | Batch 0250/0483 | Loss: 2.6005
+Epoch: 180/200 | Batch 0300/0483 | Loss: 2.3452
+Epoch: 180/200 | Batch 0350/0483 | Loss: 2.4390
+Epoch: 180/200 | Batch 0400/0483 | Loss: 2.5356
+Epoch: 180/200 | Batch 0450/0483 | Loss: 2.6276
+MAE/RMSE/ACC: Current Valid: 0.95/1.30/39.13 Ep. 180 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.75 min
+Epoch: 181/200 | Batch 0000/0483 | Loss: 2.4637
+Epoch: 181/200 | Batch 0050/0483 | Loss: 2.1906
+Epoch: 181/200 | Batch 0100/0483 | Loss: 2.6605
+Epoch: 181/200 | Batch 0150/0483 | Loss: 2.4409
+Epoch: 181/200 | Batch 0200/0483 | Loss: 2.5590
+Epoch: 181/200 | Batch 0250/0483 | Loss: 2.4009
+Epoch: 181/200 | Batch 0300/0483 | Loss: 2.4071
+Epoch: 181/200 | Batch 0350/0483 | Loss: 2.4243
+Epoch: 181/200 | Batch 0400/0483 | Loss: 2.4441
+Epoch: 181/200 | Batch 0450/0483 | Loss: 2.7239
+MAE/RMSE/ACC: Current Valid: 0.90/1.25/39.13 Ep. 181 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.81 min
+Epoch: 182/200 | Batch 0000/0483 | Loss: 2.5019
+Epoch: 182/200 | Batch 0050/0483 | Loss: 2.3298
+Epoch: 182/200 | Batch 0100/0483 | Loss: 2.5149
+Epoch: 182/200 | Batch 0150/0483 | Loss: 2.5892
+Epoch: 182/200 | Batch 0200/0483 | Loss: 2.6651
+Epoch: 182/200 | Batch 0250/0483 | Loss: 2.5922
+Epoch: 182/200 | Batch 0300/0483 | Loss: 2.3426
+Epoch: 182/200 | Batch 0350/0483 | Loss: 2.3582
+Epoch: 182/200 | Batch 0400/0483 | Loss: 2.6195
+Epoch: 182/200 | Batch 0450/0483 | Loss: 2.7013
+MAE/RMSE/ACC: Current Valid: 0.86/1.21/39.13 Ep. 182 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.86 min
+Epoch: 183/200 | Batch 0000/0483 | Loss: 2.5030
+Epoch: 183/200 | Batch 0050/0483 | Loss: 2.3434
+Epoch: 183/200 | Batch 0100/0483 | Loss: 2.4960
+Epoch: 183/200 | Batch 0150/0483 | Loss: 2.6004
+Epoch: 183/200 | Batch 0200/0483 | Loss: 2.4338
+Epoch: 183/200 | Batch 0250/0483 | Loss: 2.5068
+Epoch: 183/200 | Batch 0300/0483 | Loss: 2.5105
+Epoch: 183/200 | Batch 0350/0483 | Loss: 2.4713
+Epoch: 183/200 | Batch 0400/0483 | Loss: 2.4458
+Epoch: 183/200 | Batch 0450/0483 | Loss: 2.6113
+MAE/RMSE/ACC: Current Valid: 1.00/1.37/39.13 Ep. 183 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.91 min
+Epoch: 184/200 | Batch 0000/0483 | Loss: 2.7039
+Epoch: 184/200 | Batch 0050/0483 | Loss: 2.5289
+Epoch: 184/200 | Batch 0100/0483 | Loss: 2.6768
+Epoch: 184/200 | Batch 0150/0483 | Loss: 2.5733
+Epoch: 184/200 | Batch 0200/0483 | Loss: 2.6644
+Epoch: 184/200 | Batch 0250/0483 | Loss: 2.6426
+Epoch: 184/200 | Batch 0300/0483 | Loss: 2.5679
+Epoch: 184/200 | Batch 0350/0483 | Loss: 2.4021
+Epoch: 184/200 | Batch 0400/0483 | Loss: 2.6366
+Epoch: 184/200 | Batch 0450/0483 | Loss: 2.6225
+MAE/RMSE/ACC: Current Valid: 0.92/1.28/39.13 Ep. 184 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 8.96 min
+Epoch: 185/200 | Batch 0000/0483 | Loss: 2.3949
+Epoch: 185/200 | Batch 0050/0483 | Loss: 2.4695
+Epoch: 185/200 | Batch 0100/0483 | Loss: 2.3771
+Epoch: 185/200 | Batch 0150/0483 | Loss: 2.4233
+Epoch: 185/200 | Batch 0200/0483 | Loss: 2.6465
+Epoch: 185/200 | Batch 0250/0483 | Loss: 2.4323
+Epoch: 185/200 | Batch 0300/0483 | Loss: 2.5495
+Epoch: 185/200 | Batch 0350/0483 | Loss: 2.4736
+Epoch: 185/200 | Batch 0400/0483 | Loss: 2.6015
+Epoch: 185/200 | Batch 0450/0483 | Loss: 2.5913
+MAE/RMSE/ACC: Current Valid: 0.81/1.15/39.13 Ep. 185 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.00 min
+Epoch: 186/200 | Batch 0000/0483 | Loss: 2.4005
+Epoch: 186/200 | Batch 0050/0483 | Loss: 2.5240
+Epoch: 186/200 | Batch 0100/0483 | Loss: 2.5111
+Epoch: 186/200 | Batch 0150/0483 | Loss: 2.5819
+Epoch: 186/200 | Batch 0200/0483 | Loss: 2.7253
+Epoch: 186/200 | Batch 0250/0483 | Loss: 2.5410
+Epoch: 186/200 | Batch 0300/0483 | Loss: 2.4371
+Epoch: 186/200 | Batch 0350/0483 | Loss: 2.2718
+Epoch: 186/200 | Batch 0400/0483 | Loss: 2.8151
+Epoch: 186/200 | Batch 0450/0483 | Loss: 2.6930
+MAE/RMSE/ACC: Current Valid: 0.93/1.29/39.13 Ep. 186 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.05 min
+Epoch: 187/200 | Batch 0000/0483 | Loss: 2.4809
+Epoch: 187/200 | Batch 0050/0483 | Loss: 2.2971
+Epoch: 187/200 | Batch 0100/0483 | Loss: 2.3446
+Epoch: 187/200 | Batch 0150/0483 | Loss: 2.6453
+Epoch: 187/200 | Batch 0200/0483 | Loss: 2.4088
+Epoch: 187/200 | Batch 0250/0483 | Loss: 2.5089
+Epoch: 187/200 | Batch 0300/0483 | Loss: 2.3858
+Epoch: 187/200 | Batch 0350/0483 | Loss: 2.5147
+Epoch: 187/200 | Batch 0400/0483 | Loss: 2.5721
+Epoch: 187/200 | Batch 0450/0483 | Loss: 2.5183
+MAE/RMSE/ACC: Current Valid: 0.98/1.34/39.13 Ep. 187 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.10 min
+Epoch: 188/200 | Batch 0000/0483 | Loss: 2.5811
+Epoch: 188/200 | Batch 0050/0483 | Loss: 2.4838
+Epoch: 188/200 | Batch 0100/0483 | Loss: 2.5946
+Epoch: 188/200 | Batch 0150/0483 | Loss: 2.5303
+Epoch: 188/200 | Batch 0200/0483 | Loss: 2.3549
+Epoch: 188/200 | Batch 0250/0483 | Loss: 2.4621
+Epoch: 188/200 | Batch 0300/0483 | Loss: 2.5348
+Epoch: 188/200 | Batch 0350/0483 | Loss: 2.4504
+Epoch: 188/200 | Batch 0400/0483 | Loss: 2.4600
+Epoch: 188/200 | Batch 0450/0483 | Loss: 2.6522
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/39.13 Ep. 188 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.15 min
+Epoch: 189/200 | Batch 0000/0483 | Loss: 2.5901
+Epoch: 189/200 | Batch 0050/0483 | Loss: 2.3408
+Epoch: 189/200 | Batch 0100/0483 | Loss: 2.8174
+Epoch: 189/200 | Batch 0150/0483 | Loss: 2.7429
+Epoch: 189/200 | Batch 0200/0483 | Loss: 2.5320
+Epoch: 189/200 | Batch 0250/0483 | Loss: 2.5581
+Epoch: 189/200 | Batch 0300/0483 | Loss: 2.5556
+Epoch: 189/200 | Batch 0350/0483 | Loss: 2.4383
+Epoch: 189/200 | Batch 0400/0483 | Loss: 2.4419
+Epoch: 189/200 | Batch 0450/0483 | Loss: 2.5716
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/39.13 Ep. 189 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.20 min
+Epoch: 190/200 | Batch 0000/0483 | Loss: 2.6798
+Epoch: 190/200 | Batch 0050/0483 | Loss: 2.5038
+Epoch: 190/200 | Batch 0100/0483 | Loss: 2.4708
+Epoch: 190/200 | Batch 0150/0483 | Loss: 2.7408
+Epoch: 190/200 | Batch 0200/0483 | Loss: 2.6491
+Epoch: 190/200 | Batch 0250/0483 | Loss: 2.6310
+Epoch: 190/200 | Batch 0300/0483 | Loss: 2.3648
+Epoch: 190/200 | Batch 0350/0483 | Loss: 2.3041
+Epoch: 190/200 | Batch 0400/0483 | Loss: 2.4796
+Epoch: 190/200 | Batch 0450/0483 | Loss: 2.6432
+MAE/RMSE/ACC: Current Valid: 0.89/1.23/39.13 Ep. 190 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.24 min
+Epoch: 191/200 | Batch 0000/0483 | Loss: 2.4349
+Epoch: 191/200 | Batch 0050/0483 | Loss: 2.4802
+Epoch: 191/200 | Batch 0100/0483 | Loss: 2.4641
+Epoch: 191/200 | Batch 0150/0483 | Loss: 2.5015
+Epoch: 191/200 | Batch 0200/0483 | Loss: 2.6687
+Epoch: 191/200 | Batch 0250/0483 | Loss: 2.5034
+Epoch: 191/200 | Batch 0300/0483 | Loss: 2.3213
+Epoch: 191/200 | Batch 0350/0483 | Loss: 2.3966
+Epoch: 191/200 | Batch 0400/0483 | Loss: 2.5303
+Epoch: 191/200 | Batch 0450/0483 | Loss: 2.7388
+MAE/RMSE/ACC: Current Valid: 0.81/1.14/39.13 Ep. 191 | Best Valid: 0.82/1.14/39.13 | Ep. 51
+Time elapsed: 9.29 min
+Epoch: 192/200 | Batch 0000/0483 | Loss: 2.4923
+Epoch: 192/200 | Batch 0050/0483 | Loss: 2.4936
+Epoch: 192/200 | Batch 0100/0483 | Loss: 2.5634
+Epoch: 192/200 | Batch 0150/0483 | Loss: 2.4268
+Epoch: 192/200 | Batch 0200/0483 | Loss: 2.5475
+Epoch: 192/200 | Batch 0250/0483 | Loss: 2.6451
+Epoch: 192/200 | Batch 0300/0483 | Loss: 2.5330
+Epoch: 192/200 | Batch 0350/0483 | Loss: 2.5137
+Epoch: 192/200 | Batch 0400/0483 | Loss: 2.5149
+Epoch: 192/200 | Batch 0450/0483 | Loss: 2.7489
+MAE/RMSE/ACC: Current Valid: 0.80/1.13/39.56 Ep. 192 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.34 min
+Epoch: 193/200 | Batch 0000/0483 | Loss: 2.5727
+Epoch: 193/200 | Batch 0050/0483 | Loss: 2.5291
+Epoch: 193/200 | Batch 0100/0483 | Loss: 2.3510
+Epoch: 193/200 | Batch 0150/0483 | Loss: 2.7178
+Epoch: 193/200 | Batch 0200/0483 | Loss: 2.7524
+Epoch: 193/200 | Batch 0250/0483 | Loss: 2.7496
+Epoch: 193/200 | Batch 0300/0483 | Loss: 2.4537
+Epoch: 193/200 | Batch 0350/0483 | Loss: 2.2738
+Epoch: 193/200 | Batch 0400/0483 | Loss: 2.2511
+Epoch: 193/200 | Batch 0450/0483 | Loss: 2.7108
+MAE/RMSE/ACC: Current Valid: 0.97/1.33/39.56 Ep. 193 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.39 min
+Epoch: 194/200 | Batch 0000/0483 | Loss: 2.5985
+Epoch: 194/200 | Batch 0050/0483 | Loss: 2.3927
+Epoch: 194/200 | Batch 0100/0483 | Loss: 2.4493
+Epoch: 194/200 | Batch 0150/0483 | Loss: 2.6398
+Epoch: 194/200 | Batch 0200/0483 | Loss: 2.6504
+Epoch: 194/200 | Batch 0250/0483 | Loss: 2.6592
+Epoch: 194/200 | Batch 0300/0483 | Loss: 2.5107
+Epoch: 194/200 | Batch 0350/0483 | Loss: 2.3741
+Epoch: 194/200 | Batch 0400/0483 | Loss: 2.5252
+Epoch: 194/200 | Batch 0450/0483 | Loss: 2.7665
+MAE/RMSE/ACC: Current Valid: 0.85/1.19/39.56 Ep. 194 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.44 min
+Epoch: 195/200 | Batch 0000/0483 | Loss: 2.4930
+Epoch: 195/200 | Batch 0050/0483 | Loss: 2.3376
+Epoch: 195/200 | Batch 0100/0483 | Loss: 2.4221
+Epoch: 195/200 | Batch 0150/0483 | Loss: 2.7207
+Epoch: 195/200 | Batch 0200/0483 | Loss: 2.5160
+Epoch: 195/200 | Batch 0250/0483 | Loss: 2.5191
+Epoch: 195/200 | Batch 0300/0483 | Loss: 2.5610
+Epoch: 195/200 | Batch 0350/0483 | Loss: 2.2813
+Epoch: 195/200 | Batch 0400/0483 | Loss: 2.4819
+Epoch: 195/200 | Batch 0450/0483 | Loss: 2.7351
+MAE/RMSE/ACC: Current Valid: 0.85/1.18/39.56 Ep. 195 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.48 min
+Epoch: 196/200 | Batch 0000/0483 | Loss: 2.6548
+Epoch: 196/200 | Batch 0050/0483 | Loss: 2.5149
+Epoch: 196/200 | Batch 0100/0483 | Loss: 2.4643
+Epoch: 196/200 | Batch 0150/0483 | Loss: 2.5454
+Epoch: 196/200 | Batch 0200/0483 | Loss: 2.5055
+Epoch: 196/200 | Batch 0250/0483 | Loss: 2.6131
+Epoch: 196/200 | Batch 0300/0483 | Loss: 2.4913
+Epoch: 196/200 | Batch 0350/0483 | Loss: 2.3118
+Epoch: 196/200 | Batch 0400/0483 | Loss: 2.5497
+Epoch: 196/200 | Batch 0450/0483 | Loss: 2.4560
+MAE/RMSE/ACC: Current Valid: 0.99/1.34/39.56 Ep. 196 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.53 min
+Epoch: 197/200 | Batch 0000/0483 | Loss: 2.6361
+Epoch: 197/200 | Batch 0050/0483 | Loss: 2.4893
+Epoch: 197/200 | Batch 0100/0483 | Loss: 2.3185
+Epoch: 197/200 | Batch 0150/0483 | Loss: 2.5903
+Epoch: 197/200 | Batch 0200/0483 | Loss: 2.4588
+Epoch: 197/200 | Batch 0250/0483 | Loss: 2.7135
+Epoch: 197/200 | Batch 0300/0483 | Loss: 2.3805
+Epoch: 197/200 | Batch 0350/0483 | Loss: 2.4011
+Epoch: 197/200 | Batch 0400/0483 | Loss: 2.7171
+Epoch: 197/200 | Batch 0450/0483 | Loss: 2.9014
+MAE/RMSE/ACC: Current Valid: 0.90/1.24/39.56 Ep. 197 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.58 min
+Epoch: 198/200 | Batch 0000/0483 | Loss: 2.5787
+Epoch: 198/200 | Batch 0050/0483 | Loss: 2.3833
+Epoch: 198/200 | Batch 0100/0483 | Loss: 2.5066
+Epoch: 198/200 | Batch 0150/0483 | Loss: 2.5372
+Epoch: 198/200 | Batch 0200/0483 | Loss: 2.8184
+Epoch: 198/200 | Batch 0250/0483 | Loss: 2.5462
+Epoch: 198/200 | Batch 0300/0483 | Loss: 2.5747
+Epoch: 198/200 | Batch 0350/0483 | Loss: 2.3444
+Epoch: 198/200 | Batch 0400/0483 | Loss: 2.7195
+Epoch: 198/200 | Batch 0450/0483 | Loss: 2.8012
+MAE/RMSE/ACC: Current Valid: 0.94/1.30/39.56 Ep. 198 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.63 min
+Epoch: 199/200 | Batch 0000/0483 | Loss: 2.4859
+Epoch: 199/200 | Batch 0050/0483 | Loss: 2.5057
+Epoch: 199/200 | Batch 0100/0483 | Loss: 2.5661
+Epoch: 199/200 | Batch 0150/0483 | Loss: 2.5698
+Epoch: 199/200 | Batch 0200/0483 | Loss: 2.5968
+Epoch: 199/200 | Batch 0250/0483 | Loss: 2.6179
+Epoch: 199/200 | Batch 0300/0483 | Loss: 2.5137
+Epoch: 199/200 | Batch 0350/0483 | Loss: 2.4740
+Epoch: 199/200 | Batch 0400/0483 | Loss: 2.5539
+Epoch: 199/200 | Batch 0450/0483 | Loss: 2.6133
+MAE/RMSE/ACC: Current Valid: 0.96/1.32/39.56 Ep. 199 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.68 min
+Epoch: 200/200 | Batch 0000/0483 | Loss: 2.7877
+Epoch: 200/200 | Batch 0050/0483 | Loss: 2.4358
+Epoch: 200/200 | Batch 0100/0483 | Loss: 2.4314
+Epoch: 200/200 | Batch 0150/0483 | Loss: 2.4285
+Epoch: 200/200 | Batch 0200/0483 | Loss: 2.6656
+Epoch: 200/200 | Batch 0250/0483 | Loss: 2.7400
+Epoch: 200/200 | Batch 0300/0483 | Loss: 2.4743
+Epoch: 200/200 | Batch 0350/0483 | Loss: 2.2834
+Epoch: 200/200 | Batch 0400/0483 | Loss: 2.6777
+Epoch: 200/200 | Batch 0450/0483 | Loss: 2.7670
+MAE/RMSE/ACC: Current Valid: 0.95/1.31/39.56 Ep. 200 | Best Valid: 0.80/1.13/39.56 | Ep. 192
+Time elapsed: 9.72 min
+MAE/RMSE: | Best Train: 0.80/1.12 | Best Valid: 0.80/1.13 | Best Test: 0.82/1.14
+ACC: | Best Train: 39.79 | Best Valid: 39.56 | Best Test: 38.81
+Total Running Time: 9.74 min
